@@ -1,0 +1,255 @@
+{
+ "a_lakes": {
+  "columns": [
+   "lake",
+   "trophic status",
+   "TP mg/L",
+   "P removed t/yr (least-cost)"
+  ],
+  "rows": [
+   [
+    "Lake Winnipeg",
+    "eutrophic",
+    0.12,
+    3556.5
+   ],
+   [
+    "Lake Erie (Canadian waters)",
+    "eutrophic",
+    0.04,
+    240.735129984
+   ],
+   [
+    "Lake St. Clair (Canadian waters)",
+    "eutrophic",
+    0.03,
+    43.2
+   ],
+   [
+    "Lake Ontario (Bay of Quinte, Hamilton Harbour)",
+    "eutrophic",
+    0.03,
+    40.5
+   ],
+   [
+    "Lake Simcoe",
+    "eutrophic",
+    0.022,
+    18.9
+   ],
+   [
+    "Missisquoi Bay, Lake Champlain (Quebec)",
+    "eutrophic",
+    0.049,
+    0.0
+   ],
+   [
+    "Lake of the Woods (Canadian waters)",
+    "eutrophic",
+    0.035,
+    0.0
+   ],
+   [
+    "Lake Manitoba",
+    "eutrophic",
+    0.09,
+    0.0
+   ],
+   [
+    "Lake Winnipegosis",
+    "eutrophic",
+    0.035,
+    0.0
+   ],
+   [
+    "Lesser Slave Lake",
+    "eutrophic",
+    0.045,
+    0.0
+   ],
+   [
+    "Last Mountain Lake",
+    "eutrophic",
+    0.08,
+    0.0
+   ],
+   [
+    "Lac Saint-Pierre",
+    "eutrophic",
+    0.035,
+    0.0
+   ],
+   [
+    "Lake Superior (Canadian waters)",
+    "oligotrophic",
+    0.0025,
+    0.0
+   ],
+   [
+    "Lake Huron and Georgian Bay (Canadian)",
+    "oligotrophic",
+    0.004,
+    0.0
+   ],
+   [
+    "Great Bear Lake",
+    "oligotrophic",
+    0.002,
+    0.0
+   ],
+   [
+    "Great Slave Lake",
+    "oligotrophic",
+    0.005,
+    0.0
+   ],
+   [
+    "Lake Athabasca",
+    "mesotrophic",
+    0.01,
+    0.0
+   ],
+   [
+    "Reindeer Lake",
+    "oligotrophic",
+    0.005,
+    0.0
+   ],
+   [
+    "Lake Nipigon",
+    "oligotrophic",
+    0.005,
+    0.0
+   ],
+   [
+    "Lac Mistassini",
+    "oligotrophic",
+    0.004,
+    0.0
+   ],
+   [
+    "Lac Saint-Jean",
+    "mesotrophic",
+    0.012,
+    0.0
+   ],
+   [
+    "Lake Nipissing",
+    "mesotrophic",
+    0.015,
+    0.0
+   ]
+  ],
+  "note": ""
+ },
+ "a_map_farm_area": {
+  "columns": [
+   "study area",
+   "item",
+   "km2"
+  ],
+  "rows": [
+   [
+    "Pacific",
+    "central farms km2",
+    7113.427815520514
+   ],
+   [
+    "Pacific",
+    "additional farms, electric-or-biofuel km2",
+    20592.394811293583
+   ],
+   [
+    "Atlantic",
+    "central farms km2",
+    18198.618722102037
+   ],
+   [
+    "Atlantic",
+    "additional farms, electric-or-biofuel km2",
+    8965.400174836359
+   ],
+   [
+    "Hudson",
+    "central farms km2",
+    0.0
+   ],
+   [
+    "Hudson",
+    "additional farms, electric-or-biofuel km2",
+    0.0
+   ]
+  ],
+  "note": "Farm cells are placed nearest to land (Hudson Bay: nearest to Churchill or Moosonee) within each zone and distance band; locations are illustrative, areas are model results."
+ },
+ "b_area_by_region": {
+  "columns": [
+   "region",
+   "available km2",
+   "used least-cost km2",
+   "used electric-or-biofuel km2"
+  ],
+  "rows": [
+   [
+    "British Columbia",
+    46153.45,
+    7046.450000000001,
+    27481.68056430123
+   ],
+   [
+    "Scotian Shelf, Fundy, south Newfoundland",
+    63664.75,
+    18169.4,
+    27051.200000000004
+   ],
+   [
+    "Gulf of St Lawrence",
+    7053.65,
+    0.0,
+    0.0
+   ],
+   [
+    "Labrador and NE Newfoundland",
+    33796.5,
+    0.0,
+    0.0
+   ],
+   [
+    "Hudson Bay",
+    17506.300000000003,
+    0.0,
+    0.0
+   ]
+  ],
+  "note": ""
+ },
+ "c_biomass_cost": {
+  "columns": [
+   "region",
+   "CAD per dry t (cheapest zone, band and nutrient method; learned yields, 4% finance)"
+  ],
+  "rows": [
+   [
+    "British Columbia",
+    369.54542048353636
+   ],
+   [
+    "Scotian Shelf, Fundy, south Newfoundland",
+    499.5078772285109
+   ],
+   [
+    "Gulf of St Lawrence",
+    720.4440536949676
+   ],
+   [
+    "Labrador and NE Newfoundland",
+    1025.912332461634
+   ],
+   [
+    "Hudson Bay",
+    2200.1800074350845
+   ]
+  ],
+  "note": ""
+ }
+}

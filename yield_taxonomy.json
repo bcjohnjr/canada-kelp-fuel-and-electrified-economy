@@ -1,0 +1,103 @@
+[
+ {
+  "case": "central",
+  "yield_set": "demonstrated (commercial, Faroe Islands)",
+  "cost_bn": 90.78768593520282,
+  "kelp_km2": 0,
+  "kelp_dry_mt": 0.0,
+  "kelp_share_pct": 0.0,
+  "electricity_twh": 438.4505125917136,
+  "efuels_twh": 98.267412557429,
+  "mult_breakeven": 0.6901286321140125,
+  "coverage": 1.0581054946261697,
+  "feasible": true
+ },
+ {
+  "case": "central",
+  "yield_set": "design (8 Pacific, 6 Atlantic)",
+  "cost_bn": 89.96529024490988,
+  "kelp_km2": 12263.256260218915,
+  "kelp_dry_mt": 6.904306317098511,
+  "kelp_share_pct": 2.0499773105278427,
+  "electricity_twh": 400.69138398925145,
+  "efuels_twh": 82.91999145170757,
+  "mult_breakeven": 0.6848515544780182,
+  "coverage": 1.061311230049171,
+  "feasible": true
+ },
+ {
+  "case": "central",
+  "yield_set": "learning target (12 Pacific, 9 Atlantic)",
+  "cost_bn": 88.32581026974808,
+  "kelp_km2": 25215.85,
+  "kelp_dry_mt": 20.120559,
+  "kelp_share_pct": 5.948356979189067,
+  "electricity_twh": 341.03712778527995,
+  "efuels_twh": 53.42039888787391,
+  "mult_breakeven": 0.674331480973614,
+  "coverage": 1.0715015692748102,
+  "feasible": true
+ },
+ {
+  "case": "eb",
+  "yield_set": "demonstrated (commercial, Faroe Islands)",
+  "feasible": false
+ },
+ {
+  "case": "eb",
+  "yield_set": "design (8 Pacific, 6 Atlantic)",
+  "cost_bn": 103.7065765719012,
+  "kelp_km2": 75691.7503610298,
+  "kelp_dry_mt": 50.453756797122274,
+  "kelp_share_pct": 14.696409114076664,
+  "electricity_twh": 239.10600272906083,
+  "efuels_twh": 0.0,
+  "mult_breakeven": 0.7730254537601646,
+  "coverage": 0.8621055255978941,
+  "feasible": true
+ },
+ {
+  "case": "eb",
+  "yield_set": "learning target (12 Pacific, 9 Atlantic)",
+  "cost_bn": 92.91926966961734,
+  "kelp_km2": 54532.88056430123,
+  "kelp_dry_mt": 50.63805067716148,
+  "kelp_share_pct": 14.838532323032275,
+  "electricity_twh": 239.08562407360364,
+  "efuels_twh": 0.0,
+  "mult_breakeven": 0.7038063945182894,
+  "coverage": 0.9985193698116234,
+  "feasible": true
+ },
+ {
+  "case": "strict",
+  "yield_set": "demonstrated (commercial, Faroe Islands)",
+  "feasible": false
+ },
+ {
+  "case": "strict",
+  "yield_set": "design (8 Pacific, 6 Atlantic)",
+  "cost_bn": 152.3572952827849,
+  "kelp_km2": 150668.34999999998,
+  "kelp_dry_mt": 87.99791400987745,
+  "kelp_share_pct": 25.61311838359044,
+  "electricity_twh": 271.28163016704093,
+  "efuels_twh": 0.0,
+  "mult_breakeven": 1.0852031836711853,
+  "coverage": 0.26777998439223605,
+  "feasible": true
+ },
+ {
+  "case": "strict",
+  "yield_set": "learning target (12 Pacific, 9 Atlantic)",
+  "cost_bn": 116.12201406914245,
+  "kelp_km2": 92656.24597335602,
+  "kelp_dry_mt": 88.01189628337755,
+  "kelp_share_pct": 25.618284721571648,
+  "electricity_twh": 271.2763281390688,
+  "efuels_twh": 0.0,
+  "mult_breakeven": 0.8526917607837827,
+  "coverage": 0.7260002383871904,
+  "feasible": true
+ }
+]

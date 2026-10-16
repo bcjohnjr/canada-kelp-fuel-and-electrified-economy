@@ -1,0 +1,317 @@
+{
+ "a_spending": {
+  "columns": [
+   "system and price",
+   "component",
+   "CAD bn/yr"
+  ],
+  "rows": [
+   [
+    "Fossil, Oct 2026 prices",
+    "Statutory per-unit fuel taxes (fossil: as levied)",
+    9.657976346117175
+   ],
+   [
+    "Fossil, Oct 2026 prices",
+    "Fossil fuel, pre-tax",
+    146.18503886432237
+   ],
+   [
+    "Fossil, Oct 2026 prices",
+    "Vehicle purchase premia",
+    0.0
+   ],
+   [
+    "Fossil, Oct 2026 prices",
+    "Operating costs and depreciation",
+    0.0
+   ],
+   [
+    "Fossil, Oct 2026 prices",
+    "Return on capital",
+    0.0
+   ],
+   [
+    "Fossil, Oct 2026 prices",
+    "Economic rent, if collected (deficit hatched)",
+    0.0
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    "Statutory per-unit fuel taxes (fossil: as levied)",
+    16.76404097650107
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    "Fossil fuel, pre-tax",
+    0.0
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    "Vehicle purchase premia",
+    6.1318426573484865
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    "Operating costs and depreciation",
+    61.37082674903266
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    "Return on capital",
+    20.823140863366927
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    "Economic rent, if collected (deficit hatched)",
+    50.753163964190406
+   ],
+   [
+    "Fossil, 2025 prices",
+    "Statutory per-unit fuel taxes (fossil: as levied)",
+    19.069090634964965
+   ],
+   [
+    "Fossil, 2025 prices",
+    "Fossil fuel, pre-tax",
+    85.55458209887212
+   ],
+   [
+    "Fossil, 2025 prices",
+    "Vehicle purchase premia",
+    0.0
+   ],
+   [
+    "Fossil, 2025 prices",
+    "Operating costs and depreciation",
+    0.0
+   ],
+   [
+    "Fossil, 2025 prices",
+    "Return on capital",
+    0.0
+   ],
+   [
+    "Fossil, 2025 prices",
+    "Economic rent, if collected (deficit hatched)",
+    0.0
+   ],
+   [
+    "Renewable, 2025 prices",
+    "Statutory per-unit fuel taxes (fossil: as levied)",
+    16.76404097650107
+   ],
+   [
+    "Renewable, 2025 prices",
+    "Fossil fuel, pre-tax",
+    0.0
+   ],
+   [
+    "Renewable, 2025 prices",
+    "Vehicle purchase premia",
+    6.1318426573484865
+   ],
+   [
+    "Renewable, 2025 prices",
+    "Operating costs and depreciation",
+    61.37082674903266
+   ],
+   [
+    "Renewable, 2025 prices",
+    "Return on capital",
+    20.823140863366927
+   ],
+   [
+    "Renewable, 2025 prices",
+    "Economic rent, if collected (deficit hatched)",
+    -0.466178512412057
+   ]
+  ],
+  "note": "Spending before sales tax (identical in each pair; labels above bars). Renewable: central case (827 TWh) with statutory taxes restored."
+ },
+ "b_surplus": {
+  "columns": [
+   "system",
+   "royalties and land sales bn",
+   "corporate income tax bn",
+   "after-tax operating profit bn",
+   "total bn"
+  ],
+  "rows": [
+   [
+    "Oil and gas (2019\u201323 taxes, 2025 profits)",
+    17.6,
+    6.9,
+    42.300000000000004,
+    66.80000000000001
+   ],
+   [
+    "Renewable, Oct 2026 prices",
+    17.6,
+    11.326830942927206,
+    42.649473884630126,
+    71.57630482755734
+   ],
+   [
+    "Renewable, 2025 prices",
+    17.6,
+    0.0,
+    2.7569623509548684,
+    20.35696235095487
+   ]
+  ],
+  "note": "Renewable royalty set equal to the oil-and-gas royalties and land sales it replaces (capped at the surplus)."
+ },
+ "c_pump_prices": {
+  "columns": [
+   "fuel",
+   "price point",
+   "c/L"
+  ],
+  "rows": [
+   [
+    "gasoline",
+    "2025 average",
+    147.5
+   ],
+   [
+    "gasoline",
+    "Renewable break-even (least-cost case)",
+    126.50458583064997
+   ],
+   [
+    "gasoline",
+    "Renewable break-even (Monte Carlo median)",
+    142.98683500504313
+   ],
+   [
+    "gasoline",
+    "October 2026 (held constant)",
+    187.6
+   ],
+   [
+    "gasoline",
+    "Matches oil-and-gas benchmark (least-cost case)",
+    181.8504013770536
+   ],
+   [
+    "gasoline",
+    "Replaces oil-and-gas surplus (Monte Carlo median)",
+    190.82877464815124
+   ],
+   [
+    "diesel",
+    "2025 average",
+    157.9
+   ],
+   [
+    "diesel",
+    "Renewable break-even (least-cost case)",
+    175.79821708982115
+   ],
+   [
+    "diesel",
+    "Renewable break-even (Monte Carlo median)",
+    198.7029205000786
+   ],
+   [
+    "diesel",
+    "October 2026 (held constant)",
+    260.7
+   ],
+   [
+    "diesel",
+    "Matches oil-and-gas benchmark (least-cost case)",
+    252.71001939764324
+   ],
+   [
+    "diesel",
+    "Replaces oil-and-gas surplus (Monte Carlo median)",
+    265.18689525998417
+   ]
+  ],
+  "note": "Break-even: covers system cost incl. normal return, vehicle premia and statutory fuel taxes. Oil replacement: also earns the CAD 66.8 bn pre-royalty commercial and fiscal surplus of oil and gas extraction and refining (2025 profits); assumes the rent is fully collected."
+ },
+ "d_capture": {
+  "columns": [
+   "case",
+   "share of rent collected",
+   "surplus replaced",
+   "EBIT bn",
+   "left with users bn"
+  ],
+  "rows": [
+   [
+    "central",
+    0.0,
+    0.31172366561926534,
+    20.823140863366927,
+    50.753163964190406
+   ],
+   [
+    "central",
+    0.25,
+    0.5016681415331515,
+    33.511431854414525,
+    38.064872973142805
+   ],
+   [
+    "central",
+    0.5,
+    0.6916126174470378,
+    46.199722845462134,
+    25.376581982095203
+   ],
+   [
+    "central",
+    0.75,
+    0.8815570933609239,
+    58.88801383650973,
+    12.688290991047602
+   ],
+   [
+    "central",
+    1.0,
+    1.0715015692748102,
+    71.57630482755734,
+    0.0
+   ],
+   [
+    "transition",
+    0.0,
+    0.27225316210000555,
+    18.186511228280374,
+    54.41098037933227
+   ],
+   [
+    "transition",
+    0.25,
+    0.47588707070529096,
+    31.78925632311344,
+    40.808235284499204
+   ],
+   [
+    "transition",
+    0.5,
+    0.6795209793105764,
+    45.39200141794651,
+    27.205490189666136
+   ],
+   [
+    "transition",
+    0.75,
+    0.8831548879158618,
+    58.99474651277958,
+    13.602745094833068
+   ],
+   [
+    "transition",
+    1.0,
+    1.0867887965211473,
+    72.59749160761265,
+    0.0
+   ]
+  ],
+  "note": "Central case: rent 50.75 bn = efficiency surplus on electrified km 56.02 bn + renewable liquids -5.27 bn (electricity valued at its marginal cost); return on capital 20.82 bn."
+ }
+}

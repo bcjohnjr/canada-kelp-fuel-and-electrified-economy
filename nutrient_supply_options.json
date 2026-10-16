@@ -1,0 +1,374 @@
+{
+ "pac_shelf": {
+  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 2504.148553051442,
+   "wave_pump_xl": 2625.402061936038,
+   "solar_pipe": 117.80816199079273,
+   "depth_cycling": 319.589249402013
+  },
+  "units_per_km2": {
+   "wave_pump": 76.99263680917876,
+   "wave_pump_xl": 19.364814712611626,
+   "solar_pipe": 0.8533904991182344,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 3.0000000000000004,
+  "deep_water_m3_per_t_dw": 22556.39097744361,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 896.2352941176471,
+   "depth_cycling": 1112.5892494020131,
+   "solar_pipe": 910.8081619907928,
+   "wave_pump": 3297.148553051442,
+   "wave_pump_xl": 3418.402061936038
+  },
+  "effective_yield_t_ha": {
+   "natural": 6.8,
+   "depth_cycling": 8.0,
+   "solar_pipe": 8.0,
+   "wave_pump": 8.0,
+   "wave_pump_xl": 8.0
+  }
+ },
+ "pac_slope": {
+  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 5843.013290453364,
+   "wave_pump_xl": 6125.938144517421,
+   "solar_pipe": 274.88571131184966,
+   "depth_cycling": 319.589249402013
+  },
+  "units_per_km2": {
+   "wave_pump": 179.64948588808375,
+   "wave_pump_xl": 45.18456766276046,
+   "solar_pipe": 1.9912444979425465,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 7.0,
+  "deep_water_m3_per_t_dw": 52631.57894736842,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 1329.6,
+   "depth_cycling": 1271.189249402013,
+   "solar_pipe": 1226.4857113118496,
+   "wave_pump": 6794.613290453364,
+   "wave_pump_xl": 7077.538144517421
+  },
+  "effective_yield_t_ha": {
+   "natural": 5.2,
+   "depth_cycling": 8.0,
+   "solar_pipe": 8.0,
+   "wave_pump": 8.0,
+   "wave_pump_xl": 8.0
+  }
+ },
+ "pac_deep": {
+  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 10016.594212205766,
+   "wave_pump_xl": 10501.60824774415,
+   "solar_pipe": 471.23264796317085,
+   "depth_cycling": 319.589249402013
+  },
+  "units_per_km2": {
+   "wave_pump": 307.970547236715,
+   "wave_pump_xl": 77.45925885044649,
+   "solar_pipe": 3.413561996472937,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 12.0,
+  "deep_water_m3_per_t_dw": 90225.56390977443,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 2422.225,
+   "depth_cycling": 1469.439249402013,
+   "solar_pipe": 1621.0826479631708,
+   "wave_pump": 11166.444212205766,
+   "wave_pump_xl": 11651.45824774415
+  },
+  "effective_yield_t_ha": {
+   "natural": 3.2,
+   "depth_cycling": 8.0,
+   "solar_pipe": 8.0,
+   "wave_pump": 8.0,
+   "wave_pump_xl": 8.0
+  }
+ },
+ "atl_shelf": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 10135.839381398691,
+   "wave_pump_xl": 10626.627393550629,
+   "solar_pipe": 438.8931525147178,
+   "depth_cycling": 426.118999202684
+  },
+  "units_per_km2": {
+   "wave_pump": 233.72764745643548,
+   "wave_pump_xl": 58.78604466328529,
+   "solar_pipe": 2.3844734534185954,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 5.0,
+  "deep_water_m3_per_t_dw": 84033.61344537814,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 1248.0,
+   "depth_cycling": 1477.5989465291414,
+   "solar_pipe": 1426.8931525147177,
+   "wave_pump": 11123.839381398691,
+   "wave_pump_xl": 11614.627393550629
+  },
+  "effective_yield_t_ha": {
+   "natural": 4.5,
+   "depth_cycling": 5.699999999999999,
+   "solar_pipe": 6.0,
+   "wave_pump": 6.0,
+   "wave_pump_xl": 6.0
+  }
+ },
+ "atl_slope": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 18244.51088651764,
+   "wave_pump_xl": 19127.92930839113,
+   "solar_pipe": 790.007674526492,
+   "depth_cycling": 426.118999202684
+  },
+  "units_per_km2": {
+   "wave_pump": 420.70976542158377,
+   "wave_pump_xl": 105.8148803939135,
+   "solar_pipe": 4.292052216153471,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 8.999999999999998,
+  "deep_water_m3_per_t_dw": 151260.50420168063,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 1951.4181818181817,
+   "depth_cycling": 1746.4340650578943,
+   "solar_pipe": 1975.6076745264918,
+   "wave_pump": 19430.11088651764,
+   "wave_pump_xl": 20313.529308391127
+  },
+  "effective_yield_t_ha": {
+   "natural": 3.3000000000000003,
+   "depth_cycling": 5.46,
+   "solar_pipe": 6.0,
+   "wave_pump": 6.0,
+   "wave_pump_xl": 6.0
+  }
+ },
+ "atl_deep": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 28380.350267916336,
+   "wave_pump_xl": 29754.556701941758,
+   "solar_pipe": 1228.90082704121,
+   "depth_cycling": 426.118999202684
+  },
+  "units_per_km2": {
+   "wave_pump": 654.4374128780194,
+   "wave_pump_xl": 164.6009250571988,
+   "solar_pipe": 6.676525669572067,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 14.0,
+  "deep_water_m3_per_t_dw": 235294.1176470588,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 4100.933333333334,
+   "depth_cycling": 2141.5368207783144,
+   "solar_pipe": 2690.834160374543,
+   "wave_pump": 29842.28360124967,
+   "wave_pump_xl": 31216.490035275092
+  },
+  "effective_yield_t_ha": {
+   "natural": 1.7999999999999998,
+   "depth_cycling": 5.16,
+   "solar_pipe": 6.0,
+   "wave_pump": 6.0,
+   "wave_pump_xl": 6.0
+  }
+ },
+ "gsl_shelf": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 7883.430629976762,
+   "wave_pump_xl": 8265.154639428267,
+   "solar_pipe": 339.14470876137295,
+   "depth_cycling": 511.3427990432208
+  },
+  "units_per_km2": {
+   "wave_pump": 151.49014186991192,
+   "wave_pump_xl": 38.10206598546269,
+   "solar_pipe": 1.5354563904589442,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 5.0,
+  "deep_water_m3_per_t_dw": 64935.06493506493,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 1819.9999999999998,
+   "depth_cycling": 2029.8345253086536,
+   "solar_pipe": 1769.1447087613733,
+   "wave_pump": 9313.430629976763,
+   "wave_pump_xl": 9695.154639428267
+  },
+  "effective_yield_t_ha": {
+   "natural": 3.75,
+   "depth_cycling": 4.75,
+   "solar_pipe": 5.0,
+   "wave_pump": 5.0,
+   "wave_pump_xl": 5.0
+  }
+ },
+ "gsl_slope": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 12613.489007962819,
+   "wave_pump_xl": 13224.247423085226,
+   "solar_pipe": 542.6315340181967,
+   "depth_cycling": 511.3427990432208
+  },
+  "units_per_km2": {
+   "wave_pump": 242.3842269918591,
+   "wave_pump_xl": 60.9633055767403,
+   "solar_pipe": 2.456730224734311,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 8.0,
+  "deep_water_m3_per_t_dw": 103896.1038961039,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 2652.0,
+   "depth_cycling": 2393.8943467861095,
+   "solar_pipe": 2258.631534018197,
+   "wave_pump": 14329.489007962819,
+   "wave_pump_xl": 14940.247423085226
+  },
+  "effective_yield_t_ha": {
+   "natural": 3.0,
+   "depth_cycling": 4.6000000000000005,
+   "solar_pipe": 5.0,
+   "wave_pump": 5.0,
+   "wave_pump_xl": 5.0
+  }
+ },
+ "lab_shelf": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 12163.00725767843,
+   "wave_pump_xl": 12751.952872260757,
+   "solar_pipe": 559.5887694562654,
+   "depth_cycling": 639.178498804026
+  },
+  "units_per_km2": {
+   "wave_pump": 186.9821179651484,
+   "wave_pump_xl": 47.02883573062824,
+   "solar_pipe": 2.0268024354058065,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 6.000000000000001,
+  "deep_water_m3_per_t_dw": 107142.85714285716,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 2631.2,
+   "depth_cycling": 2713.7303178766238,
+   "solar_pipe": 2488.7887694562655,
+   "wave_pump": 14092.20725767843,
+   "wave_pump_xl": 14681.152872260758
+  },
+  "effective_yield_t_ha": {
+   "natural": 2.8,
+   "depth_cycling": 3.76,
+   "solar_pipe": 4.0,
+   "wave_pump": 4.0,
+   "wave_pump_xl": 4.0
+  }
+ },
+ "lab_slope": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 18244.510886517644,
+   "wave_pump_xl": 19127.92930839113,
+   "solar_pipe": 839.3831541843979,
+   "depth_cycling": 639.178498804026
+  },
+  "units_per_km2": {
+   "wave_pump": 280.47317694772255,
+   "wave_pump_xl": 70.54325359594233,
+   "solar_pipe": 3.040203653108709,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 8.999999999999998,
+  "deep_water_m3_per_t_dw": 160714.28571428568,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 3923.258181818182,
+   "depth_cycling": 3211.833954729699,
+   "solar_pipe": 3154.423154184398,
+   "wave_pump": 20559.550886517645,
+   "wave_pump_xl": 21442.96930839113
+  },
+  "effective_yield_t_ha": {
+   "natural": 2.2,
+   "depth_cycling": 3.64,
+   "solar_pipe": 4.0,
+   "wave_pump": 4.0,
+   "wave_pump_xl": 4.0
+  }
+ },
+ "hb_shelf": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native in the Hudson Bay complex)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 31533.72251990705,
+   "wave_pump_xl": 33060.61855771307,
+   "solar_pipe": 1492.236718550041,
+   "depth_cycling": 1022.6855980864416
+  },
+  "units_per_km2": {
+   "wave_pump": 302.98028373982385,
+   "wave_pump_xl": 76.20413197092537,
+   "solar_pipe": 3.378004059009677,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 10.0,
+  "deep_water_m3_per_t_dw": 285714.2857142857,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 6323.200000000001,
+   "depth_cycling": 5689.980797448589,
+   "solar_pipe": 4820.236718550041,
+   "wave_pump": 34861.72251990705,
+   "wave_pump_xl": 36388.61855771307
+  },
+  "effective_yield_t_ha": {
+   "natural": 1.25,
+   "depth_cycling": 1.875,
+   "solar_pipe": 2.5,
+   "wave_pump": 2.5,
+   "wave_pump_xl": 2.5
+  }
+ },
+ "hb_slope": {
+  "species": "Saccharina latissima (sugar kelp; highest-yielding native in the Hudson Bay complex)",
+  "nutrient_cad_per_t": {
+   "wave_pump": 34687.094771897755,
+   "wave_pump_xl": 36366.68041348437,
+   "solar_pipe": 1641.4603904050448,
+   "depth_cycling": 1022.6855980864416
+  },
+  "units_per_km2": {
+   "wave_pump": 333.27831211380624,
+   "wave_pump_xl": 83.8245451680179,
+   "solar_pipe": 3.7158044649106445,
+   "depth_cycling": 1.0
+  },
+  "n_supplement_kgN_per_t": 11.0,
+  "deep_water_m3_per_t_dw": 314285.71428571426,
+  "biomass_cost_nearest_band_cad_per_t": {
+   "natural": 8451.893333333333,
+   "depth_cycling": 6832.866572073252,
+   "solar_pipe": 5700.393723738378,
+   "wave_pump": 38746.02810523109,
+   "wave_pump_xl": 40425.613746817704
+  },
+  "effective_yield_t_ha": {
+   "natural": 1.125,
+   "depth_cycling": 1.8125,
+   "solar_pipe": 2.5,
+   "wave_pump": 2.5,
+   "wave_pump_xl": 2.5
+  }
+ }
+}

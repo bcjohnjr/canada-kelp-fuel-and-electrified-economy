@@ -1,0 +1,71 @@
+{
+ "basis_case": "deterministic_learning_target_full_2025_demand_4pct_finance",
+ "interpretation": "Screening gross employment and fiscal capacity for the deterministic learning-target system; not Monte Carlo medians or net macroeconomic effects.",
+ "assumptions": {
+  "domestic_value_added_share": 0.6,
+  "clean_sector_labour_share": 0.4637259204950495,
+  "average_compensation_2026_cad": 118252.08604720645,
+  "personal_income_tax_rate": 0.2,
+  "cash_wage_share": 0.9,
+  "consumption_share": 0.963,
+  "effective_general_sales_tax": 0.03805478216518256,
+  "property_tax_rate": 0.005,
+  "property_taxable_share": 0.5
+ },
+ "cost_base": {
+  "objective_bn": 88.32581026974808,
+  "annual_capital_charge_bn": 57.40612730065714,
+  "noncapital_annual_cost_bn": 30.919682969090935,
+  "build_capex_total_bn": 624.3565712732783,
+  "build_capex_per_year_bn": 26.014857136386595,
+  "onshore_property_base_bn": 523.3389503982781
+ },
+ "employment": {
+  "ongoing_jobs": 72750.97933003705,
+  "average_build_jobs": 61210.40554313201,
+  "average_jobs_during_build": 133961.38487316907,
+  "ongoing_jobs_range": [
+   47568.74302937067,
+   107188.23429284857
+  ],
+  "build_jobs_range": [
+   40022.857132902456,
+   90184.83807280686
+  ],
+  "build_phase_total_jobs_range": [
+   87591.60016227313,
+   197373.07236565545
+  ]
+ },
+ "labour_compensation": {
+  "ongoing_bn": 8.60295506775408,
+  "build_bn": 7.2382581432708495,
+  "build_phase_total_bn": 15.841213211024929
+ },
+ "tax_channels": {
+  "personal_income_tax_steady_bn": 1.720591013550816,
+  "personal_income_tax_build_phase_bn": 3.168242642204986,
+  "wage_induced_sales_tax_steady_bn": 0.22699467977779164,
+  "wage_induced_sales_tax_build_phase_bn": 0.4179809253690637,
+  "property_tax_capacity_bn": 1.3083473759956954,
+  "property_tax_capacity_range_bn": [
+   0.4579215815984934,
+   2.551277383191606
+  ],
+  "renewable_corporate_income_tax_at_2025_prices_bn": 2.5858018990105656,
+  "statutory_transport_taxes_and_road_charges_bn": 16.76404097650107,
+  "retained_petroleum_government_revenue_bn": 20.0,
+  "stable_price_fiscal_capacity_steady_bn": 42.60577594483594,
+  "stable_price_fiscal_capacity_build_phase_bn": 44.24441381908139,
+  "retained_petroleum_plus_statutory_transport_baseline_bn": 36.76404097650107,
+  "incremental_tax_capacity_above_baseline_bn": 5.841734968334869,
+  "full_petroleum_sector_upper_sensitivity_bn": 46.60577594483594
+ },
+ "crude_redirection": {
+  "domestic_crude_redirected_mbd": 0.9029999999999999,
+  "existing_crude_exports_mbd": 4.3,
+  "existing_crude_export_value_bn": 140.0,
+  "gross_added_export_value_bn": 29.4,
+  "gross_crude_export_value_if_redirected_bn": 169.4
+ }
+}

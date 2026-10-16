@@ -1,0 +1,55 @@
+{
+  "turning": {
+    "conventional_missed_m2": 214.6018366025517,
+    "conventional_missed_pct": 1.4902905319621647,
+    "grid_forward_missed_m2": 355.38064141382563,
+    "grid_forward_missed_pct": 2.467921120929345,
+    "grid_inplace_missed_m2": 88.84516035345641,
+    "grid_inplace_missed_pct": 0.6169802802323362
+  },
+  "energy": {
+    "bare_hose_10pct_mj": 55.6,
+    "faired_hose_10pct_mj": 33.9,
+    "conventional_mj": 90.9,
+    "faired_10pct_reduction_pct": 62.70627062706271,
+    "faired_10pct_advantage_ratio": 2.68141592920354,
+    "rows": [
+      {
+        "dry_solids_fraction": 0.1,
+        "relative_flow": 1.0,
+        "relative_hose_diameter": 1.0,
+        "fixed_head_skin_mj": 12.27058823529411,
+        "pump_mj": 17.8,
+        "faired_hose_form_mj": 3.829411764705884,
+        "grid_total_mj": 33.89999999999999,
+        "conventional_total_mj": 90.9,
+        "energy_reduction_pct": 62.70627062706271,
+        "conventional_to_grid_ratio": 2.6814159292035407
+      },
+      {
+        "dry_solids_fraction": 0.2,
+        "relative_flow": 0.5,
+        "relative_hose_diameter": 0.7071067811865476,
+        "fixed_head_skin_mj": 12.27058823529411,
+        "pump_mj": 8.821608737926816,
+        "faired_hose_form_mj": 2.7078030267790743,
+        "grid_total_mj": 23.8,
+        "conventional_total_mj": 90.9,
+        "energy_reduction_pct": 73.81738173817382,
+        "conventional_to_grid_ratio": 3.819327731092437
+      },
+      {
+        "dry_solids_fraction": 0.3,
+        "relative_flow": 0.33333333333333337,
+        "relative_hose_diameter": 0.5773502691896258,
+        "fixed_head_skin_mj": 12.27058823529411,
+        "pump_mj": 5.818499851515028,
+        "faired_hose_form_mj": 2.2109119131908623,
+        "grid_total_mj": 20.3,
+        "conventional_total_mj": 90.9,
+        "energy_reduction_pct": 77.66776677667767,
+        "conventional_to_grid_ratio": 4.477832512315271
+      }
+    ]
+  }
+}

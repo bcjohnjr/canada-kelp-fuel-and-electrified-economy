@@ -1,0 +1,134 @@
+{
+ "retail_margin_bn": 5.9511030074999995,
+ "station_liquid_share_remaining": 0.098051445752673,
+ "displaced_station_labour_bn": 2.147035501516618,
+ "displaced_station_jobs": 44729.9062815962,
+ "domestic_serving_refining_labour_bn": 1.4400261594130728,
+ "domestic_serving_refining_jobs": 10285.901138664805,
+ "alberta_share_of_station_margin": 0.1674408605147136,
+ "cases": {
+  "A_capacity_maintained": {
+   "jobs_created_ongoing": 72750.97933003705,
+   "jobs_created_build_average": 61210.40554313201,
+   "jobs_displaced": 44729.9062815962,
+   "net_jobs_ongoing": 28021.07304844085,
+   "net_jobs_during_build": 89231.47859157287,
+   "labour_compensation_created_bn": 8.60295506775408,
+   "labour_compensation_displaced_bn": 2.147035501516618,
+   "new_tax_revenue_bn": 5.841734968334869,
+   "revenue_lost_bn": 0.48605805713152755,
+   "net_public_revenue_bn": 5.355676911203341,
+   "net_public_revenue_build_phase_bn": 6.9943147854487835,
+   "public_revenue_status_quo_bn": 40.76404097650107,
+   "public_revenue_after_bn": 46.11971788770441,
+   "petroleum_royalties_land_retained_bn": 17.6,
+   "statutory_transport_taxes_retained_bn": 16.76404097650107,
+   "alberta": {
+    "royalty_base_change_bn": 0.0,
+    "bitumen_royalties_budget_2026_27_bn": 9.7,
+    "fuel_tax_retained_bn": 1.357926115,
+    "new_ongoing_jobs_range": [
+     8820.761077117333,
+     20074.112421198333
+    ],
+    "new_build_jobs_range": [
+     7421.5133280893915,
+     16889.732255640658
+    ],
+    "jobs_displaced": 7489.613998532962,
+    "net_ongoing_jobs_range": [
+     1331.1470785843712,
+     12584.498422665372
+    ],
+    "net_jobs_during_build_range": [
+     8752.660406673764,
+     29474.23067830603
+    ],
+    "refining_capacity_share": 0.27502634351949423
+   }
+  },
+  "B_domestic_refining_closes": {
+   "jobs_created_ongoing": 72750.97933003705,
+   "jobs_created_build_average": 61210.40554313201,
+   "jobs_displaced": 55015.80742026101,
+   "net_jobs_ongoing": 17735.171909776043,
+   "net_jobs_during_build": 78945.57745290807,
+   "labour_compensation_created_bn": 8.60295506775408,
+   "labour_compensation_displaced_bn": 3.587061660929691,
+   "new_tax_revenue_bn": 5.841734968334869,
+   "revenue_lost_bn": 4.812059335064973,
+   "net_public_revenue_bn": 1.0296756332698962,
+   "net_public_revenue_build_phase_bn": 2.6683135075153386,
+   "public_revenue_status_quo_bn": 40.76404097650107,
+   "public_revenue_after_bn": 41.79371660977097,
+   "petroleum_royalties_land_retained_bn": 17.6,
+   "statutory_transport_taxes_retained_bn": 16.76404097650107,
+   "alberta": {
+    "royalty_base_change_bn": 0.0,
+    "bitumen_royalties_budget_2026_27_bn": 9.7,
+    "fuel_tax_retained_bn": 1.357926115,
+    "new_ongoing_jobs_range": [
+     8820.761077117333,
+     20074.112421198333
+    ],
+    "new_build_jobs_range": [
+     7421.5133280893915,
+     16889.732255640658
+    ],
+    "jobs_displaced": 10318.507778502946,
+    "net_ongoing_jobs_range": [
+     -1497.746701385613,
+     9755.604642695387
+    ],
+    "net_jobs_during_build_range": [
+     5923.7666267037785,
+     26645.336898336045
+    ],
+    "refining_capacity_share": 0.27502634351949423
+   }
+  }
+ },
+ "sensitivity": {
+  "A_capacity_maintained": {
+   "jobs_displaced_range": [
+    22364.9531407981,
+    73804.34536463374
+   ],
+   "net_jobs_ongoing_range": [
+    -26235.602335263073,
+    84823.28115205048
+   ],
+   "net_public_revenue_range_bn": [
+    5.173405139779018,
+    5.537948682627664
+   ]
+  },
+  "B_domestic_refining_closes": {
+   "jobs_displaced_range": [
+    31365.116637129806,
+    85804.56335974268
+   ],
+   "net_jobs_ongoing_range": [
+    -38235.82033037201,
+    75823.11765571877
+   ],
+   "net_public_revenue_range_bn": [
+    0.8474038618455726,
+    1.211947404694219
+   ]
+  }
+ },
+ "assumptions": {
+  "retail_margin_share_of_pump_price": 0.063,
+  "retail_labour_share": 0.4,
+  "retail_compensation_cad": 48000.0,
+  "refining_salaries_2023_bn": 1.6,
+  "benefit_uplift": 1.15,
+  "refining_compensation_cad": 140000.0,
+  "domestic_serving_refining_share": 0.7,
+  "refining_government_revenue_bn": 4.0,
+  "alberta_population_share": 0.12124594278108174,
+  "alberta_renewable_additions_share": 0.2759291023441967,
+  "alberta_refining_capacity_share": 0.27502634351949423
+ }
+}

@@ -1,0 +1,247 @@
+{
+ "cumulative": [
+  {
+   "key": "today",
+   "label": "Today's costs (7%, current demand)",
+   "cost": 111.84890356715988,
+   "kelp_km2": 0,
+   "kelp_share": 0.0,
+   "electricity_twh": 439.79442283766355,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 65.79889918747675,
+   "coverage": 0.9850134608903703,
+   "rent": 27.2300706667786,
+   "mult_oil": 1.0064237772297426,
+   "mult_oil_2025": 1.4991264589035664
+  },
+  {
+   "key": "farm",
+   "label": "Cheaper farming: biomass CAD 520 \u2192 340 per dry t at reference yield",
+   "cost": 111.28639224289589,
+   "step_saving": 0.5625113242639941,
+   "kelp_km2": 12053.6,
+   "kelp_share": 1.5091412005812064,
+   "electricity_twh": 408.9813777278488,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 65.6310747717402,
+   "coverage": 0.982501119337428,
+   "rent": 27.792581991042596,
+   "mult_oil": 1.0075006584458173,
+   "mult_oil_2025": 1.5007305357950698
+  },
+  {
+   "key": "yield",
+   "label": "Higher yield: 8 \u2192 12 (Pacific) and 6 \u2192 9 (Atlantic) t dry ha\u207b\u00b9 yr\u207b\u00b9",
+   "cost": 109.64269613895475,
+   "step_saving": 1.6436961039411386,
+   "kelp_km2": 12246.939815701759,
+   "kelp_share": 2.3794079234604726,
+   "electricity_twh": 398.14504400779754,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 66.68122523764845,
+   "coverage": 0.9982219346953359,
+   "rent": 29.436278094983734,
+   "mult_oil": 1.0007621436366025,
+   "mult_oil_2025": 1.4906931280223585
+  },
+  {
+   "key": "deep",
+   "label": "Cheaper deep-water structures: factor 1.45 \u2192 1.2; depth cycling CAD 1.6M \u2192 0.8M km\u207b\u00b2",
+   "cost": 109.5879062404877,
+   "step_saving": 0.054789898467049625,
+   "kelp_km2": 10884.69639106268,
+   "kelp_share": 2.38523845653684,
+   "electricity_twh": 398.10688521577094,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 66.72248287518525,
+   "coverage": 0.998839563999779,
+   "rent": 29.491067993450784,
+   "mult_oil": 1.0004974051914366,
+   "mult_oil_2025": 1.490298784787613
+  },
+  {
+   "key": "conversion",
+   "label": "Better conversion: whole-kelp HTL 0.193 \u2192 0.23, residue 0.25 \u2192 0.30, all alginate fermented",
+   "cost": 107.37138072518471,
+   "step_saving": 2.2165255153029904,
+   "kelp_km2": 34615.08765086637,
+   "kelp_share": 9.265761586510504,
+   "electricity_twh": 288.8928726806181,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 66.09339242954141,
+   "coverage": 0.9894220423584041,
+   "rent": 31.707593508753774,
+   "mult_oil": 1.0045340984291433,
+   "mult_oil_2025": 1.4963116729725292
+  },
+  {
+   "key": "refcapex",
+   "label": "Biorefinery cost \u221230% (nth-of-a-kind plants)",
+   "cost": 103.89494617040432,
+   "step_saving": 3.4764345547803828,
+   "kelp_km2": 40628.18592134622,
+   "kelp_share": 11.379546384618564,
+   "electricity_twh": 255.87556281325146,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 68.85693348998055,
+   "coverage": 1.0307924175146788,
+   "rent": 35.18402806353416,
+   "mult_oil": 0.9868012468367414,
+   "mult_oil_2025": 1.4698975643083305
+  },
+  {
+   "key": "efuels",
+   "label": "Electrofuel synthesis and electrolysers \u221225%; DAC \u221225%",
+   "cost": 103.22289927425305,
+   "step_saving": 0.6720468961512722,
+   "kelp_km2": 29994.35,
+   "kelp_share": 7.64143340108947,
+   "electricity_twh": 314.2567849387713,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 69.20297290998022,
+   "coverage": 1.0359726483529972,
+   "rent": 35.85607495968543,
+   "mult_oil": 0.9845808109735595,
+   "mult_oil_2025": 1.4665900965913445
+  },
+  {
+   "key": "capital",
+   "label": "Cheaper capital: 4% instead of 7%",
+   "cost": 88.32581026974808,
+   "step_saving": 14.897089004504977,
+   "kelp_km2": 25215.85,
+   "kelp_share": 5.948356979189067,
+   "electricity_twh": 341.03712778527995,
+   "fossil": {
+    "oct2026": 146.18503886432237,
+    "avg2025": 85.55458209887212
+   },
+   "ebit": 71.57630482755734,
+   "coverage": 1.0715015692748102,
+   "rent": 50.753163964190406,
+   "mult_oil": 0.9693518197071088,
+   "mult_oil_2025": 1.4439056327834747
+  },
+  {
+   "key": "demand",
+   "label": "Less fuel: aviation \u221220%, shipping \u221210%, off-road \u221215% (no oil-sands mining fleet), wind-assisted ships up to 15%",
+   "cost": 78.99813070193903,
+   "step_saving": 9.327679567809042,
+   "kelp_km2": 25215.85,
+   "kelp_share": 6.180815022967947,
+   "electricity_twh": 276.3848341602799,
+   "fossil": {
+    "oct2026": 140.4468669116552,
+    "avg2025": 82.72167693039552
+   },
+   "ebit": 72.59749160761265,
+   "coverage": 1.0867887965211473,
+   "rent": 54.41098037933227,
+   "mult_oil": 0.9613728203001989,
+   "mult_oil_2025": 1.4187057428642584
+  }
+ ],
+ "single": {
+  "farm": {
+   "label": "Cheaper farming: biomass CAD 520 \u2192 340 per dry t at reference yield",
+   "cost": 111.28639224289589,
+   "saving": 0.5625113242639941,
+   "ebit": 65.6310747717402,
+   "coverage": 0.982501119337428,
+   "rent": 27.792581991042596,
+   "mult_oil": 1.0075006584458173,
+   "mult_oil_2025": 1.5007305357950698
+  },
+  "yield": {
+   "label": "Higher yield: 8 \u2192 12 (Pacific) and 6 \u2192 9 (Atlantic) t dry ha\u207b\u00b9 yr\u207b\u00b9",
+   "cost": 111.31604443939003,
+   "saving": 0.5328591277698536,
+   "ebit": 65.87805183393576,
+   "coverage": 0.9861983807475411,
+   "rent": 27.762929794548455,
+   "mult_oil": 1.0059158773642778,
+   "mult_oil_2025": 1.498369912661299
+  },
+  "deep": {
+   "label": "Cheaper deep-water structures: factor 1.45 \u2192 1.2; depth cycling CAD 1.6M \u2192 0.8M km\u207b\u00b2",
+   "cost": 111.84890356715988,
+   "saving": 0.0,
+   "ebit": 65.79889918747675,
+   "coverage": 0.9850134608903703,
+   "rent": 27.2300706667786,
+   "mult_oil": 1.0064237772297426,
+   "mult_oil_2025": 1.4991264589035664
+  },
+  "conversion": {
+   "label": "Better conversion: whole-kelp HTL 0.193 \u2192 0.23, residue 0.25 \u2192 0.30, all alginate fermented",
+   "cost": 111.33068101978664,
+   "saving": 0.5182225473732416,
+   "ebit": 65.83474610008467,
+   "coverage": 0.9855500913186327,
+   "rent": 27.748293214151843,
+   "mult_oil": 1.0061937578569815,
+   "mult_oil_2025": 1.4987838317363946
+  },
+  "refcapex": {
+   "label": "Biorefinery cost \u221230% (nth-of-a-kind plants)",
+   "cost": 111.63395869314289,
+   "saving": 0.21494487401699303,
+   "ebit": 65.692009958114,
+   "coverage": 0.9834133227262573,
+   "rent": 27.445015540795595,
+   "mult_oil": 1.0071096548048037,
+   "mult_oil_2025": 1.5001481132440204
+  },
+  "efuels": {
+   "label": "Electrofuel synthesis and electrolysers \u221225%; DAC \u221225%",
+   "cost": 106.98327037257002,
+   "saving": 4.865633194589861,
+   "ebit": 68.91425529214021,
+   "coverage": 1.031650528325452,
+   "rent": 32.09570386136846,
+   "mult_oil": 0.9864334292474689,
+   "mult_oil_2025": 1.4693496787231484
+  },
+  "capital": {
+   "label": "Cheaper capital: 4% instead of 7%",
+   "cost": 95.08859922286172,
+   "saving": 16.760304344298163,
+   "ebit": 67.4897929590642,
+   "coverage": 1.0103262419021586,
+   "rent": 43.990375011076765,
+   "mult_oil": 0.9955737961169916,
+   "mult_oil_2025": 1.482964784137196
+  },
+  "demand": {
+   "label": "Less fuel: aviation \u221220%, shipping \u221210%, off-road \u221215% (no oil-sands mining fleet), wind-assisted ships up to 15%",
+   "cost": 96.86852766444817,
+   "saving": 14.980375902711714,
+   "ebit": 69.34421672280075,
+   "coverage": 1.0380870766886339,
+   "rent": 36.54058341682314,
+   "mult_oil": 0.9830485452677814,
+   "mult_oil_2025": 1.450692787684865
+  }
+ }
+}

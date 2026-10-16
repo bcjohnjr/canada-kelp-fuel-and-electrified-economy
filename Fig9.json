@@ -1,0 +1,184 @@
+{
+ "a_self_reliance": {
+  "columns": [
+   "case",
+   "source",
+   "TWh/yr"
+  ],
+  "rows": [
+   [
+    "All routes (central case)",
+    "Kelp HTL fuel",
+    45.5368491288
+   ],
+   [
+    "All routes (central case)",
+    "Lake and marsh fuel",
+    2.7424392409662373
+   ],
+   [
+    "All routes (central case)",
+    "Existing biofuel feedstocks",
+    55.00952502870512
+   ],
+   [
+    "All routes (central case)",
+    "Forest and farm residues",
+    85.0
+   ],
+   [
+    "All routes (central case)",
+    "Electrofuels",
+    53.42039888787391
+   ],
+   [
+    "No electrofuels",
+    "Kelp HTL fuel",
+    98.68292518144074
+   ],
+   [
+    "No electrofuels",
+    "Lake and marsh fuel",
+    3.039359144760004
+   ],
+   [
+    "No electrofuels",
+    "Existing biofuel feedstocks",
+    51.13358032848221
+   ],
+   [
+    "No electrofuels",
+    "Forest and farm residues",
+    85.0
+   ],
+   [
+    "No electrofuels",
+    "Electrofuels",
+    0.0
+   ],
+   [
+    "Electric or biofuel only",
+    "Kelp HTL fuel",
+    114.60403629255187
+   ],
+   [
+    "Electric or biofuel only",
+    "Lake and marsh fuel",
+    3.039359144760004
+   ],
+   [
+    "Electric or biofuel only",
+    "Existing biofuel feedstocks",
+    35.0
+   ],
+   [
+    "Electric or biofuel only",
+    "Forest and farm residues",
+    85.0
+   ],
+   [
+    "Electric or biofuel only",
+    "Electrofuels",
+    0.0
+   ],
+   [
+    "Electrification, seaweed and existing biofuels only",
+    "Kelp HTL fuel",
+    199.18852366854014
+   ],
+   [
+    "Electrification, seaweed and existing biofuels only",
+    "Lake and marsh fuel",
+    3.4890992046489155
+   ],
+   [
+    "Electrification, seaweed and existing biofuels only",
+    "Existing biofuel feedstocks",
+    35.0
+   ],
+   [
+    "Electrification, seaweed and existing biofuels only",
+    "Forest and farm residues",
+    0.0
+   ],
+   [
+    "Electrification, seaweed and existing biofuels only",
+    "Electrofuels",
+    0.0
+   ],
+   [
+    "Electrification, seaweed and existing biofuels, transition demand",
+    "Kelp HTL fuel",
+    170.36814667523163
+   ],
+   [
+    "Electrification, seaweed and existing biofuels, transition demand",
+    "Lake and marsh fuel",
+    3.1877609247469794
+   ],
+   [
+    "Electrification, seaweed and existing biofuels, transition demand",
+    "Existing biofuel feedstocks",
+    35.0
+   ],
+   [
+    "Electrification, seaweed and existing biofuels, transition demand",
+    "Forest and farm residues",
+    0.0
+   ],
+   [
+    "Electrification, seaweed and existing biofuels, transition demand",
+    "Electrofuels",
+    0.0
+   ]
+  ],
+  "note": "Labels: kelp farm area and share of the oil-and-gas surplus replaced (rent collected). Kelp area permitted by the farm caps: 168175 km2. The strict case is feasible only if kelp yields reach 61% of the learned yields, and in 542 of 1000 Monte Carlo draws."
+ },
+ "b_territorial": {
+  "columns": [
+   "case",
+   "Mt CO2e",
+   "% below 2005"
+  ],
+  "rows": [
+   [
+    "2024 inventory",
+    685.0,
+    10.22280471821756
+   ],
+   [
+    "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export",
+    516.1746060029769,
+    32.34933079908559
+   ],
+   [
+    "\u2026 and refineries that served Canadian transport close or convert",
+    504.97460600297694,
+    33.81722070734248
+   ],
+   [
+    "\u2026 and oil sands carbon capture (Pathways, 22 Mt)",
+    482.97460600297694,
+    36.70057588427563
+   ]
+  ],
+  "note": "NIR boundary: transport and off-road removed; adds 2.2 Mt released in Canada by the renewable system (CH4 and N2O from biofuel combustion, biogas methane slip). Targets 2030: 420-458 Mt; 2035: 382-420 Mt (excluding the LULUCF accounting contribution)."
+ },
+ "c_lifecycle": {
+  "columns": [
+   "system",
+   "Mt CO2e/yr well-to-wheel"
+  ],
+  "rows": [
+   [
+    "fossil transport fuels",
+    272.997704
+   ],
+   [
+    "renewable system",
+    19.562738285261517
+   ]
+  ],
+  "note": "Separate account, not added to the territorial inventory. Combustion abroad of exported oil: 856 Mt CO2/yr (counted in importing countries)."
+ }
+}

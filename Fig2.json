@@ -1,0 +1,287 @@
+{
+ "a_biomass_cost": {
+  "columns": [
+   "zone",
+   "nutrient method",
+   "CAD per dry t",
+   "effective yield t/ha/yr"
+  ],
+  "rows": [
+   [
+    "Pacific shelf",
+    "Natural supply",
+    896.2352941176471,
+    6.8
+   ],
+   [
+    "Pacific slope",
+    "Natural supply",
+    1329.6,
+    5.2
+   ],
+   [
+    "Pacific deep",
+    "Natural supply",
+    2422.225,
+    3.2
+   ],
+   [
+    "Atlantic shelf",
+    "Natural supply",
+    1248.0,
+    4.5
+   ],
+   [
+    "Atlantic slope",
+    "Natural supply",
+    1951.4181818181817,
+    3.3000000000000003
+   ],
+   [
+    "Atlantic deep",
+    "Natural supply",
+    4100.933333333334,
+    1.7999999999999998
+   ],
+   [
+    "Pacific shelf",
+    "Depth cycling",
+    1112.5892494020131,
+    8.0
+   ],
+   [
+    "Pacific slope",
+    "Depth cycling",
+    1271.189249402013,
+    8.0
+   ],
+   [
+    "Pacific deep",
+    "Depth cycling",
+    1469.439249402013,
+    8.0
+   ],
+   [
+    "Atlantic shelf",
+    "Depth cycling",
+    1477.5989465291414,
+    5.699999999999999
+   ],
+   [
+    "Atlantic slope",
+    "Depth cycling",
+    1746.4340650578943,
+    5.46
+   ],
+   [
+    "Atlantic deep",
+    "Depth cycling",
+    2141.5368207783144,
+    5.16
+   ],
+   [
+    "Pacific shelf",
+    "Pumped pipe",
+    910.8081619907928,
+    8.0
+   ],
+   [
+    "Pacific slope",
+    "Pumped pipe",
+    1226.4857113118496,
+    8.0
+   ],
+   [
+    "Pacific deep",
+    "Pumped pipe",
+    1621.0826479631708,
+    8.0
+   ],
+   [
+    "Atlantic shelf",
+    "Pumped pipe",
+    1426.8931525147177,
+    6.0
+   ],
+   [
+    "Atlantic slope",
+    "Pumped pipe",
+    1975.6076745264918,
+    6.0
+   ],
+   [
+    "Atlantic deep",
+    "Pumped pipe",
+    2690.834160374543,
+    6.0
+   ],
+   [
+    "Pacific shelf",
+    "Wave pump",
+    3297.148553051442,
+    8.0
+   ],
+   [
+    "Pacific slope",
+    "Wave pump",
+    6794.613290453364,
+    8.0
+   ],
+   [
+    "Pacific deep",
+    "Wave pump",
+    11166.444212205766,
+    8.0
+   ],
+   [
+    "Atlantic shelf",
+    "Wave pump",
+    11123.839381398691,
+    6.0
+   ],
+   [
+    "Atlantic slope",
+    "Wave pump",
+    19430.11088651764,
+    6.0
+   ],
+   [
+    "Atlantic deep",
+    "Wave pump",
+    29842.28360124967,
+    6.0
+   ]
+  ],
+  "note": "Today's costs, 7% finance, nearest distance band; natural supply yields only the naturally supplied share."
+ },
+ "b_refinery": {
+  "columns": [
+   "route",
+   "flow",
+   "GJ per dry t (inputs negative)"
+  ],
+  "rows": [
+   [
+    "Ethanol + HTL",
+    "Diesel/jet",
+    3.344025599999999
+   ],
+   [
+    "Ethanol + HTL",
+    "Ethanol",
+    3.7622912000000004
+   ],
+   [
+    "Ethanol + HTL",
+    "Biomethane",
+    0.5914159999999998
+   ],
+   [
+    "Ethanol + HTL",
+    "Fertiliser energy avoided",
+    0.804
+   ],
+   [
+    "Ethanol + HTL",
+    "Electricity",
+    -1.2023712
+   ],
+   [
+    "Ethanol + HTL",
+    "Process heat",
+    -2.0351231999999997
+   ],
+   [
+    "Whole HTL",
+    "Diesel/jet",
+    6.836832
+   ],
+   [
+    "Whole HTL",
+    "Ethanol",
+    0.0
+   ],
+   [
+    "Whole HTL",
+    "Biomethane",
+    1.1277
+   ],
+   [
+    "Whole HTL",
+    "Fertiliser energy avoided",
+    0.804
+   ],
+   [
+    "Whole HTL",
+    "Electricity",
+    -1.788084
+   ],
+   [
+    "Whole HTL",
+    "Process heat",
+    -1.654544
+   ],
+   [
+    "Digestion",
+    "Diesel/jet",
+    0.0
+   ],
+   [
+    "Digestion",
+    "Ethanol",
+    0.0
+   ],
+   [
+    "Digestion",
+    "Biomethane",
+    6.186239999999999
+   ],
+   [
+    "Digestion",
+    "Fertiliser energy avoided",
+    0.804
+   ],
+   [
+    "Digestion",
+    "Electricity",
+    -0.4630464000000001
+   ],
+   [
+    "Digestion",
+    "Process heat",
+    -0.4
+   ]
+  ],
+  "note": ""
+ },
+ "c_heat": {
+  "columns": [
+   "source",
+   "CAD/MWh_th at 7%",
+   "CAD/MWh_th at 4%"
+  ],
+  "rows": [
+   [
+    "Wind-charged thermal storage",
+    121.05263157894737,
+    95.15481238463902
+   ],
+   [
+    "Heat pump (low-temperature)",
+    52.8,
+    41.896978008996086
+   ],
+   [
+    "Electric boiler (grid)",
+    133.33333333333334,
+    105.80044951766689
+   ],
+   [
+    "Forest-residue boiler",
+    36.35294117647059,
+    33.68561287019051
+   ]
+  ],
+  "note": "Tier-2 wind; heat pumps limited to 60% of refinery heat (low-temperature duties); residues compete with residue fuels."
+ }
+}

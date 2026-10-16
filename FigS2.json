@@ -1,0 +1,62 @@
+{
+ "a_lifecycle": {
+  "columns": [
+   "system",
+   "component",
+   "MtCO2e/yr"
+  ],
+  "rows": [
+   [
+    "Fossil comparator",
+    "total",
+    272.997704
+   ],
+   [
+    "Renewable system",
+    "Direct electric transport",
+    2.662228454656858
+   ],
+   [
+    "Renewable system",
+    "Kelp fuels",
+    3.89597107756956
+   ],
+   [
+    "Renewable system",
+    "Residue and lake fuels",
+    4.738091719012177
+   ],
+   [
+    "Renewable system",
+    "Crop and waste biofuels",
+    5.958685802066769
+   ],
+   [
+    "Renewable system",
+    "Electrofuels",
+    2.3077612319561527
+   ]
+  ],
+  "note": "Factor sensitivity of the renewable system 12.4-32.0 MtCO2e/yr; vehicle manufacture excluded; exported fuel excluded."
+ },
+ "b_exposure": {
+  "columns": [
+   "system",
+   "2025 prices bn",
+   "Oct 2026 prices bn"
+  ],
+  "rows": [
+   [
+    "Fossil fuels (pre-tax)",
+    85.55458209887212,
+    146.18503886432237
+   ],
+   [
+    "Renewable system",
+    84.29372115634754,
+    88.32581026974808
+   ]
+  ],
+  "note": "Renewable system: only commodity-priced inputs (waste lipids, canola oil, grain ethanol) repriced."
+ }
+}

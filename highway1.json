@@ -1,0 +1,356 @@
+{
+ "central": {
+  "ers": {
+   "cap_twh_diesel": 26.141594737500004,
+   "used_twh_diesel": 26.141594737500004,
+   "electricity_twh": 9.933806000250001,
+   "cad_per_mwh_diesel": 78.44108822581407,
+   "route_km": 7821.0,
+   "built_km": 7820.999999999999,
+   "cost_bn": 2.0505751391677145,
+   "share_of_hdv": 0.15027599546344408,
+   "trucks": 71008.48094174212
+  },
+  "cost_bn": 88.32581026974808,
+  "cost_no_ers_bn": 93.99562206083026,
+  "saving_bn": 5.669811791082182,
+  "kelp_km2": 25215.85,
+  "kelp_km2_no_ers": 25215.85,
+  "dropin_twh": 209.48225050059526,
+  "dropin_twh_no_ers": 235.62384523809527,
+  "marginal_dropin": 321.4934678915227,
+  "with_401": {
+   "cost_bn": 84.56017135542491,
+   "ers": {
+    "cap_twh_diesel": 40.0463427375,
+    "used_twh_diesel": 40.0463427375,
+    "electricity_twh": 15.21761024025,
+    "cad_per_mwh_diesel": 59.71631464048495,
+    "route_km": 9121.0,
+    "built_km": 9121.0,
+    "cost_bn": 2.3914200031132498,
+    "share_of_hdv": 0.23020799151611343,
+    "trucks": 108777.98365464929
+   },
+   "kelp_km2": 25215.85,
+   "saving_vs_hwy1_bn": 3.765638914323162
+  },
+  "sensitivity": [
+   {
+    "case": "AADTT 1,500",
+    "cost_bn": 91.41396504184803,
+    "saving_vs_no_ers_bn": 2.581657018982227,
+    "ers_used_twh": 15.6849568425,
+    "ers_cad_mwh": 130.7351470430235
+   },
+   {
+    "case": "AADTT 3,500",
+    "cost_bn": 85.23765549764813,
+    "saving_vs_no_ers_bn": 8.757966563182123,
+    "ers_used_twh": 36.5982326325,
+    "ers_cad_mwh": 56.02934873272435
+   },
+   {
+    "case": "Catenary CAD 2.46 M/km",
+    "cost_bn": 87.67646147567831,
+    "saving_vs_no_ers_bn": 6.319160585151948,
+    "ers_used_twh": 26.141594737500004,
+    "ers_cad_mwh": 53.60141028763961
+   },
+   {
+    "case": "Catenary CAD 4.83 M/km",
+    "cost_bn": 89.02642344229704,
+    "saving_vs_no_ers_bn": 4.969198618533213,
+    "ers_used_twh": 26.141594737500004,
+    "ers_cad_mwh": 105.24179336963385
+   },
+   {
+    "case": "Catenary CAD 9 M/km",
+    "cost_bn": 91.40167297849966,
+    "saving_vs_no_ers_bn": 2.593949082330596,
+    "ers_used_twh": 26.141594737500004,
+    "ers_cad_mwh": 196.10272056453513
+   }
+  ],
+  "end_use": [
+   {
+    "segment": "Cars and light trucks",
+    "demand_twh": 427.3101666666667,
+    "battery": 427.3101666666667,
+    "catenary": 0.0,
+    "biofuel": 0,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 119.64684666666669
+   },
+   {
+    "segment": "Diesel pick-ups and vans",
+    "demand_twh": 19.192777777777778,
+    "battery": 19.192777777777778,
+    "catenary": 0.0,
+    "biofuel": 0,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 6.333616666666667
+   },
+   {
+    "segment": "Heavy trucks and buses",
+    "demand_twh": 173.95722222222224,
+    "battery": 86.97861111111112,
+    "catenary": 26.141594737500004,
+    "biofuel": 60.83701637361112,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 56.032469889138895
+   },
+   {
+    "segment": "Rail",
+    "demand_twh": 23.588888888888892,
+    "battery": 9.435555555555558,
+    "catenary": 0.0,
+    "biofuel": 14.153333333333334,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 4.246000000000001
+   },
+   {
+    "segment": "Farm machinery",
+    "demand_twh": 30.022222222222226,
+    "battery": 6.004444444444445,
+    "catenary": 0.0,
+    "biofuel": 24.01777777777778,
+    "other": 0.0,
+    "electricity_twh": 2.521866666666667
+   },
+   {
+    "segment": "Mining equipment",
+    "demand_twh": 27.770555555555557,
+    "battery": 11.108222222222224,
+    "catenary": 0.0,
+    "biofuel": 16.662333333333333,
+    "other": 0.0,
+    "electricity_twh": 4.665453333333334
+   },
+   {
+    "segment": "Construction, forestry machinery",
+    "demand_twh": 17.262777777777778,
+    "battery": 2.5894166666666667,
+    "catenary": 0.0,
+    "biofuel": 14.673361111111111,
+    "other": 0.0,
+    "electricity_twh": 1.1652375000000001
+   },
+   {
+    "segment": "Aviation (jets)",
+    "demand_twh": 90.567,
+    "battery": 0,
+    "catenary": 0.0,
+    "biofuel": 90.567,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 0
+   },
+   {
+    "segment": "Domestic shipping",
+    "demand_twh": 17.305555555555557,
+    "battery": 0,
+    "catenary": 0.0,
+    "biofuel": 0,
+    "other": 15.921111111111113,
+    "wind_assist": 1.3844444444444446,
+    "electricity_twh": 0
+   }
+  ],
+  "offroad_twh": {
+   "farm": {
+    "el": 6.004444444444445,
+    "liq": 24.01777777777778
+   },
+   "mine": {
+    "el": 11.108222222222224,
+    "liq": 16.662333333333333
+   },
+   "con": {
+    "el": 2.5894166666666667,
+    "liq": 14.673361111111111
+   }
+  }
+ },
+ "eb": {
+  "ers": {
+   "cap_twh_diesel": 26.141594737500004,
+   "used_twh_diesel": 26.141594737500004,
+   "electricity_twh": 9.933806000250001,
+   "cad_per_mwh_diesel": 78.44108822581407,
+   "route_km": 7821.0,
+   "built_km": 7820.999999999999,
+   "cost_bn": 2.0505751391677145,
+   "share_of_hdv": 0.15027599546344408,
+   "trucks": 71008.48094174212
+  },
+  "cost_bn": 92.91926966961734,
+  "cost_no_ers_bn": 99.32984989028498,
+  "saving_bn": 6.41058022066764,
+  "kelp_km2": 54532.88056430123,
+  "kelp_km2_no_ers": 64158.482491329334,
+  "dropin_twh": 225.40336161170637,
+  "dropin_twh_no_ers": 251.5449563492064,
+  "marginal_dropin": 347.93395487785364,
+  "with_401": {
+   "cost_bn": 88.80748225881128,
+   "ers": {
+    "cap_twh_diesel": 40.0463427375,
+    "used_twh_diesel": 40.0463427375,
+    "electricity_twh": 15.21761024025,
+    "cad_per_mwh_diesel": 59.71631464048495,
+    "route_km": 9121.0,
+    "built_km": 9121.0,
+    "cost_bn": 2.3914200031132498,
+    "share_of_hdv": 0.23020799151611343,
+    "trucks": 108777.98365464929
+   },
+   "kelp_km2": 48162.235277975364,
+   "saving_vs_hwy1_bn": 4.111787410806059
+  },
+  "sensitivity": [
+   {
+    "case": "AADTT 1,500",
+    "cost_bn": 96.30373181355147,
+    "saving_vs_no_ers_bn": 3.0261180767335105,
+    "ers_used_twh": 15.6849568425,
+    "ers_cad_mwh": 130.7351470430235
+   },
+   {
+    "case": "AADTT 3,500",
+    "cost_bn": 89.54488347452126,
+    "saving_vs_no_ers_bn": 9.78496641576372,
+    "ers_used_twh": 36.5982326325,
+    "ers_cad_mwh": 56.02934873272435
+   },
+   {
+    "case": "Catenary CAD 2.46 M/km",
+    "cost_bn": 92.26992087554757,
+    "saving_vs_no_ers_bn": 7.059929014737406,
+    "ers_used_twh": 26.141594737500004,
+    "ers_cad_mwh": 53.60141028763961
+   },
+   {
+    "case": "Catenary CAD 4.83 M/km",
+    "cost_bn": 93.6198828421663,
+    "saving_vs_no_ers_bn": 5.709967048118671,
+    "ers_used_twh": 26.141594737500004,
+    "ers_cad_mwh": 105.24179336963385
+   },
+   {
+    "case": "Catenary CAD 9 M/km",
+    "cost_bn": 95.99513237836892,
+    "saving_vs_no_ers_bn": 3.334717511916054,
+    "ers_used_twh": 26.141594737500004,
+    "ers_cad_mwh": 196.10272056453513
+   }
+  ],
+  "end_use": [
+   {
+    "segment": "Cars and light trucks",
+    "demand_twh": 427.3101666666667,
+    "battery": 427.3101666666667,
+    "catenary": 0.0,
+    "biofuel": 0,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 119.64684666666669
+   },
+   {
+    "segment": "Diesel pick-ups and vans",
+    "demand_twh": 19.192777777777778,
+    "battery": 19.192777777777778,
+    "catenary": 0.0,
+    "biofuel": 0,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 6.333616666666667
+   },
+   {
+    "segment": "Heavy trucks and buses",
+    "demand_twh": 173.95722222222224,
+    "battery": 86.97861111111112,
+    "catenary": 26.141594737500004,
+    "biofuel": 60.83701637361112,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 56.032469889138895
+   },
+   {
+    "segment": "Rail",
+    "demand_twh": 23.588888888888892,
+    "battery": 9.435555555555558,
+    "catenary": 0.0,
+    "biofuel": 14.153333333333334,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 4.246000000000001
+   },
+   {
+    "segment": "Farm machinery",
+    "demand_twh": 30.022222222222226,
+    "battery": 6.004444444444445,
+    "catenary": 0.0,
+    "biofuel": 24.01777777777778,
+    "other": 0.0,
+    "electricity_twh": 2.521866666666667
+   },
+   {
+    "segment": "Mining equipment",
+    "demand_twh": 27.770555555555557,
+    "battery": 11.108222222222224,
+    "catenary": 0.0,
+    "biofuel": 16.662333333333333,
+    "other": 0.0,
+    "electricity_twh": 4.665453333333334
+   },
+   {
+    "segment": "Construction, forestry machinery",
+    "demand_twh": 17.262777777777778,
+    "battery": 2.5894166666666667,
+    "catenary": 0.0,
+    "biofuel": 14.673361111111111,
+    "other": 0.0,
+    "electricity_twh": 1.1652375000000001
+   },
+   {
+    "segment": "Aviation (jets)",
+    "demand_twh": 90.567,
+    "battery": 0,
+    "catenary": 0.0,
+    "biofuel": 90.567,
+    "other": 0.0,
+    "wind_assist": 0.0,
+    "electricity_twh": 0
+   },
+   {
+    "segment": "Domestic shipping",
+    "demand_twh": 17.305555555555557,
+    "battery": 0,
+    "catenary": 0.0,
+    "biofuel": 15.921111111111113,
+    "other": 0.0,
+    "wind_assist": 1.3844444444444446,
+    "electricity_twh": 0
+   }
+  ],
+  "offroad_twh": {
+   "farm": {
+    "el": 6.004444444444445,
+    "liq": 24.01777777777778
+   },
+   "mine": {
+    "el": 11.108222222222224,
+    "liq": 16.662333333333333
+   },
+   "con": {
+    "el": 2.5894166666666667,
+    "liq": 14.673361111111111
+   }
+  }
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "available_km2": {
+  "pac": 46153.45,
+  "atl": 63664.75,
+  "gsl": 7053.65,
+  "lab": 33796.5,
+  "hb": 17506.300000000003
+ },
+ "cheapest_biomass_cad_t": {
+  "pac_shelf": 369.54542048353636,
+  "pac_slope": 491.172091416969,
+  "pac_deep": 524.3125178869375,
+  "atl_shelf": 499.5078772285109,
+  "atl_slope": 660.6793812402846,
+  "atl_deep": 766.0884514528503,
+  "gsl_shelf": 720.4440536949676,
+  "gsl_slope": 895.5595568502661,
+  "lab_shelf": 1025.912332461634,
+  "lab_slope": 1187.3472017631661,
+  "hb_shelf": 2200.1800074350845,
+  "hb_slope": 2506.099970459942
+ },
+ "solutions": {
+  "central": {
+   "by_region_km2": {
+    "pac": 7046.450000000001,
+    "atl": 18169.4
+   },
+   "by_zone_band_km2": {
+    "pac_shelf|0-50": 2359.3,
+    "pac_shelf|50-100": 869.6,
+    "pac_shelf|100-200": 101.80000000000001,
+    "pac_slope|0-50": 911.7,
+    "pac_slope|50-100": 859.1,
+    "pac_slope|100-200": 185.70000000000002,
+    "pac_deep|0-50": 1759.25,
+    "atl_shelf|0-50": 4269.3,
+    "atl_shelf|50-100": 4453.6,
+    "atl_shelf|100-200": 9446.5
+   },
+   "total_km2": 25215.85
+  },
+  "eb": {
+   "by_region_km2": {
+    "pac": 27481.68056430123,
+    "atl": 27051.200000000004
+   },
+   "by_zone_band_km2": {
+    "pac_shelf|0-50": 2359.3,
+    "pac_shelf|50-100": 869.6,
+    "pac_shelf|100-200": 101.80000000000001,
+    "pac_slope|0-50": 911.7,
+    "pac_slope|50-100": 859.1,
+    "pac_slope|100-200": 185.70000000000002,
+    "pac_deep|0-50": 1759.25,
+    "pac_deep|50-100": 4778.5,
+    "pac_deep|100-200": 12145.0,
+    "pac_deep|200-370": 3511.7305643012296,
+    "atl_shelf|0-50": 4269.3,
+    "atl_shelf|50-100": 4453.6,
+    "atl_shelf|100-200": 9446.5,
+    "atl_shelf|200-370": 8881.800000000001
+   },
+   "total_km2": 54532.88056430123
+  }
+ },
+ "forced": [
+  {
+   "case": "central",
+   "region": "gsl",
+   "extra_cost_bn": 0.20907359689988425,
+   "dry_mt": 1.5,
+   "extra_cad_per_t": 139.38239793325616
+  },
+  {
+   "case": "central",
+   "region": "lab",
+   "extra_cost_bn": 0.41270163984926,
+   "dry_mt": 1.2,
+   "extra_cad_per_t": 343.9180332077167
+  },
+  {
+   "case": "central",
+   "region": "hb",
+   "extra_cost_bn": 0.7066212247671899,
+   "dry_mt": 0.75,
+   "extra_cad_per_t": 942.1616330229198
+  },
+  {
+   "case": "eb",
+   "region": "gsl",
+   "extra_cost_bn": 0.14714797778404431,
+   "dry_mt": 1.5,
+   "extra_cad_per_t": 98.09865185602955
+  },
+  {
+   "case": "eb",
+   "region": "lab",
+   "extra_cost_bn": 0.3664638442427446,
+   "dry_mt": 1.2,
+   "extra_cad_per_t": 305.3865368689538
+  },
+  {
+   "case": "eb",
+   "region": "hb",
+   "extra_cost_bn": 0.6853685598036918,
+   "dry_mt": 0.75,
+   "extra_cad_per_t": 913.8247464049225
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "oil_export_energy_twh": 2761.955,
+ "transition": {
+  "ceiling_twh": 864.2578125,
+  "cost_bn": 505.62648396186086,
+  "electricity_twh": 2014.72,
+  "wind_twh": 1804.56,
+  "wind_gw": 610.0,
+  "pv_gw": 100.0,
+  "kelp_km2": 168174.64999999997,
+  "dac_mt": 157.61126325583027,
+  "efuels_twh": 608.7175055484197,
+  "share_of_oil_exports": 0.3129152402917499
+ },
+ "central": {
+  "ceiling_twh": 837.158203125,
+  "cost_bn": 505.05246771141935,
+  "electricity_twh": 2014.72,
+  "wind_twh": 1804.56,
+  "wind_gw": 610.0,
+  "pv_gw": 100.0,
+  "kelp_km2": 168174.64999999997,
+  "dac_mt": 157.49045065128277,
+  "efuels_twh": 608.3147968665947,
+  "share_of_oil_exports": 0.30310349123175434
+ },
+ "beyond_500": [
+  {
+   "volume_twh": 600,
+   "cost_bn": 340.4538026144745,
+   "electricity_twh": 1694.4937250269445,
+   "wind_twh": 1645.8408523463265,
+   "kelp_km2": 84000.2,
+   "dac_mt": 129.37480859725326,
+   "marginal_cad_mwh": 452.5288027570839
+  },
+  {
+   "volume_twh": 700,
+   "cost_bn": 385.77558258682933,
+   "electricity_twh": 1944.72,
+   "wind_twh": 1804.56,
+   "kelp_km2": 91829.94284599507,
+   "dac_mt": 155.15388472147052,
+   "marginal_cad_mwh": 457.07925828888835
+  },
+  {
+   "volume_twh": 750,
+   "cost_bn": 409.0679123355147,
+   "electricity_twh": 1974.72,
+   "wind_twh": 1804.56,
+   "kelp_km2": 116871.84999999999,
+   "dac_mt": 156.4983369835132,
+   "marginal_cad_mwh": 542.0146950266835
+  }
+ ]
+}

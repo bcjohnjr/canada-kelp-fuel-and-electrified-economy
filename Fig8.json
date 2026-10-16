@@ -1,0 +1,227 @@
+{
+ "c_bloom_extent": {
+  "columns": [
+   "lake",
+   "measure",
+   "km2"
+  ],
+  "rows": [
+   [
+    "Lake Winnipeg",
+    "Seasonal mean",
+    5452
+   ],
+   [
+    "Lake Erie",
+    "Seasonal mean",
+    427.0
+   ],
+   [
+    "Lake Winnipeg",
+    "Mean annual maximum",
+    13959
+   ],
+   [
+    "Lake Erie",
+    "Mean annual maximum",
+    1227
+   ],
+   [
+    "Lake Winnipeg",
+    "Record (2011)",
+    21641
+   ],
+   [
+    "Lake Erie",
+    "Record (2011)",
+    5257
+   ]
+  ],
+  "note": "Whole-lake extents (chlorophyll >10 ug/L), ECCC EOLakeWatch annual bloom reports; PEI 5,660 km2."
+ },
+ "d_p_removed": {
+  "columns": [
+   "water body",
+   "biomass",
+   "t P/yr"
+  ],
+  "rows": [
+   [
+    "Lake Winnipeg",
+    "grid",
+    2249.5499999999997
+   ],
+   [
+    "Lake Winnipeg",
+    "algae",
+    1066.95
+   ],
+   [
+    "Lake Winnipeg",
+    "milfoil",
+    0.0
+   ],
+   [
+    "Lake Winnipeg",
+    "cattail",
+    240.0
+   ],
+   [
+    "Lake Erie (Cdn)",
+    "grid",
+    0.0
+   ],
+   [
+    "Lake Erie (Cdn)",
+    "algae",
+    129.135129984
+   ],
+   [
+    "Lake Erie (Cdn)",
+    "milfoil",
+    21.6
+   ],
+   [
+    "Lake Erie (Cdn)",
+    "cattail",
+    90.0
+   ],
+   [
+    "Lake St. Clair (Cdn)",
+    "grid",
+    0.0
+   ],
+   [
+    "Lake St. Clair (Cdn)",
+    "algae",
+    0.0
+   ],
+   [
+    "Lake St. Clair (Cdn)",
+    "milfoil",
+    43.2
+   ],
+   [
+    "Lake St. Clair (Cdn)",
+    "cattail",
+    0.0
+   ],
+   [
+    "Lake Ontario embayments",
+    "grid",
+    0.0
+   ],
+   [
+    "Lake Ontario embayments",
+    "algae",
+    22.5
+   ],
+   [
+    "Lake Ontario embayments",
+    "milfoil",
+    18.0
+   ],
+   [
+    "Lake Ontario embayments",
+    "cattail",
+    0.0
+   ],
+   [
+    "Lake Simcoe",
+    "grid",
+    0.0
+   ],
+   [
+    "Lake Simcoe",
+    "algae",
+    0.0
+   ],
+   [
+    "Lake Simcoe",
+    "milfoil",
+    18.9
+   ],
+   [
+    "Lake Simcoe",
+    "cattail",
+    0.0
+   ]
+  ],
+  "note": "Least-cost case; total 3900 t P/yr. Harvestable P across low and high parameter sets: 966-12940 t P/yr."
+ },
+ "e_winnipeg_response": {
+  "columns": [
+   "P removed share of load",
+   "south-basin TP ug/L",
+   "chlorophyll % of now"
+  ],
+  "rows": [
+   [
+    0.0,
+    120.0,
+    100.0
+   ],
+   [
+    0.05,
+    113.99999999999999,
+    92.83708682067363
+   ],
+   [
+    0.1,
+    108.0,
+    85.84151942243221
+   ],
+   [
+    0.15,
+    102.0,
+    79.01836210326142
+   ],
+   [
+    0.2,
+    96.0,
+    72.37313595092158
+   ],
+   [
+    0.25,
+    90.0,
+    65.91189084930241
+   ],
+   [
+    0.3,
+    83.99999999999999,
+    59.64129434066812
+   ],
+   [
+    0.35000000000000003,
+    77.99999999999999,
+    53.568742763133905
+   ],
+   [
+    0.4,
+    72.0,
+    47.70250237218867
+   ],
+   [
+    0.45,
+    66.0,
+    42.051891681740585
+   ],
+   [
+    0.5,
+    60.0,
+    36.62752186528344
+   ],
+   [
+    0.55,
+    53.99999999999999,
+    31.441621295942884
+   ],
+   [
+    0.6,
+    48.0,
+    26.508486195015113
+   ]
+  ],
+  "note": "Steady-state mass balance (TP falls in proportion to the load removed); chlorophyll from Dillon and Rigler (1974), slope 1.449; response time about 2 years; legacy sediment P slows it."
+ }
+}

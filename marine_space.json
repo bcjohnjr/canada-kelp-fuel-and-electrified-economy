@@ -1,0 +1,281 @@
+{
+ "study_area_eez_km2": {
+  "Pacific": {
+   "total_km2": 445681.3720086048,
+   "shipping_km2": 32623.201813011812,
+   "inshore_0_6nm_km2": 51466.37513623404,
+   "excluded_km2": 0.0,
+   "seasonal_ice_km2": 0.0,
+   "depth_0-200_km2": 91505.89725493413,
+   "depth_200-1000_km2": 26931.303002071414,
+   "depth_>1000_km2": 327244.1717515993,
+   "by_ecozone_km2": {
+    "northern_shelf": 80108.95749287387,
+    "offshore_pacific": 327244.1717515993,
+    "southern_shelf": 32801.887449408554,
+    "strait_of_georgia": 5526.3553147231
+   }
+  },
+  "Atlantic": {
+   "total_km2": 1668983.406585393,
+   "shipping_km2": 91142.52935309576,
+   "inshore_0_6nm_km2": 162835.16436942946,
+   "excluded_km2": 290367.59352374414,
+   "seasonal_ice_km2": 949738.4989341982,
+   "depth_0-200_km2": 783006.1796119739,
+   "depth_200-1000_km2": 378164.660592741,
+   "depth_>1000_km2": 507812.566380678,
+   "by_ecozone_km2": {
+    "gulf_of_st_lawrence": 208394.08012178092,
+    "nl_shelves": 1061993.5245807928,
+    "scotian_shelf": 398595.8018828193
+   }
+  },
+  "Hudson": {
+   "total_km2": 820253.4820197286,
+   "shipping_km2": 11430.54209311519,
+   "inshore_0_6nm_km2": 88089.87420738407,
+   "excluded_km2": 615873.7218066049,
+   "seasonal_ice_km2": 820253.4820197286,
+   "depth_0-200_km2": 778401.2979689161,
+   "depth_200-1000_km2": 41852.18405081246,
+   "depth_>1000_km2": 0.0,
+   "by_ecozone_km2": {
+    "hudson_bay_complex": 820253.4820197286
+   }
+  }
+ },
+ "free_area_by_zone_band_eco_km2": {
+  "pac_deep": {
+   "0-50": {
+    "offshore_pacific": 12888.0
+   },
+   "50-100": {
+    "offshore_pacific": 35008.0
+   },
+   "100-200": {
+    "offshore_pacific": 88974.0
+   },
+   "200-370": {
+    "offshore_pacific": 162517.0
+   }
+  },
+  "pac_shelf": {
+   "0-50": {
+    "northern_shelf": 21503.0,
+    "southern_shelf": 5711.0,
+    "strait_of_georgia": 183.0
+   },
+   "50-100": {
+    "northern_shelf": 9010.0,
+    "southern_shelf": 1243.0
+   },
+   "100-200": {
+    "northern_shelf": 1225.0
+   }
+  },
+  "pac_slope": {
+   "0-50": {
+    "northern_shelf": 7153.0,
+    "southern_shelf": 2873.0,
+    "strait_of_georgia": 402.0
+   },
+   "50-100": {
+    "northern_shelf": 7977.0,
+    "southern_shelf": 2019.0
+   },
+   "100-200": {
+    "northern_shelf": 2235.0
+   }
+  },
+  "atl_deep": {
+   "100-200": {
+    "scotian_shelf": 7102.0
+   },
+   "200-370": {
+    "nl_shelves": 44499.0,
+    "scotian_shelf": 95887.0
+   }
+  },
+  "atl_shelf": {
+   "0-50": {
+    "nl_shelves": 15825.0,
+    "scotian_shelf": 34025.0
+   },
+   "50-100": {
+    "nl_shelves": 17722.0,
+    "scotian_shelf": 34228.0
+   },
+   "100-200": {
+    "nl_shelves": 51094.0,
+    "scotian_shelf": 58522.0
+   },
+   "200-370": {
+    "nl_shelves": 90950.0,
+    "scotian_shelf": 10285.0
+   }
+  },
+  "atl_slope": {
+   "0-50": {
+    "nl_shelves": 8922.0,
+    "scotian_shelf": 467.0
+   },
+   "50-100": {
+    "nl_shelves": 4029.0,
+    "scotian_shelf": 10352.0
+   },
+   "100-200": {
+    "nl_shelves": 2497.0,
+    "scotian_shelf": 17891.0
+   },
+   "200-370": {
+    "nl_shelves": 7908.0,
+    "scotian_shelf": 6776.0
+   }
+  },
+  "gsl_shelf": {
+   "0-50": {
+    "gulf_of_st_lawrence": 60307.0
+   },
+   "50-100": {
+    "gulf_of_st_lawrence": 24176.0
+   },
+   "100-200": {
+    "gulf_of_st_lawrence": 10242.0
+   }
+  },
+  "gsl_slope": {
+   "0-50": {
+    "gulf_of_st_lawrence": 31674.0
+   },
+   "50-100": {
+    "gulf_of_st_lawrence": 29095.0
+   },
+   "100-200": {
+    "gulf_of_st_lawrence": 2128.0
+   }
+  },
+  "lab_shelf": {
+   "0-50": {
+    "nl_shelves": 63965.0
+   },
+   "50-100": {
+    "nl_shelves": 45939.0
+   },
+   "100-200": {
+    "nl_shelves": 30720.0
+   },
+   "200-370": {
+    "nl_shelves": 3609.0
+   }
+  },
+  "lab_slope": {
+   "0-50": {
+    "nl_shelves": 17284.0
+   },
+   "50-100": {
+    "nl_shelves": 46306.0
+   },
+   "100-200": {
+    "nl_shelves": 107467.0
+   },
+   "200-370": {
+    "nl_shelves": 68326.0
+   }
+  },
+  "hb_shelf": {
+   "0-50": {
+    "hudson_bay_complex": 1773.0
+   },
+   "50-100": {
+    "hudson_bay_complex": 7143.0
+   },
+   "100-200": {
+    "hudson_bay_complex": 42883.0
+   },
+   "200-370": {
+    "hudson_bay_complex": 124450.0
+   }
+  },
+  "hb_slope": {
+   "200-370": {
+    "hudson_bay_complex": 47.0
+   }
+  }
+ },
+ "free_area_by_zone_and_band_km2": {
+  "pac_deep": {
+   "0-50": 7037.0,
+   "50-100": 19114.0,
+   "100-200": 48580.0,
+   "200-370": 88734.0
+  },
+  "pac_shelf": {
+   "0-50": 23593.0,
+   "50-100": 8696.0,
+   "100-200": 1018.0
+  },
+  "pac_slope": {
+   "0-50": 9117.0,
+   "50-100": 8591.0,
+   "100-200": 1857.0
+  },
+  "atl_deep": {
+   "100-200": 6001.0,
+   "200-370": 120228.0
+  },
+  "atl_shelf": {
+   "0-50": 42693.0,
+   "50-100": 44536.0,
+   "100-200": 94465.0,
+   "200-370": 88818.0
+  },
+  "atl_slope": {
+   "0-50": 8255.0,
+   "50-100": 12297.0,
+   "100-200": 17318.0,
+   "200-370": 12693.0
+  },
+  "gsl_shelf": {
+   "0-50": 53975.0,
+   "50-100": 21638.0,
+   "100-200": 9167.0
+  },
+  "gsl_slope": {
+   "0-50": 28348.0,
+   "50-100": 26040.0,
+   "100-200": 1905.0
+  },
+  "lab_shelf": {
+   "0-50": 56353.0,
+   "50-100": 40472.0,
+   "100-200": 27064.0,
+   "200-370": 3180.0
+  },
+  "lab_slope": {
+   "0-50": 15227.0,
+   "50-100": 40796.0,
+   "100-200": 94678.0,
+   "200-370": 60195.0
+  },
+  "hb_shelf": {
+   "0-50": 1761.0,
+   "50-100": 7093.0,
+   "100-200": 42583.0,
+   "200-370": 123579.0
+  },
+  "hb_slope": {
+   "200-370": 47.0
+  }
+ },
+ "conserved_share_by_ecozone": {
+  "strait_of_georgia": 0.054,
+  "southern_shelf": 0.028,
+  "northern_shelf": 0.169,
+  "offshore_pacific": 0.454,
+  "scotian_shelf": 0.155,
+  "nl_shelves": 0.119,
+  "gulf_of_st_lawrence": 0.105,
+  "hudson_bay_complex": 0.007
+ }
+}

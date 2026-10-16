@@ -1,0 +1,553 @@
+{
+ "a_electricity": {
+  "columns": [
+   "side",
+   "item",
+   "TWh/yr"
+  ],
+  "rows": [
+   [
+    "supply",
+    "Onshore wind",
+    292.38425510466186
+   ],
+   [
+    "supply",
+    "PV",
+    48.65287268061807
+   ],
+   [
+    "supply",
+    "Hydro (redirected exports)",
+    0.0
+   ],
+   [
+    "supply",
+    "New hydro",
+    0.0
+   ],
+   [
+    "use",
+    "Vehicles and rail",
+    194.61149072247227
+   ],
+   [
+    "use",
+    "Biorefineries",
+    13.36406742137218
+   ],
+   [
+    "use",
+    "Thermal storage",
+    4.17588467240733
+   ],
+   [
+    "use",
+    "Electrofuels",
+    128.20895733089736
+   ],
+   [
+    "use",
+    "Direct air capture",
+    0.0
+   ]
+  ],
+  "note": ""
+ },
+ "b_fuels": {
+  "columns": [
+   "fuel",
+   "TWh/yr"
+  ],
+  "rows": [
+   [
+    "Forest-residue HTL",
+    52.00000000000001
+   ],
+   [
+    "Farm-residue FT",
+    33.0
+   ],
+   [
+    "Kelp HTL diesel/jet",
+    45.5368491288
+   ],
+   [
+    "Kelp biomethane",
+    3.6547048809166665
+   ],
+   [
+    "Lake and marsh biomass (HTL)",
+    2.525002483921355
+   ],
+   [
+    "Waste-lipid HVO",
+    8.0
+   ],
+   [
+    "Canola HVO",
+    15.0
+   ],
+   [
+    "Grain ethanol",
+    12.0
+   ],
+   [
+    "Landfill/manure biomethane",
+    20.00952502870512
+   ],
+   [
+    "e-Fischer\u2013Tropsch",
+    53.42039888787391
+   ],
+   [
+    "e-Methanol",
+    0.0
+   ]
+  ],
+  "note": ""
+ },
+ "c_segments": {
+  "columns": [
+   "segment",
+   "case",
+   "carrier",
+   "TWh fossil replaced"
+  ],
+  "rows": [
+   [
+    "Cars and light trucks",
+    "least-cost",
+    "Battery-electric",
+    427.3101666666667
+   ],
+   [
+    "Cars and light trucks",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Cars and light trucks",
+    "least-cost",
+    "Renewable liquid",
+    0
+   ],
+   [
+    "Cars and light trucks",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Cars and light trucks",
+    "electric-or-biofuel",
+    "Battery-electric",
+    427.3101666666667
+   ],
+   [
+    "Cars and light trucks",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Cars and light trucks",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    0
+   ],
+   [
+    "Cars and light trucks",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "least-cost",
+    "Battery-electric",
+    19.192777777777778
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "least-cost",
+    "Renewable liquid",
+    0
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "electric-or-biofuel",
+    "Battery-electric",
+    19.192777777777778
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    0
+   ],
+   [
+    "Diesel pick-ups and vans",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Heavy trucks and buses",
+    "least-cost",
+    "Battery-electric",
+    86.97861111111112
+   ],
+   [
+    "Heavy trucks and buses",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    26.141594737500004
+   ],
+   [
+    "Heavy trucks and buses",
+    "least-cost",
+    "Renewable liquid",
+    60.83701637361112
+   ],
+   [
+    "Heavy trucks and buses",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Heavy trucks and buses",
+    "electric-or-biofuel",
+    "Battery-electric",
+    86.97861111111112
+   ],
+   [
+    "Heavy trucks and buses",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    26.141594737500004
+   ],
+   [
+    "Heavy trucks and buses",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    60.83701637361112
+   ],
+   [
+    "Heavy trucks and buses",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Rail",
+    "least-cost",
+    "Battery-electric",
+    9.435555555555558
+   ],
+   [
+    "Rail",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Rail",
+    "least-cost",
+    "Renewable liquid",
+    14.153333333333334
+   ],
+   [
+    "Rail",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Rail",
+    "electric-or-biofuel",
+    "Battery-electric",
+    9.435555555555558
+   ],
+   [
+    "Rail",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Rail",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    14.153333333333334
+   ],
+   [
+    "Rail",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Farm machinery",
+    "least-cost",
+    "Battery-electric",
+    6.004444444444445
+   ],
+   [
+    "Farm machinery",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Farm machinery",
+    "least-cost",
+    "Renewable liquid",
+    24.01777777777778
+   ],
+   [
+    "Farm machinery",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Farm machinery",
+    "electric-or-biofuel",
+    "Battery-electric",
+    6.004444444444445
+   ],
+   [
+    "Farm machinery",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Farm machinery",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    24.01777777777778
+   ],
+   [
+    "Farm machinery",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Mining equipment",
+    "least-cost",
+    "Battery-electric",
+    11.108222222222224
+   ],
+   [
+    "Mining equipment",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Mining equipment",
+    "least-cost",
+    "Renewable liquid",
+    16.662333333333333
+   ],
+   [
+    "Mining equipment",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Mining equipment",
+    "electric-or-biofuel",
+    "Battery-electric",
+    11.108222222222224
+   ],
+   [
+    "Mining equipment",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Mining equipment",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    16.662333333333333
+   ],
+   [
+    "Mining equipment",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Construction, forestry machinery",
+    "least-cost",
+    "Battery-electric",
+    2.5894166666666667
+   ],
+   [
+    "Construction, forestry machinery",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Construction, forestry machinery",
+    "least-cost",
+    "Renewable liquid",
+    14.673361111111111
+   ],
+   [
+    "Construction, forestry machinery",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Construction, forestry machinery",
+    "electric-or-biofuel",
+    "Battery-electric",
+    2.5894166666666667
+   ],
+   [
+    "Construction, forestry machinery",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Construction, forestry machinery",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    14.673361111111111
+   ],
+   [
+    "Construction, forestry machinery",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Aviation (jets)",
+    "least-cost",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Aviation (jets)",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Aviation (jets)",
+    "least-cost",
+    "Renewable liquid",
+    90.567
+   ],
+   [
+    "Aviation (jets)",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Aviation (jets)",
+    "electric-or-biofuel",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Aviation (jets)",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Aviation (jets)",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    90.567
+   ],
+   [
+    "Aviation (jets)",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ],
+   [
+    "Domestic shipping",
+    "least-cost",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Domestic shipping",
+    "least-cost",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Domestic shipping",
+    "least-cost",
+    "Renewable liquid",
+    0
+   ],
+   [
+    "Domestic shipping",
+    "least-cost",
+    "Methanol, ammonia, methane",
+    15.921111111111113
+   ],
+   [
+    "Domestic shipping",
+    "electric-or-biofuel",
+    "Battery-electric",
+    0
+   ],
+   [
+    "Domestic shipping",
+    "electric-or-biofuel",
+    "Catenary-electric, Trans-Canada Highway",
+    0.0
+   ],
+   [
+    "Domestic shipping",
+    "electric-or-biofuel",
+    "Renewable liquid",
+    15.921111111111113
+   ],
+   [
+    "Domestic shipping",
+    "electric-or-biofuel",
+    "Methanol, ammonia, methane",
+    0.0
+   ]
+  ],
+  "note": "Renewable liquid = drop-in diesel/jet and ethanol; in the least-cost case the drop-in pool includes electrofuels."
+ }
+}

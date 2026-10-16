@@ -1,0 +1,136 @@
+{
+ "nir": {
+  "2005": {
+   "Oil and gas": 198,
+   "Transport": 156,
+   "Buildings": 85,
+   "Electricity": 116,
+   "Heavy industry": 89,
+   "Agriculture": 66,
+   "Waste and others": 54
+  },
+  "2024": {
+   "Oil and gas": 208,
+   "Transport": 151,
+   "Buildings": 81,
+   "Electricity": 50,
+   "Heavy industry": 77,
+   "Agriculture": 70,
+   "Waste and others": 47
+  }
+ },
+ "total": {
+  "2005": 763.0,
+  "2024": 685.0
+ },
+ "targets_mt": {
+  "2030": [
+   457.8,
+   419.65000000000003
+  ],
+  "2035": [
+   419.65000000000003,
+   381.5
+  ]
+ },
+ "rows": [
+  {
+   "case": "2024 inventory",
+   "mt": 685.0,
+   "note": "ECCC NIR 2026"
+  },
+  {
+   "case": "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export",
+   "mt": 515.7569702660788,
+   "note": "-151 transport, -20 off-road, +1.8 emitted in Canada by the renewable system"
+  },
+  {
+   "case": "\u2026 and refineries that served Canadian transport close or convert",
+   "mt": 504.55697026607885,
+   "note": "-11.2 refining"
+  },
+  {
+   "case": "\u2026 and oil sands carbon capture (Pathways, 22 Mt)",
+   "mt": 482.55697026607885,
+   "note": "-22 CCS"
+  }
+ ],
+ "gap_mt": {
+  "2024 inventory": {
+   "2030": [
+    227.2,
+    265.34999999999997
+   ],
+   "2035": [
+    265.34999999999997,
+    303.5
+   ]
+  },
+  "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export": {
+   "2030": [
+    57.95697026607883,
+    96.1069702660788
+   ],
+   "2035": [
+    96.1069702660788,
+    134.25697026607884
+   ]
+  },
+  "\u2026 and refineries that served Canadian transport close or convert": {
+   "2030": [
+    46.75697026607884,
+    84.90697026607882
+   ],
+   "2035": [
+    84.90697026607882,
+    123.05697026607885
+   ]
+  },
+  "\u2026 and oil sands carbon capture (Pathways, 22 Mt)": {
+   "2030": [
+    24.756970266078838,
+    62.906970266078815
+   ],
+   "2035": [
+    62.906970266078815,
+    101.05697026607885
+   ]
+  }
+ },
+ "og_allowed_2030_upper_mt": 161.24302973392116,
+ "og_cut_needed_2030_pct": 22.47931262792252,
+ "share_below_2005_pct": {
+  "2024 inventory": 10.22280471821756,
+  "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export": 32.40406680654275,
+  "\u2026 and refineries that served Canadian transport close or convert": 33.87195671479962,
+  "\u2026 and oil sands carbon capture (Pathways, 22 Mt)": 36.75531189173279
+ },
+ "oil_and_gas_share_of_remaining_pct": 41.22428432418859,
+ "redirected_crude_mbd": 0.9029999999999999,
+ "redirected_crude_twh": 530.6479499999999,
+ "exported_combustion_abroad_mt": 856.076767,
+ "exported_combustion_now_mt": 718.1083,
+ "territorial_addition_mt": 1.79680359941222,
+ "lifecycle": {
+  "fossil_wtw_mt": 272.997704,
+  "renewable_wtw_mt": 21.521575965540027,
+  "renewable_wtw_range_mt": [
+   13.49089999215662,
+   32.55907254037732
+  ],
+  "reduction_pct": 92.11657253881519,
+  "parts_mt": {
+   "Direct electric transport": 2.530717656672542,
+   "Kelp fuels": 9.718732915050442,
+   "Residue and lake fuels": 4.75412539381704,
+   "Crop and waste biofuels": 4.518,
+   "Electrofuels": 0.0
+  }
+ },
+ "territorial_parts_mt": {
+  "combustion_non_co2_mt": 1.143718349947102,
+  "methane_slip_mt": 0.6530852494651179,
+  "total_mt": 1.79680359941222
+ },
+ "case": "eb"
+}

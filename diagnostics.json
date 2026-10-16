@@ -1,0 +1,450 @@
+{
+ "capture": {
+  "central": {
+   "rows": [
+    {
+     "capture": 0.0,
+     "ebit_bn": 20.823140863366927,
+     "coverage": 0.31172366561926534,
+     "user_saving_bn": 50.753163964190406
+    },
+    {
+     "capture": 0.25,
+     "ebit_bn": 33.511431854414525,
+     "coverage": 0.5016681415331515,
+     "user_saving_bn": 38.064872973142805
+    },
+    {
+     "capture": 0.5,
+     "ebit_bn": 46.199722845462134,
+     "coverage": 0.6916126174470378,
+     "user_saving_bn": 25.376581982095203
+    },
+    {
+     "capture": 0.75,
+     "ebit_bn": 58.88801383650973,
+     "coverage": 0.8815570933609239,
+     "user_saving_bn": 12.688290991047602
+    },
+    {
+     "capture": 1.0,
+     "ebit_bn": 71.57630482755734,
+     "coverage": 1.0715015692748102,
+     "user_saving_bn": 0.0
+    }
+   ],
+   "decomposition": {
+    "rows": [
+     {
+      "capture": 0.0,
+      "consumer_savings_bn": 50.753163964190406,
+      "government_fuel_tax_bn": 16.76404097650107,
+      "producer_return_bn": 20.823140863366927,
+      "residual_rent_bn": 0.0,
+      "benchmark_share": 0.31172366561926534
+     },
+     {
+      "capture": 0.5,
+      "consumer_savings_bn": 25.376581982095203,
+      "government_fuel_tax_bn": 16.76404097650107,
+      "producer_return_bn": 20.823140863366927,
+      "residual_rent_bn": 25.376581982095203,
+      "benchmark_share": 0.6916126174470378
+     },
+     {
+      "capture": 1.0,
+      "consumer_savings_bn": 0.0,
+      "government_fuel_tax_bn": 16.76404097650107,
+      "producer_return_bn": 20.823140863366927,
+      "residual_rent_bn": 50.753163964190406,
+      "benchmark_share": 1.0715015692748102
+     }
+    ],
+    "benchmark_bn": 66.80000000000001,
+    "benchmark_royalties_bn": 17.6,
+    "benchmark_operating_profit_bn": 49.2,
+    "period": "oct2026"
+   },
+   "rent_bn": 50.753163964190406,
+   "capital_return_bn": 20.823140863366927,
+   "allocable_surplus_bn": 71.57630482755734,
+   "ev_service_twh": 588.7607891819445,
+   "ev_payments_bn": 94.89619871236701,
+   "ev_cost_bn": 38.871938694562175,
+   "efficiency_surplus_bn": 56.024260017804835,
+   "liquid_rent_bn": -5.2710960536144285
+  },
+  "transition": {
+   "rows": [
+    {
+     "capture": 0.0,
+     "ebit_bn": 18.186511228280374,
+     "coverage": 0.27225316210000555,
+     "user_saving_bn": 54.41098037933227
+    },
+    {
+     "capture": 0.25,
+     "ebit_bn": 31.78925632311344,
+     "coverage": 0.47588707070529096,
+     "user_saving_bn": 40.808235284499204
+    },
+    {
+     "capture": 0.5,
+     "ebit_bn": 45.39200141794651,
+     "coverage": 0.6795209793105764,
+     "user_saving_bn": 27.205490189666136
+    },
+    {
+     "capture": 0.75,
+     "ebit_bn": 58.99474651277958,
+     "coverage": 0.8831548879158618,
+     "user_saving_bn": 13.602745094833068
+    },
+    {
+     "capture": 1.0,
+     "ebit_bn": 72.59749160761265,
+     "coverage": 1.0867887965211473,
+     "user_saving_bn": 0.0
+    }
+   ],
+   "decomposition": {
+    "rows": [
+     {
+      "capture": 0.0,
+      "consumer_savings_bn": 54.41098037933227,
+      "government_fuel_tax_bn": 16.67928917650107,
+      "producer_return_bn": 18.186511228280374,
+      "residual_rent_bn": 0.0,
+      "benchmark_share": 0.27225316210000555
+     },
+     {
+      "capture": 0.5,
+      "consumer_savings_bn": 27.205490189666136,
+      "government_fuel_tax_bn": 16.67928917650107,
+      "producer_return_bn": 18.186511228280374,
+      "residual_rent_bn": 27.205490189666136,
+      "benchmark_share": 0.6795209793105764
+     },
+     {
+      "capture": 1.0,
+      "consumer_savings_bn": 0.0,
+      "government_fuel_tax_bn": 16.67928917650107,
+      "producer_return_bn": 18.186511228280374,
+      "residual_rent_bn": 54.41098037933227,
+      "benchmark_share": 1.0867887965211473
+     }
+    ],
+    "benchmark_bn": 66.80000000000001,
+    "benchmark_royalties_bn": 17.6,
+    "benchmark_operating_profit_bn": 49.2,
+    "period": "oct2026"
+   },
+   "rent_bn": 54.41098037933227,
+   "capital_return_bn": 18.186511228280374,
+   "allocable_surplus_bn": 72.59749160761265,
+   "ev_service_twh": 585.8054766819444,
+   "ev_payments_bn": 94.30881160531618,
+   "ev_cost_bn": 38.63760053615071,
+   "efficiency_surplus_bn": 55.67121106916547,
+   "liquid_rent_bn": -1.2602306898332003
+  },
+  "eb": {
+   "rows": [
+    {
+     "capture": 0.0,
+     "ebit_bn": 20.54138933909531,
+     "coverage": 0.30750582842957047,
+     "user_saving_bn": 46.159704564321146
+    },
+    {
+     "capture": 0.25,
+     "ebit_bn": 32.0813154801756,
+     "coverage": 0.4802592137750837,
+     "user_saving_bn": 34.61977842324086
+    },
+    {
+     "capture": 0.5,
+     "ebit_bn": 43.621241621255884,
+     "coverage": 0.653012599120597,
+     "user_saving_bn": 23.079852282160573
+    },
+    {
+     "capture": 0.75,
+     "ebit_bn": 55.16116776233617,
+     "coverage": 0.8257659844661102,
+     "user_saving_bn": 11.539926141080286
+    },
+    {
+     "capture": 1.0,
+     "ebit_bn": 66.70109390341645,
+     "coverage": 0.9985193698116234,
+     "user_saving_bn": 0.0
+    }
+   ],
+   "decomposition": {
+    "rows": [
+     {
+      "capture": 0.0,
+      "consumer_savings_bn": 46.159704564321146,
+      "government_fuel_tax_bn": 16.76404097650107,
+      "producer_return_bn": 20.54138933909531,
+      "residual_rent_bn": 0.0,
+      "benchmark_share": 0.30750582842957047
+     },
+     {
+      "capture": 0.5,
+      "consumer_savings_bn": 23.079852282160573,
+      "government_fuel_tax_bn": 16.76404097650107,
+      "producer_return_bn": 20.54138933909531,
+      "residual_rent_bn": 23.079852282160573,
+      "benchmark_share": 0.653012599120597
+     },
+     {
+      "capture": 1.0,
+      "consumer_savings_bn": 0.0,
+      "government_fuel_tax_bn": 16.76404097650107,
+      "producer_return_bn": 20.54138933909531,
+      "residual_rent_bn": 46.159704564321146,
+      "benchmark_share": 0.9985193698116234
+     }
+    ],
+    "benchmark_bn": 66.80000000000001,
+    "benchmark_royalties_bn": 17.6,
+    "benchmark_operating_profit_bn": 49.2,
+    "period": "oct2026"
+   },
+   "rent_bn": 46.159704564321146,
+   "capital_return_bn": 20.54138933909531,
+   "allocable_surplus_bn": 66.70109390341645,
+   "ev_service_twh": 588.7607891819445,
+   "ev_payments_bn": 94.89619871236701,
+   "ev_cost_bn": 37.57706500792874,
+   "efficiency_surplus_bn": 57.31913370443827,
+   "liquid_rent_bn": -11.159429140117126
+  }
+ },
+ "combined": {
+  "transition": {
+   "cost_bn": 143.64496282252824,
+   "coverage": 0.5732741619387092,
+   "ebit_bn": 38.29471401750578,
+   "coverage_capture0": 0.5732741619387092,
+   "mult_oil": 1.1899233114187189,
+   "mult_breakeven": 1.0681988196534653,
+   "electricity_twh": 483.0234311014183,
+   "dac_mt": 9.300806465417404,
+   "efuels_twh": 114.34931624704353
+  },
+  "central": {
+   "cost_bn": 160.81642907984508,
+   "coverage": 0.5052679856638216,
+   "ebit_bn": 33.75190144234329,
+   "coverage_capture0": 0.5052679856638216,
+   "mult_oil": 1.2120601844941903,
+   "mult_breakeven": 1.1394830228133987,
+   "electricity_twh": 559.5631141014184,
+   "dac_mt": 17.22573271541741,
+   "efuels_twh": 140.76573708037688
+  }
+ },
+ "mc_skew": {
+  "transition|mean": {
+   "cost_bn": 92.3072956327026,
+   "coverage": 1.0002207818059377,
+   "mult_oil": 0.9999022687092689,
+   "wacc": 0.04666666666666667,
+   "yield_pacific_t_ha": 10.333333333333334,
+   "yield_atlantic_t_ha": 7.75,
+   "farm_cad_t": 448.62990957460704,
+   "adder_mult": 1.1666666666666667,
+   "wind_mult": 1.0333333333333334,
+   "efuel_mult": 0.8166666666666668,
+   "residue_mult": 0.9
+  },
+  "transition|mode": {
+   "cost_bn": 79.65471679171826,
+   "coverage": 1.0930577921329663,
+   "mult_oil": 0.9585826719199758,
+   "wacc": 0.04,
+   "yield_pacific_t_ha": 12.0,
+   "yield_atlantic_t_ha": 9.0,
+   "farm_cad_t": 288.17762147798703,
+   "adder_mult": 1.0,
+   "wind_mult": 1.0,
+   "efuel_mult": 0.75,
+   "residue_mult": 1.0
+  },
+  "central|mean": {
+   "cost_bn": 103.4366113394104,
+   "coverage": 0.9566583063970034,
+   "mult_oil": 1.018577830573739,
+   "wacc": 0.04666666666666667,
+   "yield_pacific_t_ha": 10.333333333333334,
+   "yield_atlantic_t_ha": 7.75,
+   "farm_cad_t": 448.62990957460704,
+   "adder_mult": 1.1666666666666667,
+   "wind_mult": 1.0333333333333334,
+   "efuel_mult": 0.8166666666666668,
+   "residue_mult": 0.9
+  },
+  "central|mode": {
+   "cost_bn": 89.04666097691302,
+   "coverage": 1.072995263486734,
+   "mult_oil": 0.9687115678920258,
+   "wacc": 0.04,
+   "yield_pacific_t_ha": 12.0,
+   "yield_atlantic_t_ha": 9.0,
+   "farm_cad_t": 288.17762147798703,
+   "adder_mult": 1.0,
+   "wind_mult": 1.0,
+   "efuel_mult": 0.75,
+   "residue_mult": 1.0
+  }
+ },
+ "emissions_bridge": {
+  "central": [
+   {
+    "item": "Model fossil comparator, well to wheel",
+    "mt": 272.997704
+   },
+   {
+    "item": "less upstream (well-to-tank) emissions",
+    "mt": -60.653609055555535
+   },
+   {
+    "item": "= combustion CO2 of fuel sold",
+    "mt": 212.34409494444446
+   },
+   {
+    "item": "less international aviation (reported as a memo item)",
+    "mt": -15.12921735
+   },
+   {
+    "item": "less off-road machinery (inventory: agriculture, construction, mining, oil and gas)",
+    "mt": -20.039833333333334
+   },
+   {
+    "item": "less biogenic CO2 of ethanol blends (7.5% by volume, estimate)",
+    "mt": -4.975775531911765
+   },
+   {
+    "item": "less biogenic CO2 of biodiesel and renewable diesel blends (4% of energy, estimate)",
+    "mt": -3.3011880000000002
+   },
+   {
+    "item": "= fossil CO2 comparable with inventory transport",
+    "mt": 168.89808072919934
+   },
+   {
+    "item": "Inventory economic-sector transport, 2024 (CO2e, incl. CH4 and N2O)",
+    "mt": 151.0
+   },
+   {
+    "item": "Residual (inventory boundary and methods, CH4 and N2O, rounding)",
+    "mt": -17.898080729199336
+   }
+  ],
+  "transition": [
+   {
+    "item": "Model fossil comparator, well to wheel",
+    "mt": 262.88415163999997
+   },
+   {
+    "item": "less upstream (well-to-tank) emissions",
+    "mt": -58.67707827333328
+   },
+   {
+    "item": "= combustion CO2 of fuel sold",
+    "mt": 204.2070733666667
+   },
+   {
+    "item": "less international aviation (reported as a memo item)",
+    "mt": -12.10337388
+   },
+   {
+    "item": "less off-road machinery (inventory: agriculture, construction, mining, oil and gas)",
+    "mt": -17.033858333333335
+   },
+   {
+    "item": "less biogenic CO2 of ethanol blends (7.5% by volume, estimate)",
+    "mt": -4.975775531911765
+   },
+   {
+    "item": "less biogenic CO2 of biodiesel and renewable diesel blends (4% of energy, estimate)",
+    "mt": -3.1624666666666674
+   },
+   {
+    "item": "= fossil CO2 comparable with inventory transport",
+    "mt": 166.93159895475492
+   },
+   {
+    "item": "Inventory economic-sector transport, 2024 (CO2e, incl. CH4 and N2O)",
+    "mt": 151.0
+   },
+   {
+    "item": "Residual (inventory boundary and methods, CH4 and N2O, rounding)",
+    "mt": -15.931598954754918
+   }
+  ]
+ },
+ "adequacy": {
+  "central": {
+   "direct_load_annual_twh": 208.65228578197525,
+   "load_avg_gw": 29.372734984314302,
+   "load_peak_gw": 39.09220155863869,
+   "wind_gw": 86.0477724203012,
+   "pv_gw": 34.71238062258709,
+   "lull_supply_gw": 9.646148660707734,
+   "gap_avg_gw": 19.72658632360657,
+   "gap_peak_gw": 29.446052897930958,
+   "gap_energy_twh": 3.3140665023659035,
+   "hydro_weekly_twh": 7.194710617094673,
+   "gap_share_of_weekly_hydro": 0.4606254064606383,
+   "flexible_load_gw_shed": 15.112424886221998,
+   "firming_budget_bn": 4.217919711535597,
+   "firming_capital_share": 0.7,
+   "firming_asset_life_yr": 25,
+   "firm_capacity_affordable_gw": 15.374958416885676
+  },
+  "transition": {
+   "direct_load_annual_twh": 207.39940215697524,
+   "load_avg_gw": 29.19395592823554,
+   "load_peak_gw": 38.850849832932354,
+   "wind_gw": 65.64598629690254,
+   "pv_gw": 34.48890680248863,
+   "lull_supply_gw": 7.599265833764912,
+   "gap_avg_gw": 21.59469009447063,
+   "gap_peak_gw": 31.251583999167444,
+   "gap_energy_twh": 3.6279079358710655,
+   "hydro_weekly_twh": 7.194710617094673,
+   "gap_share_of_weekly_hydro": 0.5042465401250658,
+   "flexible_load_gw_shed": 7.875049315445743,
+   "firming_budget_bn": 3.7937123761760523,
+   "firming_capital_share": 0.7,
+   "firming_asset_life_yr": 25,
+   "firm_capacity_affordable_gw": 13.828658205562693
+  },
+  "eb": {
+   "direct_load_annual_twh": 228.84763519930252,
+   "load_avg_gw": 31.678140168940704,
+   "load_peak_gw": 41.397606743265094,
+   "wind_gw": 60.0,
+   "pv_gw": 20.580496627856476,
+   "lull_supply_gw": 6.617414898835694,
+   "gap_avg_gw": 25.06072527010501,
+   "gap_peak_gw": 34.780191844429396,
+   "gap_energy_twh": 4.210201845377642,
+   "hydro_weekly_twh": 7.194710617094673,
+   "gap_share_of_weekly_hydro": 0.5851801510090175,
+   "flexible_load_gw_shed": 1.1687201911302665,
+   "firming_budget_bn": 3.9674739506537153,
+   "firming_capital_share": 0.7,
+   "firming_asset_life_yr": 25,
+   "firm_capacity_affordable_gw": 14.462045554008457
+  }
+ },
+ "cer_net_zero": {
+  "demand_growth_2021_2050": 1.2,
+  "generation_2021_twh": 625.7
+ }
+}
