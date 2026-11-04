@@ -1,88 +1,88 @@
 {
- "retail_margin_bn": 5.9511030074999995,
- "station_liquid_share_remaining": 0.098051445752673,
- "displaced_station_labour_bn": 2.147035501516618,
- "displaced_station_jobs": 44729.9062815962,
+ "retail_margin_bn": 5.841460799999999,
+ "station_liquid_share_remaining": 0.09984466157216187,
+ "displaced_station_labour_bn": 2.1032888493347794,
+ "displaced_station_jobs": 43818.517694474576,
  "domestic_serving_refining_labour_bn": 1.4400261594130728,
  "domestic_serving_refining_jobs": 10285.901138664805,
- "alberta_share_of_station_margin": 0.1674408605147136,
+ "alberta_share_of_station_margin": 0.16786206773826162,
  "cases": {
   "A_capacity_maintained": {
-   "jobs_created_ongoing": 72750.97933003705,
-   "jobs_created_build_average": 61210.40554313201,
-   "jobs_displaced": 44729.9062815962,
-   "net_jobs_ongoing": 28021.07304844085,
-   "net_jobs_during_build": 89231.47859157287,
-   "labour_compensation_created_bn": 8.60295506775408,
-   "labour_compensation_displaced_bn": 2.147035501516618,
-   "new_tax_revenue_bn": 5.841734968334869,
-   "revenue_lost_bn": 0.48605805713152755,
-   "net_public_revenue_bn": 5.355676911203341,
-   "net_public_revenue_build_phase_bn": 6.9943147854487835,
-   "public_revenue_status_quo_bn": 40.76404097650107,
-   "public_revenue_after_bn": 46.11971788770441,
+   "jobs_created_ongoing": 71955.15983354952,
+   "jobs_created_build_average": 60503.82346862876,
+   "jobs_displaced": 43818.517694474576,
+   "net_jobs_ongoing": 28136.642139074946,
+   "net_jobs_during_build": 88640.46560770369,
+   "labour_compensation_created_bn": 8.508847752177392,
+   "labour_compensation_displaced_bn": 2.1032888493347794,
+   "new_tax_revenue_bn": 5.679937109534224,
+   "revenue_lost_bn": 0.4761544422399745,
+   "net_public_revenue_bn": 5.2037826672942495,
+   "net_public_revenue_build_phase_bn": 6.82350493171371,
+   "public_revenue_status_quo_bn": 40.43982907650107,
+   "public_revenue_after_bn": 45.64361174379532,
    "petroleum_royalties_land_retained_bn": 17.6,
-   "statutory_transport_taxes_retained_bn": 16.76404097650107,
+   "statutory_transport_taxes_retained_bn": 16.439829076501066,
    "alberta": {
     "royalty_base_change_bn": 0.0,
     "bitumen_royalties_budget_2026_27_bn": 9.7,
-    "fuel_tax_retained_bn": 1.357926115,
+    "fuel_tax_retained_bn": 1.335685,
     "new_ongoing_jobs_range": [
-     8820.761077117333,
-     20074.112421198333
+     8724.271191982136,
+     19854.522661904517
     ],
     "new_build_jobs_range": [
-     7421.5133280893915,
-     16889.732255640658
+     7335.843118314033,
+     16694.765698090476
     ],
-    "jobs_displaced": 7489.613998532962,
+    "jobs_displaced": 7355.4669854201065,
     "net_ongoing_jobs_range": [
-     1331.1470785843712,
-     12584.498422665372
+     1368.8042065620293,
+     12499.055676484411
     ],
     "net_jobs_during_build_range": [
-     8752.660406673764,
-     29474.23067830603
+     8704.647324876063,
+     29193.821374574887
     ],
     "refining_capacity_share": 0.27502634351949423
    }
   },
   "B_domestic_refining_closes": {
-   "jobs_created_ongoing": 72750.97933003705,
-   "jobs_created_build_average": 61210.40554313201,
-   "jobs_displaced": 55015.80742026101,
-   "net_jobs_ongoing": 17735.171909776043,
-   "net_jobs_during_build": 78945.57745290807,
-   "labour_compensation_created_bn": 8.60295506775408,
-   "labour_compensation_displaced_bn": 3.587061660929691,
-   "new_tax_revenue_bn": 5.841734968334869,
-   "revenue_lost_bn": 4.812059335064973,
-   "net_public_revenue_bn": 1.0296756332698962,
-   "net_public_revenue_build_phase_bn": 2.6683135075153386,
-   "public_revenue_status_quo_bn": 40.76404097650107,
-   "public_revenue_after_bn": 41.79371660977097,
+   "jobs_created_ongoing": 71955.15983354952,
+   "jobs_created_build_average": 60503.82346862876,
+   "jobs_displaced": 54104.41883313938,
+   "net_jobs_ongoing": 17850.74100041014,
+   "net_jobs_during_build": 78354.56446903889,
+   "labour_compensation_created_bn": 8.508847752177392,
+   "labour_compensation_displaced_bn": 3.543315008747852,
+   "new_tax_revenue_bn": 5.679937109534224,
+   "revenue_lost_bn": 4.80215572017342,
+   "net_public_revenue_bn": 0.8777813893608037,
+   "net_public_revenue_build_phase_bn": 2.4975036537802646,
+   "public_revenue_status_quo_bn": 40.43982907650107,
+   "public_revenue_after_bn": 41.317610465861875,
    "petroleum_royalties_land_retained_bn": 17.6,
-   "statutory_transport_taxes_retained_bn": 16.76404097650107,
+   "statutory_transport_taxes_retained_bn": 16.439829076501066,
    "alberta": {
     "royalty_base_change_bn": 0.0,
     "bitumen_royalties_budget_2026_27_bn": 9.7,
-    "fuel_tax_retained_bn": 1.357926115,
+    "fuel_tax_retained_bn": 1.335685,
     "new_ongoing_jobs_range": [
-     8820.761077117333,
-     20074.112421198333
+     8724.271191982136,
+     19854.522661904517
     ],
     "new_build_jobs_range": [
-     7421.5133280893915,
-     16889.732255640658
+     7335.843118314033,
+     16694.765698090476
     ],
-    "jobs_displaced": 10318.507778502946,
+    "jobs_displaced": 10184.36076539009,
     "net_ongoing_jobs_range": [
-     -1497.746701385613,
-     9755.604642695387
+     -1460.089573407955,
+     9670.161896514426
     ],
     "net_jobs_during_build_range": [
-     5923.7666267037785,
-     26645.336898336045
+     5875.753544906078,
+     26364.927594604902
     ],
     "refining_capacity_share": 0.27502634351949423
    }
@@ -91,30 +91,30 @@
  "sensitivity": {
   "A_capacity_maintained": {
    "jobs_displaced_range": [
-    22364.9531407981,
-    73804.34536463374
+    21909.258847237288,
+    72300.55419588306
    ],
    "net_jobs_ongoing_range": [
-    -26235.602335263073,
-    84823.28115205048
+    -25252.16337997804,
+    84106.44845793537
    ],
    "net_public_revenue_range_bn": [
-    5.173405139779018,
-    5.537948682627664
+    5.025224751454259,
+    5.38234058313424
    ]
   },
   "B_domestic_refining_closes": {
    "jobs_displaced_range": [
-    31365.116637129806,
-    85804.56335974268
+    30909.422343568993,
+    84300.772190992
    ],
    "net_jobs_ongoing_range": [
-    -38235.82033037201,
-    75823.11765571877
+    -37252.381375086974,
+    75106.28496160367
    ],
    "net_public_revenue_range_bn": [
-    0.8474038618455726,
-    1.211947404694219
+    0.6992234735208136,
+    1.0563393052007948
    ]
   }
  },

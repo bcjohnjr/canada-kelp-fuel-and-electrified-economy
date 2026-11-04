@@ -1,0 +1,1282 @@
+[
+  {
+    "yield_pacific": 12,
+    "policy": "least_cost",
+    "farm_km2": 116776.59999999999,
+    "binding_zone_bands": [
+      {
+        "zone": "pac_shelf",
+        "band": "0-50",
+        "area_used_km2": 2359.3,
+        "cap_km2": 2359.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "50-100",
+        "area_used_km2": 869.6,
+        "cap_km2": 869.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "100-200",
+        "area_used_km2": 101.8,
+        "cap_km2": 101.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "0-50",
+        "area_used_km2": 911.7,
+        "cap_km2": 911.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "50-100",
+        "area_used_km2": 859.1,
+        "cap_km2": 859.1,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "100-200",
+        "area_used_km2": 185.7,
+        "cap_km2": 185.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "0-50",
+        "area_used_km2": 1759.25,
+        "cap_km2": 1759.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "50-100",
+        "area_used_km2": 4778.5,
+        "cap_km2": 4778.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "100-200",
+        "area_used_km2": 12145.0,
+        "cap_km2": 12145.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "200-370",
+        "area_used_km2": 22183.5,
+        "cap_km2": 22183.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "0-50",
+        "area_used_km2": 4269.3,
+        "cap_km2": 4269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "50-100",
+        "area_used_km2": 4453.6,
+        "cap_km2": 4453.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "100-200",
+        "area_used_km2": 9446.5,
+        "cap_km2": 9446.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "200-370",
+        "area_used_km2": 8881.8,
+        "cap_km2": 8881.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "0-50",
+        "area_used_km2": 825.5,
+        "cap_km2": 825.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "50-100",
+        "area_used_km2": 1229.7,
+        "cap_km2": 1229.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "100-200",
+        "area_used_km2": 1731.8,
+        "cap_km2": 1731.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "200-370",
+        "area_used_km2": 1269.3,
+        "cap_km2": 1269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "100-200",
+        "area_used_km2": 1500.25,
+        "cap_km2": 1500.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "200-370",
+        "area_used_km2": 30057.0,
+        "cap_km2": 30057.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "0-50",
+        "area_used_km2": 2698.75,
+        "cap_km2": 2698.75,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "50-100",
+        "area_used_km2": 1081.9,
+        "cap_km2": 1081.9,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "100-200",
+        "area_used_km2": 458.35,
+        "cap_km2": 458.35,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "0-50",
+        "area_used_km2": 1417.4,
+        "cap_km2": 1417.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "50-100",
+        "area_used_km2": 1302.0,
+        "cap_km2": 1302.0,
+        "ratio_used_to_cap": 1.0
+      }
+    ],
+    "sum_binding_area_km2": 116776.59999999999
+  },
+  {
+    "yield_pacific": 12,
+    "policy": "electric_or_biofuel",
+    "farm_km2": 116776.59999999999,
+    "binding_zone_bands": [
+      {
+        "zone": "pac_shelf",
+        "band": "0-50",
+        "area_used_km2": 2359.3,
+        "cap_km2": 2359.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "50-100",
+        "area_used_km2": 869.6,
+        "cap_km2": 869.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "100-200",
+        "area_used_km2": 101.8,
+        "cap_km2": 101.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "0-50",
+        "area_used_km2": 911.7,
+        "cap_km2": 911.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "50-100",
+        "area_used_km2": 859.1,
+        "cap_km2": 859.1,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "100-200",
+        "area_used_km2": 185.7,
+        "cap_km2": 185.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "0-50",
+        "area_used_km2": 1759.25,
+        "cap_km2": 1759.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "50-100",
+        "area_used_km2": 4778.5,
+        "cap_km2": 4778.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "100-200",
+        "area_used_km2": 12145.0,
+        "cap_km2": 12145.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "200-370",
+        "area_used_km2": 22183.5,
+        "cap_km2": 22183.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "0-50",
+        "area_used_km2": 4269.3,
+        "cap_km2": 4269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "50-100",
+        "area_used_km2": 4453.6,
+        "cap_km2": 4453.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "100-200",
+        "area_used_km2": 9446.5,
+        "cap_km2": 9446.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "200-370",
+        "area_used_km2": 8881.8,
+        "cap_km2": 8881.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "0-50",
+        "area_used_km2": 825.5,
+        "cap_km2": 825.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "50-100",
+        "area_used_km2": 1229.7,
+        "cap_km2": 1229.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "100-200",
+        "area_used_km2": 1731.8,
+        "cap_km2": 1731.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "200-370",
+        "area_used_km2": 1269.3,
+        "cap_km2": 1269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "100-200",
+        "area_used_km2": 1500.25,
+        "cap_km2": 1500.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "200-370",
+        "area_used_km2": 30057.0,
+        "cap_km2": 30057.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "0-50",
+        "area_used_km2": 2698.75,
+        "cap_km2": 2698.75,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "50-100",
+        "area_used_km2": 1081.9,
+        "cap_km2": 1081.9,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "100-200",
+        "area_used_km2": 458.35,
+        "cap_km2": 458.35,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "0-50",
+        "area_used_km2": 1417.4,
+        "cap_km2": 1417.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "50-100",
+        "area_used_km2": 1302.0,
+        "cap_km2": 1302.0,
+        "ratio_used_to_cap": 1.0
+      }
+    ],
+    "sum_binding_area_km2": 116776.59999999999
+  },
+  {
+    "yield_pacific": 15,
+    "policy": "least_cost",
+    "farm_km2": 129260.74999999999,
+    "binding_zone_bands": [
+      {
+        "zone": "pac_shelf",
+        "band": "0-50",
+        "area_used_km2": 2359.3,
+        "cap_km2": 2359.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "50-100",
+        "area_used_km2": 869.6,
+        "cap_km2": 869.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "100-200",
+        "area_used_km2": 101.8,
+        "cap_km2": 101.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "0-50",
+        "area_used_km2": 911.7,
+        "cap_km2": 911.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "50-100",
+        "area_used_km2": 859.1,
+        "cap_km2": 859.1,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "100-200",
+        "area_used_km2": 185.7,
+        "cap_km2": 185.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "0-50",
+        "area_used_km2": 1759.25,
+        "cap_km2": 1759.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "50-100",
+        "area_used_km2": 4778.5,
+        "cap_km2": 4778.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "100-200",
+        "area_used_km2": 12145.0,
+        "cap_km2": 12145.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "200-370",
+        "area_used_km2": 22183.5,
+        "cap_km2": 22183.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "0-50",
+        "area_used_km2": 4269.3,
+        "cap_km2": 4269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "50-100",
+        "area_used_km2": 4453.6,
+        "cap_km2": 4453.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "100-200",
+        "area_used_km2": 9446.5,
+        "cap_km2": 9446.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "200-370",
+        "area_used_km2": 8881.8,
+        "cap_km2": 8881.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "0-50",
+        "area_used_km2": 825.5,
+        "cap_km2": 825.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "50-100",
+        "area_used_km2": 1229.7,
+        "cap_km2": 1229.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "100-200",
+        "area_used_km2": 1731.8,
+        "cap_km2": 1731.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "200-370",
+        "area_used_km2": 1269.3,
+        "cap_km2": 1269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "100-200",
+        "area_used_km2": 1500.25,
+        "cap_km2": 1500.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "200-370",
+        "area_used_km2": 30057.0,
+        "cap_km2": 30057.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "0-50",
+        "area_used_km2": 2698.75,
+        "cap_km2": 2698.75,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "50-100",
+        "area_used_km2": 1081.9,
+        "cap_km2": 1081.9,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "100-200",
+        "area_used_km2": 458.35,
+        "cap_km2": 458.35,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "0-50",
+        "area_used_km2": 1417.4,
+        "cap_km2": 1417.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "50-100",
+        "area_used_km2": 1302.0,
+        "cap_km2": 1302.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "100-200",
+        "area_used_km2": 95.25,
+        "cap_km2": 95.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "0-50",
+        "area_used_km2": 5635.3,
+        "cap_km2": 5635.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "50-100",
+        "area_used_km2": 4047.2,
+        "cap_km2": 4047.2,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "100-200",
+        "area_used_km2": 2706.4,
+        "cap_km2": 2706.4,
+        "ratio_used_to_cap": 1.0
+      }
+    ],
+    "sum_binding_area_km2": 129260.74999999999
+  },
+  {
+    "yield_pacific": 15,
+    "policy": "electric_or_biofuel",
+    "farm_km2": 129260.74999999999,
+    "binding_zone_bands": [
+      {
+        "zone": "pac_shelf",
+        "band": "0-50",
+        "area_used_km2": 2359.3,
+        "cap_km2": 2359.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "50-100",
+        "area_used_km2": 869.6,
+        "cap_km2": 869.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "100-200",
+        "area_used_km2": 101.8,
+        "cap_km2": 101.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "0-50",
+        "area_used_km2": 911.7,
+        "cap_km2": 911.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "50-100",
+        "area_used_km2": 859.1,
+        "cap_km2": 859.1,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "100-200",
+        "area_used_km2": 185.7,
+        "cap_km2": 185.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "0-50",
+        "area_used_km2": 1759.25,
+        "cap_km2": 1759.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "50-100",
+        "area_used_km2": 4778.5,
+        "cap_km2": 4778.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "100-200",
+        "area_used_km2": 12145.0,
+        "cap_km2": 12145.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "200-370",
+        "area_used_km2": 22183.5,
+        "cap_km2": 22183.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "0-50",
+        "area_used_km2": 4269.3,
+        "cap_km2": 4269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "50-100",
+        "area_used_km2": 4453.6,
+        "cap_km2": 4453.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "100-200",
+        "area_used_km2": 9446.5,
+        "cap_km2": 9446.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "200-370",
+        "area_used_km2": 8881.8,
+        "cap_km2": 8881.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "0-50",
+        "area_used_km2": 825.5,
+        "cap_km2": 825.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "50-100",
+        "area_used_km2": 1229.7,
+        "cap_km2": 1229.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "100-200",
+        "area_used_km2": 1731.8,
+        "cap_km2": 1731.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "200-370",
+        "area_used_km2": 1269.3,
+        "cap_km2": 1269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "100-200",
+        "area_used_km2": 1500.25,
+        "cap_km2": 1500.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "200-370",
+        "area_used_km2": 30057.0,
+        "cap_km2": 30057.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "0-50",
+        "area_used_km2": 2698.75,
+        "cap_km2": 2698.75,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "50-100",
+        "area_used_km2": 1081.9,
+        "cap_km2": 1081.9,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "100-200",
+        "area_used_km2": 458.35,
+        "cap_km2": 458.35,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "0-50",
+        "area_used_km2": 1417.4,
+        "cap_km2": 1417.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "50-100",
+        "area_used_km2": 1302.0,
+        "cap_km2": 1302.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "100-200",
+        "area_used_km2": 95.25,
+        "cap_km2": 95.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "0-50",
+        "area_used_km2": 5635.3,
+        "cap_km2": 5635.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "50-100",
+        "area_used_km2": 4047.2,
+        "cap_km2": 4047.2,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "100-200",
+        "area_used_km2": 2706.4,
+        "cap_km2": 2706.4,
+        "ratio_used_to_cap": 1.0
+      }
+    ],
+    "sum_binding_area_km2": 129260.74999999999
+  },
+  {
+    "yield_pacific": 20,
+    "policy": "least_cost",
+    "farm_km2": 150668.34999999998,
+    "binding_zone_bands": [
+      {
+        "zone": "pac_shelf",
+        "band": "0-50",
+        "area_used_km2": 2359.3,
+        "cap_km2": 2359.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "50-100",
+        "area_used_km2": 869.6,
+        "cap_km2": 869.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "100-200",
+        "area_used_km2": 101.8,
+        "cap_km2": 101.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "0-50",
+        "area_used_km2": 911.7,
+        "cap_km2": 911.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "50-100",
+        "area_used_km2": 859.1,
+        "cap_km2": 859.1,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "100-200",
+        "area_used_km2": 185.7,
+        "cap_km2": 185.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "0-50",
+        "area_used_km2": 1759.25,
+        "cap_km2": 1759.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "50-100",
+        "area_used_km2": 4778.5,
+        "cap_km2": 4778.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "100-200",
+        "area_used_km2": 12145.0,
+        "cap_km2": 12145.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "200-370",
+        "area_used_km2": 22183.5,
+        "cap_km2": 22183.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "0-50",
+        "area_used_km2": 4269.3,
+        "cap_km2": 4269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "50-100",
+        "area_used_km2": 4453.6,
+        "cap_km2": 4453.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "100-200",
+        "area_used_km2": 9446.5,
+        "cap_km2": 9446.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "200-370",
+        "area_used_km2": 8881.8,
+        "cap_km2": 8881.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "0-50",
+        "area_used_km2": 825.5,
+        "cap_km2": 825.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "50-100",
+        "area_used_km2": 1229.7,
+        "cap_km2": 1229.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "100-200",
+        "area_used_km2": 1731.8,
+        "cap_km2": 1731.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "200-370",
+        "area_used_km2": 1269.3,
+        "cap_km2": 1269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "100-200",
+        "area_used_km2": 1500.25,
+        "cap_km2": 1500.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "200-370",
+        "area_used_km2": 30057.0,
+        "cap_km2": 30057.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "0-50",
+        "area_used_km2": 2698.75,
+        "cap_km2": 2698.75,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "50-100",
+        "area_used_km2": 1081.9,
+        "cap_km2": 1081.9,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "100-200",
+        "area_used_km2": 458.35,
+        "cap_km2": 458.35,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "0-50",
+        "area_used_km2": 1417.4,
+        "cap_km2": 1417.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "50-100",
+        "area_used_km2": 1302.0,
+        "cap_km2": 1302.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "100-200",
+        "area_used_km2": 95.25,
+        "cap_km2": 95.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "0-50",
+        "area_used_km2": 5635.3,
+        "cap_km2": 5635.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "50-100",
+        "area_used_km2": 4047.2,
+        "cap_km2": 4047.2,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "100-200",
+        "area_used_km2": 2706.4,
+        "cap_km2": 2706.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "200-370",
+        "area_used_km2": 318.0,
+        "cap_km2": 318.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "0-50",
+        "area_used_km2": 1522.7,
+        "cap_km2": 1522.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "50-100",
+        "area_used_km2": 4079.6,
+        "cap_km2": 4079.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "100-200",
+        "area_used_km2": 9467.8,
+        "cap_km2": 9467.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "200-370",
+        "area_used_km2": 6019.5,
+        "cap_km2": 6019.5,
+        "ratio_used_to_cap": 1.0
+      }
+    ],
+    "sum_binding_area_km2": 150668.34999999998
+  },
+  {
+    "yield_pacific": 20,
+    "policy": "electric_or_biofuel",
+    "farm_km2": 150668.34999999998,
+    "binding_zone_bands": [
+      {
+        "zone": "pac_shelf",
+        "band": "0-50",
+        "area_used_km2": 2359.3,
+        "cap_km2": 2359.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "50-100",
+        "area_used_km2": 869.6,
+        "cap_km2": 869.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_shelf",
+        "band": "100-200",
+        "area_used_km2": 101.8,
+        "cap_km2": 101.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "0-50",
+        "area_used_km2": 911.7,
+        "cap_km2": 911.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "50-100",
+        "area_used_km2": 859.1,
+        "cap_km2": 859.1,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_slope",
+        "band": "100-200",
+        "area_used_km2": 185.7,
+        "cap_km2": 185.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "0-50",
+        "area_used_km2": 1759.25,
+        "cap_km2": 1759.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "50-100",
+        "area_used_km2": 4778.5,
+        "cap_km2": 4778.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "100-200",
+        "area_used_km2": 12145.0,
+        "cap_km2": 12145.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "pac_deep",
+        "band": "200-370",
+        "area_used_km2": 22183.5,
+        "cap_km2": 22183.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "0-50",
+        "area_used_km2": 4269.3,
+        "cap_km2": 4269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "50-100",
+        "area_used_km2": 4453.6,
+        "cap_km2": 4453.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "100-200",
+        "area_used_km2": 9446.5,
+        "cap_km2": 9446.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_shelf",
+        "band": "200-370",
+        "area_used_km2": 8881.8,
+        "cap_km2": 8881.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "0-50",
+        "area_used_km2": 825.5,
+        "cap_km2": 825.5,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "50-100",
+        "area_used_km2": 1229.7,
+        "cap_km2": 1229.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "100-200",
+        "area_used_km2": 1731.8,
+        "cap_km2": 1731.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_slope",
+        "band": "200-370",
+        "area_used_km2": 1269.3,
+        "cap_km2": 1269.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "100-200",
+        "area_used_km2": 1500.25,
+        "cap_km2": 1500.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "atl_deep",
+        "band": "200-370",
+        "area_used_km2": 30057.0,
+        "cap_km2": 30057.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "0-50",
+        "area_used_km2": 2698.75,
+        "cap_km2": 2698.75,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "50-100",
+        "area_used_km2": 1081.9,
+        "cap_km2": 1081.9,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_shelf",
+        "band": "100-200",
+        "area_used_km2": 458.35,
+        "cap_km2": 458.35,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "0-50",
+        "area_used_km2": 1417.4,
+        "cap_km2": 1417.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "50-100",
+        "area_used_km2": 1302.0,
+        "cap_km2": 1302.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "gsl_slope",
+        "band": "100-200",
+        "area_used_km2": 95.25,
+        "cap_km2": 95.25,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "0-50",
+        "area_used_km2": 5635.3,
+        "cap_km2": 5635.3,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "50-100",
+        "area_used_km2": 4047.2,
+        "cap_km2": 4047.2,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "100-200",
+        "area_used_km2": 2706.4,
+        "cap_km2": 2706.4,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_shelf",
+        "band": "200-370",
+        "area_used_km2": 318.0,
+        "cap_km2": 318.0,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "0-50",
+        "area_used_km2": 1522.7,
+        "cap_km2": 1522.7,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "50-100",
+        "area_used_km2": 4079.6,
+        "cap_km2": 4079.6,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "100-200",
+        "area_used_km2": 9467.8,
+        "cap_km2": 9467.8,
+        "ratio_used_to_cap": 1.0
+      },
+      {
+        "zone": "lab_slope",
+        "band": "200-370",
+        "area_used_km2": 6019.5,
+        "cap_km2": 6019.5,
+        "ratio_used_to_cap": 1.0
+      }
+    ],
+    "sum_binding_area_km2": 150668.34999999998
+  }
+]

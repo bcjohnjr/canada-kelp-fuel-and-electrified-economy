@@ -74,7 +74,7 @@ def fiscal_block(s):
 
 CASES = {"today": lambda: sc.today(), "central": lambda: sc.build_case(demand=False), "transition": lambda: sc.build_case(),
          "eb": lambda: sc.build_case(demand=False, overrides={"eb_only": True})}
-CEN = lambda **kw: sc.build_case(demand=False, **kw)   # central case: learning, 4% finance, full 2025 demand (827 TWh)
+CEN = lambda **kw: sc.build_case(demand=False, **kw)   # central case: learning, 4% finance, full 2025 demand (814 TWh)
 
 
 def headline():

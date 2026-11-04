@@ -1116,7 +1116,7 @@
   },
   "n_removed_t": 33556.91120335609,
   "fuel_twh": 2.7424392409662373,
-  "share_pct": 0.331622123500738,
+  "share_pct": 0.33693199329323775,
   "vessels": 70.5143316534677,
   "cutters": 11.141965785594298,
   "harvest_cost_bn": 0.3974755144723608,
@@ -1156,8 +1156,8 @@
   },
   "harvesters": 167.37924143281077,
   "grid_units": 85.72294399374876,
-  "system_saving_bn": 0.18239075084602518,
-  "coverage_without_lakes": 1.0701465422056695
+  "system_saving_bn": 0.1823907508460394,
+  "coverage_without_lakes": 1.0522114108025298
  },
  "payment_curve": [
   {
@@ -1175,7 +1175,7 @@
    "fuel_twh": 2.7424392409662373,
    "payment_bn": 0.0,
    "harvesters": 167.37924143281077,
-   "cost_bn": 88.32581026974808
+   "cost_bn": 87.28470990215722
   },
   {
    "payment_cad_kg_p": 25.0,
@@ -1194,7 +1194,7 @@
    "fuel_twh": 3.039359144760004,
    "payment_bn": 0.10804188548100495,
    "harvesters": 185.56903624922546,
-   "cost_bn": 88.32765139061904
+   "cost_bn": 87.28655102302818
   },
   {
    "payment_cad_kg_p": 50.0,
@@ -1214,7 +1214,7 @@
    "fuel_twh": 3.1147217176383486,
    "payment_bn": 0.2203422791975425,
    "harvesters": 191.60417843785035,
-   "cost_bn": 88.33072275165073
+   "cost_bn": 87.28962238405985
   },
   {
    "payment_cad_kg_p": 100.0,
@@ -1238,7 +1238,7 @@
    "fuel_twh": 3.4890992046489155,
    "payment_bn": 0.48126240922348745,
    "harvesters": 223.17665263991418,
-   "cost_bn": 88.35921833251386
+   "cost_bn": 87.318117964923
   },
   {
    "payment_cad_kg_p": 200.0,
@@ -1262,7 +1262,7 @@
    "fuel_twh": 3.4908107467327265,
    "payment_bn": 0.9628268709617678,
    "harvesters": 223.3622627911021,
-   "cost_bn": 88.35944660532886
+   "cost_bn": 87.31834623773801
   }
  ],
  "all_lakes": [
@@ -1620,10 +1620,10 @@
    "lake": "winnipeg",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 835.0470609771817,
-   "net_cost_cad_t": -54.16449571791019,
-   "net_cad_per_kg_p": -13.210852614124432,
+   "net_cost_cad_t": -54.16449571791042,
+   "net_cad_per_kg_p": -13.210852614124487,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -1650,10 +1650,10 @@
    "lake": "winnipeg",
    "biomass": "algae",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 845.4597326215743,
-   "net_cost_cad_t": -401.4381713944601,
-   "net_cad_per_kg_p": -50.17977142430751,
+   "net_cost_cad_t": -401.4381713944603,
+   "net_cad_per_kg_p": -50.17977142430754,
    "fuel_mwh_t": 3.432124352331606
   },
   {
@@ -1680,10 +1680,10 @@
    "lake": "erie",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 959.5168032447677,
-   "net_cost_cad_t": 73.67896083539017,
-   "net_cad_per_kg_p": 23.98849887663866,
+   "net_cost_cad_t": 73.67896083538994,
+   "net_cad_per_kg_p": 23.988498876638584,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -1710,10 +1710,10 @@
    "lake": "erie",
    "biomass": "algae",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 845.4597326215743,
-   "net_cost_cad_t": -401.4381713944601,
-   "net_cad_per_kg_p": -50.17977142430751,
+   "net_cost_cad_t": -401.4381713944603,
+   "net_cad_per_kg_p": -50.17977142430754,
    "fuel_mwh_t": 3.432124352331606
   },
   {
@@ -1740,10 +1740,10 @@
    "lake": "erie",
    "biomass": "milfoil",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 669.3913240620252,
-   "net_cost_cad_t": -168.7366421197649,
-   "net_cad_per_kg_p": -56.245547373254965,
+   "net_cost_cad_t": -168.736642119765,
+   "net_cad_per_kg_p": -56.245547373255,
    "fuel_mwh_t": 2.345284974093264
   },
   {
@@ -1770,10 +1770,10 @@
    "lake": "stclair",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1044.9159975793277,
-   "net_cost_cad_t": 160.13244088423588,
-   "net_cad_per_kg_p": 58.22997850335849,
+   "net_cost_cad_t": 160.13244088423565,
+   "net_cad_per_kg_p": 58.22997850335841,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -1800,10 +1800,10 @@
    "lake": "stclair",
    "biomass": "milfoil",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 669.3913240620252,
-   "net_cost_cad_t": -168.7366421197649,
-   "net_cad_per_kg_p": -56.245547373254965,
+   "net_cost_cad_t": -168.736642119765,
+   "net_cad_per_kg_p": -56.245547373255,
    "fuel_mwh_t": 2.345284974093264
   },
   {
@@ -1830,10 +1830,10 @@
    "lake": "ontario",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1044.9159975793277,
-   "net_cost_cad_t": 160.13244088423588,
-   "net_cad_per_kg_p": 58.22997850335849,
+   "net_cost_cad_t": 160.13244088423565,
+   "net_cad_per_kg_p": 58.22997850335841,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -1860,10 +1860,10 @@
    "lake": "ontario",
    "biomass": "algae",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 845.4597326215743,
-   "net_cost_cad_t": -401.4381713944601,
-   "net_cad_per_kg_p": -50.17977142430751,
+   "net_cost_cad_t": -401.4381713944603,
+   "net_cad_per_kg_p": -50.17977142430754,
    "fuel_mwh_t": 3.432124352331606
   },
   {
@@ -1890,10 +1890,10 @@
    "lake": "ontario",
    "biomass": "milfoil",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 669.3913240620252,
-   "net_cost_cad_t": -168.7366421197649,
-   "net_cad_per_kg_p": -56.245547373254965,
+   "net_cost_cad_t": -168.736642119765,
+   "net_cad_per_kg_p": -56.245547373255,
    "fuel_mwh_t": 2.345284974093264
   },
   {
@@ -1920,10 +1920,10 @@
    "lake": "simcoe",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1208.9526705433123,
-   "net_cost_cad_t": 325.304498463605,
-   "net_cad_per_kg_p": 135.32667136085965,
+   "net_cost_cad_t": 325.3044984636048,
+   "net_cad_per_kg_p": 135.32667136085956,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -1950,10 +1950,10 @@
    "lake": "simcoe",
    "biomass": "milfoil",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 519.6546977177142,
-   "net_cost_cad_t": -318.47326846407594,
-   "net_cad_per_kg_p": -106.15775615469198,
+   "net_cost_cad_t": -318.47326846407606,
+   "net_cad_per_kg_p": -106.15775615469202,
    "fuel_mwh_t": 2.345284974093264
   },
   {
@@ -1980,10 +1980,10 @@
    "lake": "missisquoi",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 939.6212402494441,
-   "net_cost_cad_t": 53.06274684549148,
-   "net_cad_per_kg_p": 16.122911541514718,
+   "net_cost_cad_t": 53.062746845491255,
+   "net_cad_per_kg_p": 16.12291154151465,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2010,10 +2010,10 @@
    "lake": "woods",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1064.9475897561445,
-   "net_cost_cad_t": 179.5963407533603,
-   "net_cad_per_kg_p": 61.440853415623245,
+   "net_cost_cad_t": 179.59634075336007,
+   "net_cad_per_kg_p": 61.44085341562317,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2040,10 +2040,10 @@
    "lake": "manitoba",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 866.6020355154708,
-   "net_cost_cad_t": -21.87152117962107,
-   "net_cad_per_kg_p": -5.644263530224792,
+   "net_cost_cad_t": -21.871521179621297,
+   "net_cad_per_kg_p": -5.64426353022485,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2070,10 +2070,10 @@
    "lake": "winnipegosis",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1064.9475897561445,
-   "net_cost_cad_t": 179.5963407533603,
-   "net_cad_per_kg_p": 61.440853415623245,
+   "net_cost_cad_t": 179.59634075336007,
+   "net_cad_per_kg_p": 61.44085341562317,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2100,10 +2100,10 @@
    "lake": "lesser_slave",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1019.2954458980748,
-   "net_cost_cad_t": 133.035889202983,
-   "net_cad_per_kg_p": 41.57371537593218,
+   "net_cost_cad_t": 133.03588920298276,
+   "net_cad_per_kg_p": 41.57371537593211,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2130,10 +2130,10 @@
    "lake": "last_mountain",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 882.3795227846153,
-   "net_cost_cad_t": -5.758579365021966,
-   "net_cad_per_kg_p": -1.5263704341022077,
+   "net_cost_cad_t": -5.758579365022193,
+   "net_cad_per_kg_p": -1.526370434102268,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2160,10 +2160,10 @@
    "lake": "st_pierre",
    "biomass": "grid",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 1016.3609084879806,
-   "net_cost_cad_t": 131.00965948519647,
-   "net_cad_per_kg_p": 44.819094034409304,
+   "net_cost_cad_t": 131.00965948519624,
+   "net_cad_per_kg_p": 44.819094034409225,
    "fuel_mwh_t": 2.5168911917098447
   },
   {
@@ -2190,7 +2190,7 @@
    "lake": "winnipeg",
    "biomass": "cattail",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 384.1174688095828,
    "net_cost_cad_t": -729.9316109282571,
    "net_cad_per_kg_p": -364.96580546412855,
@@ -2220,7 +2220,7 @@
    "lake": "winnipeg",
    "biomass": "cattail",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 384.1174688095828,
    "net_cost_cad_t": -729.9316109282571,
    "net_cad_per_kg_p": -364.96580546412855,
@@ -2250,7 +2250,7 @@
    "lake": "erie",
    "biomass": "cattail",
    "fuel_value": "marginal renewable drop-in (central case)",
-   "fuel_cad_mwh": 321.4934678915227,
+   "fuel_cad_mwh": 321.49346789152276,
    "cost_cad_t": 384.1174688095828,
    "net_cost_cad_t": -729.9316109282571,
    "net_cad_per_kg_p": -364.96580546412855,

@@ -1,6 +1,6 @@
 {
  "pac_shelf": {
-  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)",
+  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial; repeated harvest requires validation)",
   "nutrient_cad_per_t": {
    "wave_pump": 2504.148553051442,
    "wave_pump_xl": 2625.402061936038,
@@ -31,7 +31,7 @@
   }
  },
  "pac_slope": {
-  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)",
+  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial; repeated harvest requires validation)",
   "nutrient_cad_per_t": {
    "wave_pump": 5843.013290453364,
    "wave_pump_xl": 6125.938144517421,
@@ -62,7 +62,7 @@
   }
  },
  "pac_deep": {
-  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)",
+  "species": "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial; repeated harvest requires validation)",
   "nutrient_cad_per_t": {
    "wave_pump": 10016.594212205766,
    "wave_pump_xl": 10501.60824774415,

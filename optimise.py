@@ -18,7 +18,13 @@ Supply: new onshore wind (three resource tiers), PV, redirected hydro exports, n
   ethanol, biomethane, fertiliser) heated by wind-charged thermal storage, heat pumps, electric boilers or
   residue-fired boilers; forest-residue HTL, agricultural-residue Fischer-Tropsch, waste-lipid and canola HVO,
   existing grain ethanol, ethanol-to-jet, landfill and manure biomethane, electrofuels, biogenic CO2 and direct
-  air capture. No fossil energy and no new nuclear capacity are used.
+  air capture; BWRX-300-class small modular reactors (SMRs) in two regional fleets: Atlantic (New Brunswick, Nova
+  Scotia) and inland (Ontario, Saskatchewan, Alberta). Steam cannot travel between regions, so process heat is balanced
+  in four pools: Pacific (British Columbia kelp; no nuclear unless the 'pac' fleet is enabled), Atlantic (Atlantic,
+  Gulf and Labrador kelp refineries, built beside the Atlantic modules), inland (grain-ethanol distilleries and lake
+  refineries; SMR steam limited to the distilleries co-located with a module) and Hudson Bay (no nuclear unless the
+  'hb' fleet is enabled). Each pool can also use heat pumps, wind-charged thermal storage, electric and residue
+  boilers. No fossil energy is used.
 Exports: drop-in fuel may be exported at a given price (CAD/MWh) up to a given volume; the objective then
   maximises the margin earned on exports alongside the least-cost domestic supply.
 Vehicle purchase premia at normal fleet replacement are part of the objective and reported separately.
@@ -37,6 +43,7 @@ from biorefinery import Feed, Proc, routes as refinery_routes
 from preprocess import Pre, options as preprocess_options
 from lifecycle import screening_lifecycle
 from lakes import lake_systems, LakeParams, bloom_vessel, cutter as lake_cutter
+from northern_willow import REGIONS as WILLOW_REGIONS, tech as willow_tech
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "outputs"
@@ -90,7 +97,7 @@ UNIT_CAPEX = {   # CAD 2026
 def ers(prm):
     """Electrified Trans-Canada Highway: on-wire diesel-equivalent energy (TWh) and catenary cost per MWh of diesel replaced at
     full use. Infrastructure cost: CAD 3.6 M per route-km (both directions), range 2.5-4.8 (Kayser-Bril and
-    Whitmore, HEC Montreal, Canada e-highway study of the A20-H401 corridor). Truck traffic: average annual daily heavy
+    Whitmore, HEC Montreal, overhead-catenary trucking study of the A20-H401 corridor). Truck traffic: average annual daily heavy
     truck traffic over the route; energy 4.07 kWh of diesel per km (0.38 L/km); on-wire share of corridor km."""
     h = prm["hwy1"]
     if not h["enabled"]:
@@ -148,13 +155,57 @@ def base_params():
                  r=0.07, life=15),
         refinery_cost_mult=1.0,
         wacc=0.07,
-        export=dict(price=0.0, cap_twh=0.0, logistics=8.0),
+        export=dict(price=0.0, cap_twh=0.0, logistics=8.0, bio_only=False),
         lakes=dict(enabled=True, cleanup_cad_kg_p=0.0, force=False),
+        northern_willow=dict(enabled=False, covered_yield_mult=1.0, structure_mult=1.0, kelp_treatment=False, kelp_biostimulant_yield_uplift=0.0, land_cap_mult=1.0),
         hwy1=dict(enabled=True, km=7821.0, aadtt=2500.0, kwh_d_km=4.07, on_wire=0.90, capex_m_km=3.6, om=0.015, life=30,
                   extra_km=0.0, extra_aadtt=0.0),
         eb_only=False,
+        # SMR cogeneration (BWRX-300 class): capital per module from the Darlington budget (CAD 20.9 bn for four units;
+        # later units ~CAD 4.4 bn), 15% federal clean-electricity investment tax credit, financed at the model WACC
+        # The 15% clean-electricity ITC applies only to property available for use before 2035; modules in a 2050 system
+        # are assumed to be built later, so the central case has no ITC ('itc': 0.15 tests an extension of the credit).
+        smr=dict(enabled=True, capex_bn=4.4, mwe=300.0, cf=0.90, fom_cad_kw_yr=150.0, var_cad_mwh=15.0, life=40, itc=0.0,
+                 adder=5.0, r=None, steam_loss=0.19, steam_max_per_mwe=0.667, steam_delivery=8.0,
+                 fleets={"atl": dict(cap_gw=3.0, min_gw=0.0), "inl": dict(cap_gw=9.0, min_gw=0.0),
+                         "pac": dict(cap_gw=0.0, min_gw=0.0), "hb": dict(cap_gw=0.0, min_gw=0.0)},
+                 # share of grain-ethanol distillation heat at plants beside a candidate inland SMR site (screening value:
+                 # the Chatham, Ont., and Belle Plaine, Sask., distilleries are about a quarter of Canadian capacity)
+                 ethanol_colocated_share=0.25),
+        # existing grain-ethanol distillation steam (7.25 MJ heat per litre ethanol = 0.344 MWh_th per MWh ethanol);
+        # the gas-boiler share of today's cost is removed and the heat is supplied in the eastern pool
+        ethanol_heat=dict(mwh_th_per_mwh=0.344, gas_credit_cad_mwh=5.8),
+        # winter reserve: renewable methane produced and stored each year for backup turbines that cover a multi-day
+        # low-wind period (sized by adequacy_stress.py); turbines and storage are fixed costs, the methane is optimized
+        winter_reserve=dict(methane_twh=0.0, turbine_gw=0.0, turbine_capex_cad_kw=1400.0, turbine_fom_cad_kw_yr=25.0,
+                            turbine_life=30, storage_cad_mwh_yr=3.0),
         kelp_min_km2={},          # zone prefix (e.g. "hb") -> minimum farm area, for regional siting cases
     )
+
+
+POOLS = ("pac", "atl", "inl", "hb")
+FLEETS = ("atl", "inl", "pac", "hb")
+
+
+def pool_of(zone):
+    """Heat pool of a biorefinery by its feedstock zone."""
+    if zone.startswith("pac"): return "pac"
+    if zone.startswith(("atl", "gsl", "lab")): return "atl"
+    if zone.startswith("hb"): return "hb"
+    return "inl"                                   # lakes
+
+
+def _wr_fixed(prm):
+    wr = prm["winter_reserve"]
+    return (wr["turbine_gw"] * (wr["turbine_capex_cad_kw"] * CRF(prm["wacc"], wr["turbine_life"]) + wr["turbine_fom_cad_kw_yr"])
+            + wr["methane_twh"] * wr["storage_cad_mwh_yr"])                      # CAD million per year
+
+
+def smr_lcoe(prm):
+    """Levelised cost of SMR electricity at full output (CAD/MWh), at the model cost of capital."""
+    m = prm["smr"]
+    kw_cost = m["capex_bn"] * 1e9 / (m["mwe"] * 1e3) * (1 - m["itc"])
+    return (kw_cost * CRF(m["r"] if m.get("r") else prm["wacc"], m["life"]) + m["fom_cad_kw_yr"]) / (m["cf"] * 8.76) + m["var_cad_mwh"]
 
 
 def vehicle_premium_per_mwh(prm):
@@ -221,10 +272,12 @@ def kelp_systems(prm):
     """Enumerate (zone, band, nutrient method, pre-processing, refinery route) systems."""
     fc = FarmCost(**prm["farm"])
     fl = prm["fleet"]
-    pre_opts = preprocess_options(Pre(**{**prm.get("pre", {}), "dm_harvest": fc.dm_harvest}))
     feed = Feed()
     systems = []
     for zk, z in ZONES.items():
+        dm_species = fc.dm_pacific if zk.startswith('pac') else fc.dm_atlantic
+        dm_species = dm_species if dm_species is not None else fc.dm_harvest
+        pre_opts = preprocess_options(Pre(**{**prm.get("pre", {}), "dm_harvest": dm_species}))
         y = prm["zone_yield"].get(zk)
         for band in z.area_km2:
             for m in prm["nutrient_methods"]:
@@ -234,7 +287,7 @@ def kelp_systems(prm):
                 t_km2 = fcost["yield_t_ha"] * 100
                 km = z.mid_km[band]
                 far = km > 100
-                wet = 1 / fc.dm_harvest
+                wet = 1 / dm_species
                 transit = wet * km * (fl["mj_tkm_far"] if far else fl["mj_tkm_near"]) * 1.6 / 1000
                 kite = fl["kite_far"] if far else fl["kite_near"]
                 for pk in prm["preprocess"]:
@@ -242,6 +295,7 @@ def kelp_systems(prm):
                     mass_ratio = po["mass_t"] / wet
                     transport_new = po["mass_t"] * max(km - 40, 0) * fc.transport_cad_t_wet_km
                     farm_cad = fcost["total_cad_t"] - fcost["transport_cad_t"] + transport_new + po["cost"]
+                    farm_cad += prm.get("zone_extra_farm_cost_cad_t", {}).get(zk, 0.0)  # Only selected geography pays new costs
                     pproc = Proc(**{**prm["proc"], **({} if po["ensile"] else {"ensile_sugar_loss": 0.0})})
                     pfeed = Feed(**{**asdict(feed), "mannitol": feed.mannitol * po["mannitol_keep"]})
                     rts = refinery_routes(pfeed, pproc)
@@ -283,8 +337,22 @@ def solve(prm):
                                  0, prm["hydro_redirect"]["cap_twh"])
     G["new_hydro"] = lp.var("new_hydro", prm["new_hydro"]["lcoe"] + a["network_direct"], 0, prm["new_hydro"]["cap_twh"])
     h = prm["heat"]
-    HS = {"tes": lp.var("heat_wind_thermal_storage", h["tes_cost"]), "hp": lp.var("heat_heat_pump"),
-          "eb": lp.var("heat_electric_boiler"), "bio": lp.var("heat_residue_boiler", h["bio_boiler_cost"])}
+    HS = {pl: {"tes": lp.var(f"heat_{pl}_wind_thermal_storage", h["tes_cost"]), "hp": lp.var(f"heat_{pl}_heat_pump"),
+               "eb": lp.var(f"heat_{pl}_electric_boiler"), "bio": lp.var(f"heat_{pl}_residue_boiler", h["bio_boiler_cost"])}
+          for pl in POOLS}
+    sm = prm["smr"]; lc_smr = smr_lcoe(prm)
+    for fl, fp in sm["fleets"].items():
+        cap = fp["cap_gw"] if sm["enabled"] else 0.0
+        G[f"smr_{fl}_dir"] = lp.var(f"smr_{fl}_direct", lc_smr + sm["adder"] + a["network_direct"])
+        G[f"smr_{fl}_flex"] = lp.var(f"smr_{fl}_flex", lc_smr + a["network_flex"])
+        G[f"smr_{fl}_steamloss"] = lp.var(f"smr_{fl}_steam_el_forgone", lc_smr)
+        HS[fl]["smr"] = lp.var(f"heat_{fl}_smr_steam", sm["steam_delivery"])
+        gross = {G[f"smr_{fl}_dir"]: 1.0, G[f"smr_{fl}_flex"]: 1.0, G[f"smr_{fl}_steamloss"]: 1.0}
+        lp.le(gross, cap * sm["cf"] * 8.76)
+        if fp.get("min_gw", 0.0) > 0:
+            lp.le({k: -1.0 for k in gross}, -fp["min_gw"] * sm["cf"] * 8.76)
+        lp.le({HS[fl]["smr"]: sm["steam_loss"], G[f"smr_{fl}_steamloss"]: -1.0}, 0.0)
+        lp.le({HS[fl]["smr"]: 1.0, **{k: -sm["steam_max_per_mwe"] for k in gross}}, 0.0)
 
     kelp = kelp_systems(prm)
     lakes = lake_systems(prm)
@@ -307,7 +375,12 @@ def solve(prm):
         lp.le({K[s_["key"]]: s_["p_removed_kg_t"] * 1e6 / 1e3 for s_ in ss}, ss[0]["p_group_cap_t"])
 
     F = {}
-    F["eft"] = lp.var("eFT_liquids", prm["eft"]["cost"])
+    # Optional incremental-export test: do not allow any extra electricity-derived
+    # Fischer-Tropsch liquids above the *same-yield* no-export counterfactual.
+    # This prevents export biofuel from being freed up by new domestic eFT.
+    ef_cap = prm["export"].get("max_domestic_eft_twh")
+    F["eft"] = lp.var("eFT_liquids", prm["eft"]["cost"], 0.0,
+                       float(ef_cap) if ef_cap is not None else None)
     F["emeoh"] = lp.var("e_methanol", prm["emeoh"]["cost"])
     F["enh3"] = lp.var("e_ammonia", prm["enh3"]["cost"])
     F["ech4"] = lp.var("e_methane", prm["ech4"]["cost"])
@@ -316,7 +389,7 @@ def solve(prm):
     F["waste_ch4"] = lp.var("waste_biomethane", prm["waste_ch4"]["cost"], 0, prm["waste_ch4"]["cap"])
     F["hefa"] = lp.var("HEFA_waste_lipids", prm["hefa"]["cost"], 0, prm["hefa"]["cap"])
     F["canola"] = lp.var("canola_HVO", prm["canola"]["cost"], 0, prm["canola"]["cap"])
-    F["cetoh"] = lp.var("grain_ethanol_existing", prm["crop_etoh"]["cost"], 0, prm["crop_etoh"]["cap"])
+    F["cetoh"] = lp.var("grain_ethanol_existing", prm["crop_etoh"]["cost"] - prm["ethanol_heat"]["gas_credit_cad_mwh"], 0, prm["crop_etoh"]["cap"])
     fo, ag = prm["forest"], prm["agres"]
     F["forest_odt"] = lp.var("forest_residue_Modt", fo["cost_odt"], 0, fo["cap_modt"])
     F["forest_htl"] = lp.var("forest_residue_HTL", fo["conv"])
@@ -327,8 +400,22 @@ def solve(prm):
     F["wind_assist"] = lp.var("wind_assist_saving", 71.0, 0, prm["wind_assist_share"] * d["shipping"])
     ex = prm["export"]
     F["export"] = lp.var("export_dropin", ex["logistics"] - ex["price"], ex.get("min_twh", 0.0), max(ex["cap_twh"], ex.get("min_twh", 0.0)))
+    # Optional seasonal (UNHEATED) polyethylene high-tunnel willow-to-HTL pathway.
+    # Regional process heat and power come from locally priced wind with firming and are
+    # charged in the per-hectare cost, NOT borrowed free from the national grid.
+    # This offers domestic drop-in liquid only, not synthetic fuel, jet or exports.
+    nwpr = prm.get("northern_willow", {})
+    NW, NWrows = {}, {}
+    if nwpr.get("enabled", False):
+        opts = {k:v for k,v in nwpr.items() if k != 'enabled'}
+        for key, region in WILLOW_REGIONS.items():
+            info = willow_tech(region, **opts)
+            NWrows[key] = info
+            NW[key] = lp.var('willow_km2|' + key, info['annual_cost_cad_gross_ha'] * 100 / 1e6,
+                             0, info['ha_gross_cap']/100)
     # forest residues: fuel (HTL) and boiler heat share the supply
-    lp.le({F["forest_htl"]: 1 / fo["mwh_per_odt"], HS["bio"]: 1 / h["bio_boiler_mwh_per_odt"], F["forest_odt"]: -1.0}, 0.0)
+    lp.le({F["forest_htl"]: 1 / fo["mwh_per_odt"], **{HS[pl]["bio"]: 1 / h["bio_boiler_mwh_per_odt"] for pl in POOLS},
+           F["forest_odt"]: -1.0}, 0.0)
     fert = {}
     for nut in ("n", "p", "k"):
         pr = prm["fert"]["price"][nut] * 1000
@@ -388,8 +475,26 @@ def solve(prm):
     for k, v in use("jet").items(): add(co, k, v)
     add(co, F["export"], 1.0)
     for s in systems: add(co, K[s["key"]], -s["t_km2"] * s["hc_gj"] * GJ2TWH)
+    for key, var in NW.items():
+        add(co, var, -NWrows[key]['annual_fuel_mwh_gross_ha'] * 100 / 1e6)
     for f in DROPIN_SRC: add(co, F[f], -1.0)
     lp.le(co, 0.0, "dropin")
+    if ex.get("bio_only", False):
+        # The exported carrier is assigned to biogenic sources only, never eFT or other synthetic liquids.
+        # Output is a feasible aggregate allocation, NOT molecule-level provenance/chain-of-custody certification.
+        biologic = {F["export"]: 1.0}
+        for s in systems:
+            add(biologic, K[s["key"]], -s["t_km2"] * s["hc_gj"] * GJ2TWH)
+        for f in ("hefa", "canola", "forest_htl", "agres", "atj"):
+            add(biologic, F[f], -1.0)
+        lp.le(biologic, 0.0, "bio_only_exports")
+        # Test *incremental physical biogenic output*, not just the category of
+        # exported liquid: the pre-existing domestic biogenic supply (with no
+        # exports, same yield, and same end-use constraints) is reserved first.
+        # Feasible exports must be backed by *additional* biogenic production.
+        if ex.get("baseline_biogenic_dropin_twh") is not None:
+            lp.le(biologic, -float(ex["baseline_biogenic_dropin_twh"]),
+                  "bio_exports_incremental_to_domestic_baseline")
     co = use("jet")
     for s in systems: add(co, K[s["key"]], -s["t_km2"] * s["jet_gj"] * GJ2TWH)
     for f in ("eft", "hefa", "canola", "forest_htl", "agres"): add(co, F[f], -0.6)
@@ -401,7 +506,9 @@ def solve(prm):
     co = use("methane")
     for s in systems: add(co, K[s["key"]], -s["t_km2"] * (s["ch4_gj"] - s["fleet_gj_t"]) * GJ2TWH)
     add(co, F["waste_ch4"], -1); add(co, F["ech4"], -1); add(co, F["biomeoh"], prm["biomeoh"]["ch4_per_meoh"])
-    lp.le(co, 0.0, "methane")
+    wr = prm["winter_reserve"]
+    lp.le(co, -wr["methane_twh"], "methane")
+    WRV = lp.var("winter_reserve_fixed", _wr_fixed(prm), 1.0, 1.0)
     co = use("methanol"); add(co, F["emeoh"], -1); add(co, F["biomeoh"], -1); lp.le(co, 0.0, "methanol")
     co = use("ammonia"); add(co, F["enh3"], -1); lp.le(co, 0.0, "ammonia")
     lp.le({F["eft"]: prm["eft"]["co2"], F["emeoh"]: prm["emeoh"]["co2"], F["ech4"]: prm["ech4"]["co2"],
@@ -413,22 +520,31 @@ def solve(prm):
         co = {fert[nut + "_dom"]: 1.0, fert[nut + "_exp"]: 1.0}
         for s in systems: add(co, K[s["key"]], -s["t_km2"] * s["fert"][j] / 1e9)
         lp.le(co, 0.0)
-    # process heat for kelp biorefineries
-    co = {HS[k]: -1.0 for k in HS}
-    for s in systems: add(co, K[s["key"]], s["t_km2"] * s["heat_mwh"] / 1e6)
-    lp.le(co, 0.0, "heat")
-    co = {HS["hp"]: 1.0}
-    for s in systems: add(co, K[s["key"]], -h["hp_max_share"] * s["t_km2"] * s["heat_mwh"] / 1e6)
-    lp.le(co, 0.0)
+    # process heat in four regional pools; SMR steam only from the fleet in the same region
+    eh = prm["ethanol_heat"]["mwh_th_per_mwh"]
+    for pl in POOLS:
+        co = {v: -1.0 for v in HS[pl].values()}
+        for s in systems:
+            if pool_of(s["zone"]) == pl: add(co, K[s["key"]], s["t_km2"] * s["heat_mwh"] / 1e6)
+        if pl == "inl": add(co, F["cetoh"], eh)
+        lp.le(co, 0.0, "heat_" + pl)
+        co = {HS[pl]["hp"]: 1.0}
+        for s in systems:
+            if pool_of(s["zone"]) == pl: add(co, K[s["key"]], -h["hp_max_share"] * s["t_km2"] * s["heat_mwh"] / 1e6)
+        if pl == "inl": add(co, F["cetoh"], -h["hp_max_share"] * eh)
+        lp.le(co, 0.0)
+    # inland steam reaches only the distilleries beside a module (no steam to lake refineries)
+    lp.le({HS["inl"]["smr"]: 1.0, F["cetoh"]: -sm["ethanol_colocated_share"] * eh}, 0.0)
     # electricity: direct (vehicles, refineries, heat pumps, boilers) and flexible (electrolysis, DAC, heat storage)
     co = use("el_direct")
     for s in systems: add(co, K[s["key"]], s["t_km2"] * s["el_mwh"] / 1e6)
-    add(co, HS["hp"], 1 / h["hp_cop"]); add(co, HS["eb"], 1 / h["eboiler_eff"])
+    for pl in POOLS:
+        add(co, HS[pl]["hp"], 1 / h["hp_cop"]); add(co, HS[pl]["eb"], 1 / h["eboiler_eff"])
     for k in [k for k in G if k.endswith("_dir")] + ["pv_day", "pv_shift", "hydro_redirect", "new_hydro"]:
         add(co, G[k], -1.0)
     lp.eqc(co, 0.0, "el_direct")
     co = {F["eft"]: prm["eft"]["el"], F["emeoh"]: prm["emeoh"]["el"], F["enh3"]: prm["enh3"]["el"],
-          F["ech4"]: prm["ech4"]["el"], F["dac"]: prm["dac"]["el"], HS["tes"]: 1 / h["tes_eff"]}
+          F["ech4"]: prm["ech4"]["el"], F["dac"]: prm["dac"]["el"], **{HS[pl]["tes"]: 1 / h["tes_eff"] for pl in POOLS}}
     for k in [k for k in G if k.endswith("_flex")]:
         add(co, G[k], -1.0)
     lp.le(co, 0.0, "el_flex")
@@ -484,22 +600,40 @@ def summarise(x, total, duals, prm, d, systems, vp):
     nt = len(prm["wind"]["tiers"])
     wind = sum(x[f"wind_t{i + 1}_direct"] + x[f"wind_t{i + 1}_flex"] for i in range(nt))
     gen = {"Onshore wind": wind, "PV": x["pv_direct_day"] + x["pv_direct_shifted"] + x["pv_flex"],
-           "Hydro (redirected exports)": x["hydro_redirected_from_exports"], "New hydro": x["new_hydro"]}
+           "Hydro (redirected exports)": x["hydro_redirected_from_exports"], "New hydro": x["new_hydro"],
+           "SMR (net of steam extraction)": sum(x[f"smr_{f}_direct"] + x[f"smr_{f}_flex"] for f in FLEETS)}
     s["generation_twh"] = gen
     s["wind_by_tier_twh"] = [x[f"wind_t{i + 1}_direct"] + x[f"wind_t{i + 1}_flex"] for i in range(nt)]
     wind_gw = sum(v / (t["cf"] * 8.76) for v, t in zip(s["wind_by_tier_twh"], prm["wind"]["tiers"]))
     s["capacity_gw"] = {"Onshore wind": wind_gw, "PV": gen["PV"] / (prm["pv"]["cf"] * 8.76),
-                        "New hydro": gen["New hydro"] / (prm["new_hydro"]["cf"] * 8.76)}
+                        "New hydro": gen["New hydro"] / (prm["new_hydro"]["cf"] * 8.76),
+                        "SMR": sum(x[f"smr_{f}_direct"] + x[f"smr_{f}_flex"] + x[f"smr_{f}_steam_el_forgone"] for f in FLEETS) / (prm["smr"]["cf"] * 8.76)}
+    fleet = {}
+    for f in FLEETS:
+        gw = (x[f"smr_{f}_direct"] + x[f"smr_{f}_flex"] + x[f"smr_{f}_steam_el_forgone"]) / (prm["smr"]["cf"] * 8.76)
+        fleet[f] = dict(gw=gw, modules=gw * 1000 / prm["smr"]["mwe"], steam_twh=x[f"heat_{f}_smr_steam"],
+                        direct_twh=x[f"smr_{f}_direct"], flex_twh=x[f"smr_{f}_flex"])
+    s["smr"] = dict(lcoe_cad_mwh=smr_lcoe(prm), gw=s["capacity_gw"]["SMR"], modules=s["capacity_gw"]["SMR"] * 1000 / prm["smr"]["mwe"],
+                    direct_twh=sum(v["direct_twh"] for v in fleet.values()), flex_twh=sum(v["flex_twh"] for v in fleet.values()),
+                    steam_el_forgone_twh=sum(x[f"smr_{f}_steam_el_forgone"] for f in FLEETS),
+                    steam_twh=sum(v["steam_twh"] for v in fleet.values()), by_fleet=fleet,
+                    capex_bn=s["capacity_gw"]["SMR"] * 1e6 * prm["smr"]["capex_bn"] / prm["smr"]["mwe"] / 1e3)
     s["electricity_delivered_twh"] = sum(gen.values())
-    s["heat_twh_th"] = {"Wind-charged thermal storage": x["heat_wind_thermal_storage"], "heat pumps": x["heat_heat_pump"],
-                        "electric boilers": x["heat_electric_boiler"], "residue boilers": x["heat_residue_boiler"]}
+    SRC = ("wind_thermal_storage", "heat_pump", "electric_boiler", "residue_boiler", "smr_steam")
+    s["heat_by_pool_twh_th"] = {pl: {k: x[f"heat_{pl}_{k}"] for k in SRC} for pl in POOLS}
+    hsum = lambda k: sum(s["heat_by_pool_twh_th"][pl][k] for pl in POOLS)
+    s["heat_twh_th"] = {"Wind-charged thermal storage": hsum("wind_thermal_storage"), "heat pumps": hsum("heat_pump"),
+                        "electric boilers": hsum("electric_boiler"), "residue boilers": hsum("residue_boiler"), "SMR steam": hsum("smr_steam")}
+    s["ethanol_distillation_heat_twh_th"] = x["grain_ethanol_existing"] * prm["ethanol_heat"]["mwh_th_per_mwh"]
     sysd = {sy["key"]: sy for sy in systems}
     kel = {k.split("|", 1)[1]: v for k, v in x.items() if k.startswith("kelp_km2|") and v > 1e-3}
     tot = lambda f: sum(v * sysd[k]["t_km2"] * f(sysd[k]) for k, v in kel.items())
     s["kelp_km2"] = kel
     s["kelp_total_km2"] = sum(kel.values())
     s["kelp_dry_mt"] = tot(lambda q: 1) / 1e6
-    s["kelp_wet_mt"] = s["kelp_dry_mt"] / prm["farm"]["dm_harvest"]
+    # Species-specific wet tonnes are summed by selected farm zone; equals the old
+    # global 12%-DM conversion whenever no species overrides are configured.
+    s["kelp_wet_mt"] = tot(lambda q: 1.0 / ((prm["farm"].get("dm_pacific") or prm["farm"]["dm_harvest"]) if q["zone"].startswith("pac") else (prm["farm"].get("dm_atlantic") or prm["farm"]["dm_harvest"]))) / 1e6
     s["kelp_ethanol_twh"] = tot(lambda q: q["ethanol_gj"]) / 3.6e6
     s["kelp_hc_twh"] = tot(lambda q: q["hc_gj"]) / 3.6e6
     s["kelp_jet_twh"] = tot(lambda q: q["jet_gj"]) / 3.6e6
@@ -552,6 +686,15 @@ def summarise(x, total, duals, prm, d, systems, vp):
     s["lake_refinery_cost_bn"] = ltot(lambda q: q["refinery_cad_t"]) / 1e9
     s["lake_cleanup_payment_bn"] = ltot(lambda q: q["cleanup_credit_cad_t"]) / 1e9
     s["lake_fertiliser_kt"] = {n: ltot(lambda q, j=j: q["fert"][j]) / 1e6 for j, n in enumerate(("N", "P", "K"))}
+    nw_opts = {k:v for k,v in prm.get('northern_willow',{}).items() if k != 'enabled'}
+    nw_area = {k:x.get('willow_km2|' + k, 0.0) for k in WILLOW_REGIONS}
+    nw_data = {k: willow_tech(region, **nw_opts) for k,region in WILLOW_REGIONS.items()}
+    s['northern_willow_area_km2'] = nw_area
+    s['northern_willow_area_total_km2'] = sum(nw_area.values())
+    s['northern_willow_fuel_twh'] = sum(nw_area[k]*100*nw_data[k]['annual_fuel_mwh_gross_ha']/1e6 for k in nw_area)
+    s['northern_willow_cost_bn'] = sum(nw_area[k]*100*nw_data[k]['annual_cost_cad_gross_ha']/1e9 for k in nw_area)
+    s['northern_willow_wind_process_twh'] = sum(nw_area[k]*100*nw_data[k]['local_wind_energy_mwh_gross_ha']/1e6 for k in nw_area)
+    s['northern_willow_feedstock_odt'] = sum(nw_area[k]*100*nw_data[k]['annual_odt_gross_ha'] for k in nw_area)
     units = lambda b: sum(v * 1e6 * sysd[k]["units_per_t"] for k, v in lak.items() if sysd[k]["biomass"] == b)
     s["lake_vessels"] = units("algae")
     s["lake_cutters"] = units("milfoil")
@@ -566,6 +709,7 @@ def summarise(x, total, duals, prm, d, systems, vp):
                                "waste_biomethane", "HEFA_waste_lipids", "canola_HVO", "forest_residue_HTL",
                                "agri_residue_FT", "grain_ethanol_existing")}
     fuels["kelp HTL diesel/jet"] = s["kelp_hc_twh"]
+    fuels["Northern seasonal willow HTL diesel"] = s["northern_willow_fuel_twh"]
     atj_nongrain = max(0.0, x["ATJ_jet_from_ethanol"] / prm["atj"]["eff"] - x["grain_ethanol_existing"])
     eth_ng = s["kelp_ethanol_twh"] + s["lake_ethanol_twh"]
     atj_from_kelp = atj_nongrain * (s["kelp_ethanol_twh"] / eth_ng if eth_ng > 1e-12 else 0.0)
@@ -586,12 +730,13 @@ def summarise(x, total, duals, prm, d, systems, vp):
                 + prm["ech4"]["el"] * x["e_methane"])
     s["electricity_for_efuels_twh"] = el_fuels
     s["electricity_for_dac_twh"] = prm["dac"]["el"] * x["DAC_CO2_Mt"]
-    s["electricity_for_heat_storage_twh"] = x["heat_wind_thermal_storage"] / prm["heat"]["tes_eff"]
+    s["electricity_for_heat_storage_twh"] = s["heat_twh_th"]["Wind-charged thermal storage"] / prm["heat"]["tes_eff"]
     s["electrolyser_gw"] = el_fuels * 0.95 / (0.55 * 8.76)
     ev = sum(v * OPTIONS[k.split("|")[0]][k.split("|")[1]][1] for k, v in s["end_use_twh"].items()
              if OPTIONS[k.split("|")[0]][k.split("|")[1]][0] == "el_direct")
     s["electricity_vehicles_rail_twh"] = ev
-    s["electricity_refineries_twh"] = s["kelp_refinery_el_twh"] + x["heat_heat_pump"] / prm["heat"]["hp_cop"] + x["heat_electric_boiler"] / prm["heat"]["eboiler_eff"]
+    s["electricity_refineries_twh"] = (s["kelp_refinery_el_twh"] + s["heat_twh_th"]["heat pumps"] / prm["heat"]["hp_cop"]
+                                       + s["heat_twh_th"]["electric boilers"] / prm["heat"]["eboiler_eff"])
     s["marginal_cad_mwh"] = {k: v for k, v in duals.items() if k != "co2"}
     s["co2_marginal_cad_t"] = duals.get("co2", 0.0)
     s["demand_twh"] = d
@@ -617,7 +762,7 @@ def summarise(x, total, duals, prm, d, systems, vp):
 
 
 def _dropin_supply(x, s):
-    return (s["kelp_hc_twh"] + s.get("lake_hc_twh", 0.0) + x["eFT_liquids"] + x["HEFA_waste_lipids"] + x["canola_HVO"] + x["forest_residue_HTL"]
+    return (s["kelp_hc_twh"] + s.get("lake_hc_twh", 0.0) + s.get("northern_willow_fuel_twh", 0.0) + x["eFT_liquids"] + x["HEFA_waste_lipids"] + x["canola_HVO"] + x["forest_residue_HTL"]
             + x["agri_residue_FT"] + x["ATJ_jet_from_ethanol"])
 
 
@@ -628,29 +773,34 @@ def cost_items(x, prm, s, systems, sysd, kel):
     wind_dir = sum(x[f"wind_t{i + 1}_direct"] for i in range(nt)); wind_flex = sum(x[f"wind_t{i + 1}_flex"] for i in range(nt))
     wind_gen = sum((x[f"wind_t{i + 1}_direct"] + x[f"wind_t{i + 1}_flex"]) * t["lcoe"] for i, t in enumerate(prm["wind"]["tiers"]))
     pv = x["pv_direct_day"] + x["pv_direct_shifted"] + x["pv_flex"]
-    direct = wind_dir + x["pv_direct_day"] + x["pv_direct_shifted"] + x["hydro_redirected_from_exports"] + x["new_hydro"]
-    flex = wind_flex + x["pv_flex"]
+    direct = wind_dir + x["pv_direct_day"] + x["pv_direct_shifted"] + x["hydro_redirected_from_exports"] + x["new_hydro"] + s["smr"]["direct_twh"]
+    flex = wind_flex + x["pv_flex"] + s["smr"]["flex_twh"]
+    smr_gross = s["smr"]["direct_twh"] + s["smr"]["flex_twh"] + s["smr"]["steam_el_forgone_twh"]
     use_cost = sum(x[f"use|{sg}|{o}"] * OPTIONS[sg][o][3] * OPTIONS[sg][o][1] for sg in OPTIONS for o in OPTIONS[sg])
     items = {
         "Wind generation": (wind_gen / 1000, 0.85, 25),
         "PV generation": (pv * prm["pv"]["lcoe"] / 1000, 0.85, 25),
         "New hydro": (x["new_hydro"] * prm["new_hydro"]["lcoe"] / 1000, 0.90, 60),
         "Redirected hydro exports": (x["hydro_redirected_from_exports"] * prm["hydro_redirect"]["cost"] / 1000, 0.0, 25),
+        "SMR cogeneration (incl. steam extraction)": ((smr_gross * smr_lcoe(prm) + s["smr"]["direct_twh"] * prm["smr"]["adder"]
+                                                      + s["smr"]["steam_twh"] * prm["smr"]["steam_delivery"]) / 1000, 0.80, 40),
         "Firming and balancing": ((wind_dir * a["wind"] + x["pv_direct_day"] * a["pv_day"] + x["pv_direct_shifted"] * a["pv_shift"]
                                    + wind_flex * a["flex_wind"] + x["pv_flex"] * a["flex_pv"]) / 1000, 0.70, 25),
         "Transmission and distribution": ((direct * a["network_direct"] + flex * a["network_flex"]) / 1000, 0.80, 40),
         "Charging, fuelling and delivery": (use_cost / 1000, 0.80, 20),
         "Trans-Canada Highway catenary (electric road)": (s["ers"]["cost_bn"], 0.90, 30),
         "Kelp farms and harvest": (s["kelp_farm_cost_bn"], 0.60, 15),
+        "Northern willow tunnels, wind and modular HTL": (s["northern_willow_cost_bn"], 0.65, 15),
         "Kelp biorefineries": (s["kelp_refinery_cost_bn"], 0.70, 25),
         "Lake harvest (blooms, milfoil)": (s["lake_harvest_cost_bn"], 0.50, 18),
         "Lake HTL plants": (s["lake_refinery_cost_bn"], 0.70, 25),
-        "Refinery heat": ((x["heat_wind_thermal_storage"] * prm["heat"]["tes_cost"] + x["heat_residue_boiler"] * prm["heat"]["bio_boiler_cost"]) / 1000, 0.75, 25),
+        "Refinery heat": ((s["heat_twh_th"]["Wind-charged thermal storage"] * prm["heat"]["tes_cost"]
+                           + s["heat_twh_th"]["residue boilers"] * prm["heat"]["bio_boiler_cost"]) / 1000, 0.75, 25),
         "Forest residues (feedstock)": (x["forest_residue_Modt"] * prm["forest"]["cost_odt"] / 1000, 0.15, 15),
         "Forest-residue HTL plants": (x["forest_residue_HTL"] * prm["forest"]["conv"] / 1000, 0.70, 25),
         "Agricultural-residue FT": (x["agri_residue_FT"] * (prm["agres"]["conv"] + prm["agres"]["cost_odt"] / prm["agres"]["mwh_per_odt"]) / 1000, 0.45, 25),
         "Waste-lipid and canola HVO": ((x["HEFA_waste_lipids"] * prm["hefa"]["cost"] + x["canola_HVO"] * prm["canola"]["cost"]) / 1000, 0.15, 25),
-        "Grain ethanol and ATJ": ((x["grain_ethanol_existing"] * prm["crop_etoh"]["cost"] + x["ATJ_jet_from_ethanol"] * prm["atj"]["cost"]) / 1000, 0.40, 25),
+        "Grain ethanol and ATJ": ((x["grain_ethanol_existing"] * (prm["crop_etoh"]["cost"] - prm["ethanol_heat"]["gas_credit_cad_mwh"]) + x["ATJ_jet_from_ethanol"] * prm["atj"]["cost"]) / 1000, 0.40, 25),
         "Biomethane and bio-methanol": ((x["waste_biomethane"] * prm["waste_ch4"]["cost"] + x["bio_methanol_from_CH4"] * prm["biomeoh"]["cost"]) / 1000, 0.50, 20),
         "Electrofuel synthesis": ((x["eFT_liquids"] * prm["eft"]["cost"] + x["e_methanol"] * prm["emeoh"]["cost"] + x["e_ammonia"] * prm["enh3"]["cost"]
                                    + x["e_methane"] * prm["ech4"]["cost"]) / 1000, 0.70, 25),
@@ -658,6 +808,7 @@ def cost_items(x, prm, s, systems, sysd, kel):
                                                + x["kelp_CO2_used_Mt"] * prm["kelp_co2_capture"]) / 1000, 0.60, 20),
         "Wind-assisted ships": (x["wind_assist_saving"] * 71.0 / 1000, 0.80, 20),
         "Export logistics": (s["export_logistics_bn"], 0.70, 30),
+        "Winter reserve (backup turbines, methane storage)": (x["winter_reserve_fixed"] * _wr_fixed(prm) / 1000, 0.85, 30),
     }
     return items
 
@@ -668,6 +819,7 @@ def build_list(s, prm, x, ev):
     deep = s["kelp_total_km2"] - shelf
     efuel_gw = (x["eFT_liquids"] + x["e_methanol"] + x["e_ammonia"] + x["e_methane"]) / (0.55 * 8.76)
     b = {"Onshore wind (GW)": c["Onshore wind"], "PV (GW)": c["PV"], "New hydro (GW)": c["New hydro"],
+         "SMR (GW)": c["SMR"], "SMR modules (300 MWe)": s["smr"]["modules"],
          "Electrolysers (GW)": s["electrolyser_gw"], "DAC (Mt CO2/yr)": s["co2_mt"]["DAC"],
          "Kelp farms (km2)": s["kelp_total_km2"], "Kelp (Mt dry/yr)": s["kelp_dry_mt"], "Kelp (Mt wet/yr)": s["kelp_wet_mt"],
          "Kelp biorefineries (0.5 Mt dry/yr each)": s["kelp_dry_mt"] / 0.5,
@@ -683,7 +835,8 @@ def build_list(s, prm, x, ev):
              "Residue biorefineries": (x["forest_residue_HTL"] + x["agri_residue_FT"]) * u["Residue biorefinery (CAD per MWh/yr of fuel)"] / 1e3,
              "Vessels": s["kelp_wet_mt"] * u["Vessel (CAD each)"] / 1e9,
              "ATJ plants": x["ATJ_jet_from_ethanol"] / (0.9 * 8.76) * u["ATJ plant (CAD/kW jet)"] / 1e3,
-             "Refinery heat (thermal storage)": x["heat_wind_thermal_storage"] * u["Thermal storage + heaters (CAD per MWh_th/yr)"] / 1e3,
+             "Refinery heat (thermal storage)": s["heat_twh_th"]["Wind-charged thermal storage"] * u["Thermal storage + heaters (CAD per MWh_th/yr)"] / 1e3,
+             "SMR modules": s["smr"]["capex_bn"],
              "Charging and grid": (ev - s["ers"]["electricity_twh"]) * u["Charging and grid (CAD bn per TWh/yr of EV load)"],
              "Trans-Canada Highway catenary": s["ers"]["built_km"] * u["Highway catenary (CAD per route-km, both directions)"] / 1e9,
              "Lake Grid Harvesters": s["lake_harvesters"] * u["Lake Grid Harvester (CAD each)"] / 1e9,

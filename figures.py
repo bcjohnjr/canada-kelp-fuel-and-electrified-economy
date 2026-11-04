@@ -36,7 +36,7 @@ LKJ = json.load(open(OUT / "lakes.json"))
 SRJ = json.load(open(OUT / "self_reliance.json"))
 NEJ = json.load(open(OUT / "national_emissions.json"))
 MCT = json.load(open(OUT / "monte_carlo_summary_transition.json"))
-LOW = R["central"]          # central case: learning, 4% finance, full 2025 demand (827 TWh)
+LOW = R["central"]          # central case: learning, 4% finance, full 2025 demand (814 TWh)
 TRN = R["transition"]
 F26 = LOW["fiscal"]["oct2026|avg2025"]
 F25 = LOW["fiscal"]["avg2025|avg2025"]
@@ -471,7 +471,7 @@ def fig4():
     ax.legend(handles=[Patch(fc=cc, label=kl) for _, kl, cc in comp], fontsize=4.8, loc="upper left", ncol=2, columnspacing=0.8)
     ax.set_title("(A) Where users' fuel spending goes at constant pump prices")
     record("Fig5", "a_spending", ["system and price", "component", "CAD bn/yr"], rows,
-           "Spending before sales tax (identical in each pair; labels above bars). Renewable: central case (827 TWh) with statutory taxes restored.")
+           "Spending before sales tax (identical in each pair; labels above bars). Renewable: central case (814 TWh) with statutory taxes restored.")
     ax = fig.add_subplot(gs[0, 1])
     oil = R["oil"]["avg2025"]
     groups = [("Oil and gas\n(2019–23 taxes,\n2025 profits)", oil["royalties_land"], oil["income_tax"], oil["operating_profit"] - oil["income_tax"])]
@@ -524,7 +524,7 @@ def fig4():
     ax = fig.add_subplot(gs[1, 1])
     cap = RF["capture"]
     xs = [r["capture"] * 100 for r in cap["central"]["rows"]]
-    ax.plot(xs, [r["coverage"] for r in cap["central"]["rows"]], "-o", color=C["green"], ms=3.5, lw=1.4, label="Least-cost case (827 TWh)")
+    ax.plot(xs, [r["coverage"] for r in cap["central"]["rows"]], "-o", color=C["green"], ms=3.5, lw=1.4, label="Least-cost case (814 TWh)")
     ax.plot(xs, [r["coverage"] for r in cap["transition"]["rows"]], "--s", color=C["blue"], ms=3, lw=1.1, label="Transition case (796 TWh)")
     for x_, r in zip(xs, cap["central"]["rows"]):
         ax.text(x_, r["coverage"] - 0.075, f"{r['coverage']:.2f}", ha="center", fontsize=5.6, color=C["green"])
@@ -565,7 +565,7 @@ def fig5():
     ax.set_title("(A) Monte Carlo: share of the oil-and-gas benchmark")
     h, e = np.histogram(cov, bins=bins)
     record("Fig6", "a_coverage", ["bin low", "bin high", "draws"], [(e[i], e[i + 1], int(h[i])) for i in range(len(h))],
-           f"Central case (827 TWh); rent fully collected. Median {MC['coverage_oct2026_p5_p50_p95'][1]:.3f}; deterministic central case {F26['pie_coverage']:.3f}.")
+           f"Central case (814 TWh); rent fully collected. Median {MC['coverage_oct2026_p5_p50_p95'][1]:.3f}; deterministic central case {F26['pie_coverage']:.3f}.")
     ax = fig.add_subplot(gs[(0, 1)])
     data = [be26, m26, be25, m25]
     labels = ["Break-even\nvs Oct 2026", "Replace oil\nvs Oct 2026", "Break-even\nvs 2025", "Replace oil\nvs 2025"]
@@ -732,14 +732,13 @@ def fig7():
     ax.axhline(L["winnipeg"].tp_target_mgl * 1000, color=C["red"], lw=0.8, ls=":")
     ax.text(59, L["winnipeg"].tp_target_mgl * 1000 + 3, "TP target 50", fontsize=5.2, color=C["red"], ha="right")
     ax.axvline(rs["share_of_load"] * 100, color=INK2, lw=0.8)
-    ax.text(rs["share_of_load"] * 100 - 1, 8, f"Harvest\n{rs['p_removed_t']:,.0f} t\n({rs['share_of_load'] * 100:.0f}% of load)", fontsize=5.2, color=INK2, ha="right")
     ax.set_xlabel("P removed (% of annual load)"); ax.set_ylim(0, 130); vgrid(ax)
     ax.legend(fontsize=5.0, loc="upper right")
-    ax.set_title("(E) Lake Winnipeg")
+    ax.set_title("(E) Idealized P screen", fontsize=6.0)
+    ax.text(0.03, 0.04, "Harvest replaces external load\n(not a cleanup forecast)", transform=ax.transAxes, fontsize=4.7, color=INK2, ha="left", va="bottom", bbox=dict(boxstyle="round,pad=0.2", fc="white", alpha=0.92, ec="none"))
     record("Fig8", "e_winnipeg_response", ["P removed share of load", "south-basin TP ug/L", "chlorophyll % of now"],
            [(float(h_), float(t_ * 1000), float(c_ * 100)) for h_, t_, c_ in zip(hs[::5], tp[::5], chl[::5])],
-           "Steady-state mass balance (TP falls in proportion to the load removed); chlorophyll from Dillon and Rigler (1974), slope 1.449; "
-           "response time about 2 years; legacy sediment P slows it.")
+           "Idealized equilibrium, conditional on harvested P substituting for the same amount of external P loading; TP decline and chlorophyll response are NOT a forecast of observed water quality or cleanup time (internal loading, sediment flux and hydrodynamics omitted).")
     save(fig, "Fig8_lakes"); dump_source("Fig8")
 
 

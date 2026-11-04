@@ -42,7 +42,7 @@
   },
   "eb": {
    "by_region_km2": {
-    "pac": 27481.68056430123,
+    "pac": 26786.049664755523,
     "atl": 27051.200000000004
    },
    "by_zone_band_km2": {
@@ -55,36 +55,36 @@
     "pac_deep|0-50": 1759.25,
     "pac_deep|50-100": 4778.5,
     "pac_deep|100-200": 12145.0,
-    "pac_deep|200-370": 3511.7305643012296,
+    "pac_deep|200-370": 2816.0996647555216,
     "atl_shelf|0-50": 4269.3,
     "atl_shelf|50-100": 4453.6,
     "atl_shelf|100-200": 9446.5,
     "atl_shelf|200-370": 8881.800000000001
    },
-   "total_km2": 54532.88056430123
+   "total_km2": 53837.24966475552
   }
  },
  "forced": [
   {
    "case": "central",
    "region": "gsl",
-   "extra_cost_bn": 0.20907359689988425,
+   "extra_cost_bn": 0.20907359689989846,
    "dry_mt": 1.5,
-   "extra_cad_per_t": 139.38239793325616
+   "extra_cad_per_t": 139.38239793326565
   },
   {
    "case": "central",
    "region": "lab",
-   "extra_cost_bn": 0.41270163984926,
+   "extra_cost_bn": 0.4127016398492742,
    "dry_mt": 1.2,
-   "extra_cad_per_t": 343.9180332077167
+   "extra_cad_per_t": 343.9180332077285
   },
   {
    "case": "central",
    "region": "hb",
-   "extra_cost_bn": 0.7066212247671899,
+   "extra_cost_bn": 0.7066212247672041,
    "dry_mt": 0.75,
-   "extra_cad_per_t": 942.1616330229198
+   "extra_cad_per_t": 942.1616330229389
   },
   {
    "case": "eb",
@@ -96,16 +96,16 @@
   {
    "case": "eb",
    "region": "lab",
-   "extra_cost_bn": 0.3664638442427446,
+   "extra_cost_bn": 0.3664638442427588,
    "dry_mt": 1.2,
-   "extra_cad_per_t": 305.3865368689538
+   "extra_cad_per_t": 305.38653686896566
   },
   {
    "case": "eb",
    "region": "hb",
-   "extra_cost_bn": 0.6853685598036918,
+   "extra_cost_bn": 0.6853685598037202,
    "dry_mt": 0.75,
-   "extra_cad_per_t": 913.8247464049225
+   "extra_cad_per_t": 913.8247464049604
   }
  ]
 }

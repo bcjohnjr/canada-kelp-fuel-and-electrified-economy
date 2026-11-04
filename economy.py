@@ -1,16 +1,14 @@
 """Canadian transport-fuel volumes, prices, taxes and the oil-and-gas fiscal and profit baselines (CAD 2026).
 
 Volumes (2025)
-  Statistics Canada, End use of refined petroleum products, 2024 (The Daily, 7 Nov 2025): sales to end users of
-    motor gasoline 43.7, diesel fuel oil 29.6 and aviation turbo fuel 8.7 million m3; grown to 2025 with the
-    domestic-sales changes in "Another record year of production for refined petroleum in 2025" (gasoline +2.7%,
-    distillate +2.2%, jet +8.0%).
+  Statistics Canada, End use of refined petroleum products, 2025 (The Daily, 27 Oct 2026): sales to end users of
+    motor gasoline 43.7, diesel fuel oil 29.4 and aviation turbo fuel 9.2 million m3 in 2025.
   Statistics Canada, Motor vehicle fuel sales, 2025 (The Daily, 2 Oct 2026): net road diesel 17.9 billion litres.
   NRCan Comprehensive Energy Use Database, transportation, 2023: rail 88.0 PJ (2.2 GL diesel), marine 62.3 PJ
     (heavy fuel oil 27.3 PJ, the rest diesel), propane 12.4 PJ, natural gas 4.4 PJ.
   Diesel not used on roads, rails or ships is split between off-road machinery (agriculture, construction,
     mining, forestry, oil and gas field work; 7.0 GL, transport scope) and stationary uses (heating, remote
-    power, industrial boilers; 2.25 GL, outside scope).
+    power, industrial boilers; the remainder of 2025 diesel fuel oil sales, about 1.4 GL, outside scope).
 Prices
   Gasoline: September 2026 national average from Natural Resources Canada fuel-price data, 187.6 c/L;
     2025 average of NRCan weekly prices, 147.5 c/L.
@@ -41,8 +39,8 @@ KWH_PER_L = {"gasoline": 34.0 / 3.6, "diesel": 38.6 / 3.6, "jet": 34.7 / 3.6}
 FX = {"oct2026": 1.4249, "avg2025": 1.398}
 FX_COST = 1.40            # CAD per USD used to convert international cost data (2025-2026 average)
 
-VOL_GL = {"gasoline": 43.7 * 1.027, "diesel_total": 29.6 * 1.022, "road_diesel": 17.9, "rail_diesel": 2.2,
-          "marine_diesel": (62.3 - 27.3) / 38.6, "offroad_diesel": 7.0, "jet": 8.7 * 1.08}
+VOL_GL = {"gasoline": 43.7, "diesel_total": 29.4, "road_diesel": 17.9, "rail_diesel": 2.2,
+          "marine_diesel": (62.3 - 27.3) / 38.6, "offroad_diesel": 7.0, "jet": 9.2}
 VOL_GL["stationary_diesel"] = (VOL_GL["diesel_total"] - VOL_GL["road_diesel"] - VOL_GL["rail_diesel"]
                                - VOL_GL["marine_diesel"] - VOL_GL["offroad_diesel"])
 LDV_DIESEL_SHARE = 0.10          # light-duty pick-ups and vans; remainder trucks and buses

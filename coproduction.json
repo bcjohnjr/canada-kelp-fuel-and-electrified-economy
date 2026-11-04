@@ -1,0 +1,235 @@
+{
+ "params": {
+  "grid_harvester": {
+   "cycle_m2": 14400.0,
+   "cycle_mj": 33.9,
+   "conventional_cycle_mj": 90.9,
+   "unit_capex_cad_m": 6.0,
+   "missed_area_pct_grid": 0.62,
+   "missed_area_pct_conventional": 1.49
+  },
+  "shellfish": {
+   "km2_kelp_per_site": 25.0,
+   "nearshore_band": "0-50",
+   "chemistry_pass": {
+    "pac": 0.5,
+    "atl": 0.8
+   },
+   "mussel_t_site": 48.0,
+   "oyster_t_site": 24.0,
+   "sales_cad_site": 280800.0,
+   "nonharvest_opex_cad_site": 247200.0,
+   "manual_harvest_cad_site": 21600.0,
+   "robot_variable_cad_site": 4080.0,
+   "robot_fixed_cad_site": 57568.47,
+   "shared_kelp_lease_saving_cad_site": 60000.0
+  },
+  "salmon": {
+   "block_t": 50000.0,
+   "price_cad_kg": [
+    6.0,
+    8.0,
+    10.0
+   ],
+   "revenue_cad_m_at_6": 300.0,
+   "feed_cad_m": 105.0,
+   "pen_cad_m": 35.46,
+   "hatchery_cad_m": 37.5,
+   "robots": 1544,
+   "robot_cad_m": 25.2,
+   "other_cad_m": 60.0,
+   "freight_cad_m": 9.36,
+   "laser_capex_cad": 15000.0,
+   "laser_years": 5,
+   "laser_om_cad": 1500.0,
+   "rate": 0.08,
+   "closed_containment_premium_cad_kg": [
+    1.0,
+    2.0,
+    3.0
+   ],
+   "n_released_t": 690.0,
+   "kelp_n_fraction": 0.02,
+   "edible_t": 35000.0,
+   "edible_protein_t": 7000.0
+  },
+  "drones": {
+   "per_km2": 2.0,
+   "kwh_day": 0.4,
+   "capex_cad": 12000.0,
+   "life": 6,
+   "om_cad": 800.0,
+   "rate": 0.06,
+   "bare_spot_share": 0.05,
+   "detection": 0.85,
+   "reseed_cad_km2": 250000.0,
+   "rov_break_even_diver_days": 47.5,
+   "raft_km2": 400.0,
+   "raft_kwh_day": 600.0
+  }
+ },
+ "grid_harvester": {
+  "units": 294.81562502948157,
+  "area_pass_km2": 39308.75,
+  "energy_gwh": 25.705374710648147,
+  "conventional_energy_gwh": 68.92680121527778,
+  "saving_gwh": 43.22142650462963,
+  "capex_cad_bn": 1.7688937501768893,
+  "missed_area_km2": 243.71425,
+  "missed_area_conventional_km2": 585.700375
+ },
+ "shellfish": {
+  "pac": {
+   "nearshore_kelp_km2": 5030.25,
+   "candidate_sites": 201.21,
+   "operable_sites": 100.605,
+   "mussel_t": 4829.04,
+   "oyster_t": 2414.52,
+   "margin_manual_cad_m": 1.20726,
+   "margin_robot_cad_m": -2.8218163243500003,
+   "margin_robot_shared_lease_cad_m": 3.21448367565,
+   "margin_manual_shared_lease_cad_m": 7.24356
+  },
+  "atl": {
+   "nearshore_kelp_km2": 4269.3,
+   "candidate_sites": 170.77200000000002,
+   "operable_sites": 136.6176,
+   "mussel_t": 6557.6448,
+   "oyster_t": 3278.8224,
+   "margin_manual_cad_m": 1.6394112000000003,
+   "margin_robot_cad_m": -3.8319146550720005,
+   "margin_robot_shared_lease_cad_m": 4.365141344928,
+   "margin_manual_shared_lease_cad_m": 9.836467200000001
+  }
+ },
+ "salmon": {
+  "rows": [
+   {
+    "region": "Atlantic, open-net pens in kelp lease",
+    "price_cad_kg": 6.0,
+    "revenue_cad_m": 300.0,
+    "cost_cad_m": 280.6365714877679,
+    "net_cad_m": 19.363428512232076,
+    "net_cad_kg": 0.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 1/kg)",
+    "price_cad_kg": 6.0,
+    "revenue_cad_m": 300.0,
+    "cost_cad_m": 330.6365714877679,
+    "net_cad_m": -30.636571487767924,
+    "net_cad_kg": -0.6127314297553585
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 2/kg)",
+    "price_cad_kg": 6.0,
+    "revenue_cad_m": 300.0,
+    "cost_cad_m": 380.6365714877679,
+    "net_cad_m": -80.63657148776792,
+    "net_cad_kg": -1.6127314297553585
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 3/kg)",
+    "price_cad_kg": 6.0,
+    "revenue_cad_m": 300.0,
+    "cost_cad_m": 430.6365714877679,
+    "net_cad_m": -130.63657148776792,
+    "net_cad_kg": -2.6127314297553585
+   },
+   {
+    "region": "Atlantic, open-net pens in kelp lease",
+    "price_cad_kg": 8.0,
+    "revenue_cad_m": 400.0,
+    "cost_cad_m": 280.6365714877679,
+    "net_cad_m": 119.36342851223208,
+    "net_cad_kg": 2.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 1/kg)",
+    "price_cad_kg": 8.0,
+    "revenue_cad_m": 400.0,
+    "cost_cad_m": 330.6365714877679,
+    "net_cad_m": 69.36342851223208,
+    "net_cad_kg": 1.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 2/kg)",
+    "price_cad_kg": 8.0,
+    "revenue_cad_m": 400.0,
+    "cost_cad_m": 380.6365714877679,
+    "net_cad_m": 19.363428512232076,
+    "net_cad_kg": 0.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 3/kg)",
+    "price_cad_kg": 8.0,
+    "revenue_cad_m": 400.0,
+    "cost_cad_m": 430.6365714877679,
+    "net_cad_m": -30.636571487767924,
+    "net_cad_kg": -0.6127314297553585
+   },
+   {
+    "region": "Atlantic, open-net pens in kelp lease",
+    "price_cad_kg": 10.0,
+    "revenue_cad_m": 500.0,
+    "cost_cad_m": 280.6365714877679,
+    "net_cad_m": 219.36342851223208,
+    "net_cad_kg": 4.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 1/kg)",
+    "price_cad_kg": 10.0,
+    "revenue_cad_m": 500.0,
+    "cost_cad_m": 330.6365714877679,
+    "net_cad_m": 169.36342851223208,
+    "net_cad_kg": 3.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 2/kg)",
+    "price_cad_kg": 10.0,
+    "revenue_cad_m": 500.0,
+    "cost_cad_m": 380.6365714877679,
+    "net_cad_m": 119.36342851223208,
+    "net_cad_kg": 2.3872685702446415
+   },
+   {
+    "region": "British Columbia, closed containment (+CAD 3/kg)",
+    "price_cad_kg": 10.0,
+    "revenue_cad_m": 500.0,
+    "cost_cad_m": 430.6365714877679,
+    "net_cad_m": 69.36342851223208,
+    "net_cad_kg": 1.3872685702446415
+   }
+  ],
+  "laser_cad_m": 8.116571487767931,
+  "cost_cad_m": 280.6365714877679,
+  "breakeven_price_atlantic_cad_kg": 5.6127314297553585,
+  "breakeven_price_bc_cad_kg": {
+   "1.0": 6.6127314297553585,
+   "2.0": 7.6127314297553585,
+   "3.0": 8.612731429755359
+  },
+  "n_released_t": 690.0,
+  "kelp_n_uptake_t": 402411.18,
+  "n_share_of_kelp_need_pct": 0.17146640905950974,
+  "robots": 1544,
+  "edible_t": 35000.0,
+  "protein_t": 7000.0
+ },
+ "drones": {
+  "drones": 50431.7,
+  "pv_charging_gwh": 7.3630282000000005,
+  "annual_cost_cad_m": 163.41643684548856,
+  "cost_cad_per_km2": 6480.703083397489,
+  "spot_repair_km2": 1071.673625,
+  "reseeding_cad_m": 267.91840625,
+  "rov_sites": 237.2226,
+  "rov_break_even_diver_days": 47.5,
+  "service_rafts": 63.039624999999994,
+  "raft_gwh": 11.347132499999999
+ },
+ "kelp_km2": {
+  "pac": 7046.450000000001,
+  "atl": 18169.4
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Where nuclear heat pays when all Canadian transport fuel is replaced with electricity, biofuels and two-coast kelp: model and data",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {"name": "Bily, Jonathan Karl", "affiliation": "Independent researcher, Zaragoza, Spain", "orcid": "0009-0004-3526-7271"},
+    {"name": "Pahl, Christoph", "affiliation": "Technical University of Munich and Max Planck Institute for Physics"},
+    {"name": "Valdés Bacallao, Patricia", "affiliation": "University of Málaga"}
+  ],
+  "keywords": ["energy systems", "transport", "small modular reactors", "kelp", "linear programming", "Canada"],
+  "description": "Python model, inputs (with a machine-readable provenance table) and outputs reproducing every number and figure of the article. Run ./run_all.sh."
+}

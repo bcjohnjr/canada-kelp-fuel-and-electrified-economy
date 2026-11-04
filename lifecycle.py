@@ -18,7 +18,7 @@ Central factors
 
 FOSSIL_G_PER_MJ = {"ldv_gasoline": 92.0, "ldv_diesel": 92.0, "hdv": 92.0, "rail": 92.0, "offroad": 92.0,
                    "aviation": 89.0, "shipping": 93.3}
-ELECTRICITY_G_PER_KWH = {"Onshore wind": 9.3, "PV": 40.0, "Hydro (redirected exports)": 15.0, "New hydro": 15.0}
+ELECTRICITY_G_PER_KWH = {"Onshore wind": 9.3, "PV": 40.0, "Hydro (redirected exports)": 15.0, "New hydro": 15.0, "SMR (net of steam extraction)": 5.5}
 
 FUEL_G_PER_MJ = {
     "eFT_liquids": 12.0, "e_methanol": 12.0, "e_ammonia": 3.2, "e_methane": 12.0,
@@ -26,6 +26,7 @@ FUEL_G_PER_MJ = {
     "forest_residue_HTL": 15.0, "agri_residue_FT": 15.0, "grain_ethanol_existing": 35.0,
     "kelp HTL diesel/jet": 22.0, "kelp ethanol": 22.0, "kelp biomethane (net of fleet)": 22.0,
     "lake HTL diesel/jet": 15.0, "lake ethanol": 15.0, "lake biomethane (net of fleet)": 15.0,
+    "Northern seasonal willow HTL diesel": 50.0,  # ILLUSTRATIVE factor; lacks permafrost/peat/land-change LCA
 }
 RES = ("forest_residue_HTL", "agri_residue_FT")
 CROP = ("ATJ_jet_from_ethanol", "grain_ethanol_existing", "canola_HVO")
@@ -33,12 +34,12 @@ WASTE = ("waste_biomethane", "HEFA_waste_lipids")
 SEA = ("kelp HTL diesel/jet", "kelp ethanol", "kelp biomethane (net of fleet)")
 LAKE = ("lake HTL diesel/jet", "lake ethanol", "lake biomethane (net of fleet)")
 EF = ("eFT_liquids", "e_methanol", "e_methane")
-DROPIN = ("eFT_liquids", "HEFA_waste_lipids", "canola_HVO", "forest_residue_HTL", "agri_residue_FT", "ATJ_jet_from_ethanol",
+DROPIN = ("Northern seasonal willow HTL diesel", "eFT_liquids", "HEFA_waste_lipids", "canola_HVO", "forest_residue_HTL", "agri_residue_FT", "ATJ_jet_from_ethanol",
           "kelp HTL diesel/jet", "lake HTL diesel/jet")
 
-LOW = {"electricity": {"Onshore wind": 7.0, "PV": 20.0, "Hydro (redirected exports)": 4.0, "New hydro": 4.0},
+LOW = {"electricity": {"Onshore wind": 7.0, "PV": 20.0, "Hydro (redirected exports)": 4.0, "New hydro": 4.0, "SMR (net of steam extraction)": 3.7},
        "residue": 8.0, "crop": 25.0, "canola": 30.0, "waste": 14.0, "kelp": 14.0, "efuel": 8.0, "ammonia": 2.0}
-HIGH = {"electricity": {"Onshore wind": 15.0, "PV": 60.0, "Hydro (redirected exports)": 60.0, "New hydro": 60.0},
+HIGH = {"electricity": {"Onshore wind": 15.0, "PV": 60.0, "Hydro (redirected exports)": 60.0, "New hydro": 60.0, "SMR (net of steam extraction)": 12.0},
         "residue": 30.0, "crop": 50.0, "canola": 60.0, "waste": 30.0, "kelp": 29.0, "efuel": 25.0, "ammonia": 19.0}
 
 
@@ -82,7 +83,8 @@ def lowcarbon_lifecycle_mt(s, electricity_factors=None, fuel_factors=None, parts
                 "Kelp fuels": sum(by[k] for k in SEA),
                 "Residue and lake fuels": sum(by[k] for k in RES + LAKE),
                 "Crop and waste biofuels": sum(by[k] for k in CROP + WASTE),
-                "Electrofuels": sum(by[k] for k in EF) + by["e_ammonia"]}
+                "Electrofuels": sum(by[k] for k in EF) + by["e_ammonia"],
+                "Northern seasonal willow (indicative, excludes land-carbon change)": by["Northern seasonal willow HTL diesel"]}
     return direct_el + sum(by.values())
 
 
@@ -102,6 +104,7 @@ def sampled_lifecycle(s, rng):
     tri = rng.triangular
     el = {"Onshore wind": tri(7, 9.3, 15), "PV": tri(20, 40, 60), "Hydro (redirected exports)": tri(4, 15, 60)}
     el["New hydro"] = el["Hydro (redirected exports)"]
+    el["SMR (net of steam extraction)"] = tri(3.7, 5.5, 12)
     b = {"residue": tri(8, 15, 30), "crop": tri(25, 35, 50), "canola": tri(30, 45, 60), "waste": tri(14, 20, 30),
          "kelp": tri(14, 22, 29), "efuel": tri(8, 12, 25), "ammonia": tri(2, 3.2, 19)}
     low = lowcarbon_lifecycle_mt(s, el, _fuel_factors(b))

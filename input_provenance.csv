@@ -1,0 +1,106 @@
+group,parameter,value,unit,type,source,source_date,conversion,range_or_uncertainty
+demand,motor gasoline sales to end users,43.7,GL/yr,observed,"Statistics Canada, End use of refined petroleum products, 2025 (The Daily)",2026-10-27,34.0 MJ/L,±1% (survey revision)
+demand,diesel fuel oil sales to end users,29.4,GL/yr,observed,"Statistics Canada, End use of refined petroleum products, 2025",2026-10-27,38.6 MJ/L,±1%
+demand,aviation turbo fuel sales,9.2,GL/yr,observed,"Statistics Canada, End use of refined petroleum products, 2025",2026-10-27,34.7 MJ/L; includes international flights fuelled in Canada,±1%
+demand,net road diesel,17.9,GL/yr,observed,"Statistics Canada, Motor vehicle fuel sales, 2025",2026-10-02,38.6 MJ/L; 10% light-duty,±2%
+demand,rail diesel,2.2,GL/yr,observed,"NRCan Comprehensive Energy Use Database, transportation 2023",2025,88.0 PJ,±3%
+demand,marine fuel,62.3,PJ/yr,observed,"NRCan Comprehensive Energy Use Database, transportation 2023",2025,"27.3 PJ heavy fuel oil, rest diesel",±5%
+demand,off-road machinery diesel,7.0,GL/yr,derived,"diesel total less road, rail, marine and stationary uses",2026,"agriculture, mining, construction, forestry",±15%
+demand,modelled demand: ldv_gasoline,416.17,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+demand,modelled demand: ldv_diesel,19.19,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+demand,modelled demand: hdv,173.96,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+demand,modelled demand: rail,23.59,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+demand,modelled demand: offroad,75.06,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+demand,modelled demand: aviation,88.68,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+demand,modelled demand: shipping,17.31,TWh/yr,derived,economy.demand(),2026,volume × energy content,follows volumes
+electricity,"onshore wind tier 1 LCOE (7%, today)",65,CAD/MWh,assumption,national model; Canadian wind auctions and NREL ATB,2026,"CF 0.4, cap 60 GW",MC ±20%
+electricity,"onshore wind tier 2 LCOE (7%, today)",78,CAD/MWh,assumption,national model; Canadian wind auctions and NREL ATB,2026,"CF 0.36, cap 150 GW",MC ±20%
+electricity,"onshore wind tier 3 LCOE (7%, today)",92,CAD/MWh,assumption,national model; Canadian wind auctions and NREL ATB,2026,"CF 0.32, cap 400 GW",MC ±20%
+electricity,"solar PV LCOE (7%, today)",80,CAD/MWh,assumption,national model,2026,CF 0.16,MC ±20%
+electricity,BC Hydro 2024 call for power average price,74,CAD/MWh,observed,"BCUC decision, 25 Aug 2025",2025-08-25,,
+heat,heat-pump COP (150 °C lift),2.5,-,assumption,Arpagaus et al. 2018 (Energy 152),2018,max 60% of a pool,2.0–3.0
+heat,wind-charged thermal storage cost,20.0,CAD/MWh_th,assumption,national model,2026,efficiency 0.95,±30%
+heat,ethanol distillation heat,0.344,MWh_th/MWh ethanol,derived,"RFA 2024 using Argonne GREET 2022: 26,083 Btu/gal",2024,7.25 MJ/L ÷ 21.1 MJ/L,±15%
+heat,ethanol co-located with an inland SMR site,0.25,share,assumption,Chatham (ON) and Belle Plaine (SK) distilleries relative to national capacity,2026,,0–1 tested
+smr,module capital,4.4,CAD bn per 300 MWe,project,OPG Darlington New Nuclear: CAD 20.9 bn for four BWRX-300,2025,later units,3.5 (fleet) – 6.1 (first unit)
+smr,clean electricity ITC,0.15,share of capital,project,Income Tax Act clean electricity ITC; property available for use before 2035,2024,0 after 2034 under current law,0 or 0.15
+smr,fixed O&M,150.0,CAD/kW-yr,assumption,NREL ATB 2024 nuclear (converted),2024,USD→CAD 1.40,±25%
+smr,"fuel, variable O&M, waste",15.0,CAD/MWh,assumption,NREL ATB 2024 nuclear,2024,"12 fuel+VOM, 3 waste",±25%
+smr,"steam extraction penalty, 150 °C",0.19,MWh_e/MWh_th,derived,"second-law estimate, 35 °C condenser",2026,,0.15–0.23
+smr,maximum steam per module,200,MWth,assumption,GE Vernova BWRX-300 (870 MWth) with turbine minimum load,2026,0.667 MWh_th per MWh_e gross,150–300
+smr,availability,0.9,-,assumption,,2026,,0.85–0.93
+smr,site common infrastructure,0.8 / 1.6 / 2.4,CAD bn per new site,project,OPG Darlington budget: CAD 1.6 bn common infrastructure within CAD 20.9 bn,2025,per site of up to two modules,0–2.4 tested
+smr,steam pipeline capital,4.0 (150 °C) / 2.5 (80 °C),CAD M per km,assumption,screening value for large-diameter steam and hot-water lines,2026,1% O&M,±50%
+smr,heat load factors,0.90 process steam / 0.85 kelp refinery / 0.45 greenhouse,share of operating hours,assumption,seasonal greenhouse heating; continuous process steam,2026,,−20% tested
+smr,capacity value,120.0,CAD/kW-yr,assumption,"near the cost of new entry of a peaking turbine (CAD 1,400/kW, 30 yr, 4–7%, + CAD 25/kW-yr = 106–138)",2026,,0–120 tested
+adequacy,backup turbine capital,1400,CAD/kW,assumption,open-cycle turbine on renewable methane,2026,"30 yr, CAD 25/kW-yr fixed O&M",±30%
+adequacy,methane storage cost,3.0,CAD/MWh-yr held,assumption,underground gas storage capacity charge,2026,,1–10
+smr,carbon price path,95/115/130/140,CAD/t (2026/2030/2035/2040),project,"GLJ, Canada’s carbon pricing reset (May 2026)",2026-05-28,,realisation 50–100% tested
+smr,gas CO2 factor,0.0501,t/GJ,observed,"ECCC offset system emission factors: 1,919 g/m3",2026,38.3 MJ/m3,
+smr,CCGT heat rate,6.9,GJ/MWh,assumption,,2026,,6.5–7.5
+smr,fossil-free grid power value after switch,79.2,CAD/MWh,derived,national model el_direct shadow price less network adder,2026,,
+kelp,learning-target yield pac_shelf,12.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield pac_slope,12.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield pac_deep,12.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield atl_shelf,9.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield atl_slope,9.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield atl_deep,9.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield gsl_shelf,7.5,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield gsl_slope,7.5,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield lab_shelf,6.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield lab_slope,6.0,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield hb_shelf,3.75,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,learning-target yield hb_slope,3.75,t dry/ha/yr,assumption,learning target; fuel designs 10–20 (Greene et al. 2020; ARPA-E MARINER),2020,,MC 3–15
+kelp,design yield Pacific / Atlantic,8 / 6,t dry/ha/yr,assumption,between commercial and fuel-design values,2026,,
+kelp,demonstrated commercial yield (Faroe Islands),0.9–1.4,t dry/ha/yr,observed,"Bak et al. 2018, Algal Res. 33:36",2018,,
+kelp,farm base cost (today / learning),520 / 288,CAD/t dry at reference yield,assumption,national model,2026,,MC
+kelp,whole-kelp HTL biocrude yield (today),0.193,t/t dry,observed,Anastasakis & Ross 2011; Elliott et al. 2015,2011–2015,,0.15–0.25
+kelp,farmable share of zone area,0.05–0.25,share,assumption,marine GIS with exclusions and conserved areas,2026,,
+coproduction:grid_harvester,cycle_m2,14400.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:grid_harvester,cycle_mj,33.9,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:grid_harvester,conventional_cycle_mj,90.9,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:grid_harvester,unit_capex_cad_m,6.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:grid_harvester,missed_area_pct_grid,0.62,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:grid_harvester,missed_area_pct_conventional,1.49,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,km2_kelp_per_site,25.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,nearshore_band,0-50,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,chemistry_pass,"{'pac': 0.5, 'atl': 0.8}",,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,mussel_t_site,48.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,oyster_t_site,24.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,sales_cad_site,280800.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,nonharvest_opex_cad_site,247200.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,manual_harvest_cad_site,21600.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,robot_variable_cad_site,4080.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,robot_fixed_cad_site,57568.47,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:shellfish,shared_kelp_lease_saving_cad_site,60000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,block_t,50000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,price_cad_kg,"[6.0, 8.0, 10.0]",,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,revenue_cad_m_at_6,300.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,feed_cad_m,105.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,pen_cad_m,35.46,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,hatchery_cad_m,37.5,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,robots,1544,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,robot_cad_m,25.2,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,other_cad_m,60.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,freight_cad_m,9.36,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,laser_capex_cad,15000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,laser_years,5,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,laser_om_cad,1500.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,rate,0.08,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,closed_containment_premium_cad_kg,"[1.0, 2.0, 3.0]",,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,n_released_t,690.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,kelp_n_fraction,0.02,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,edible_t,35000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:salmon,edible_protein_t,7000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,per_km2,2.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,kwh_day,0.4,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,capex_cad,12000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,life,6,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,om_cad,800.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,rate,0.06,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,bare_spot_share,0.05,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,detection,0.85,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,reseed_cad_km2,250000.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,rov_break_even_diver_days,47.5,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,raft_km2,400.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening
+coproduction:drones,raft_kwh_day,600.0,,assumption,marine screen and salmon/laser model supplied with the study,2026,,screening

@@ -2,35 +2,35 @@
  "territorial": [
   {
    "case": "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export",
-   "emissions_mtco2e_a": 516.1746060029769,
-   "avoided_vs_2024_mtco2e_a": 168.82539399702307,
-   "reduction_vs_2024_pct": 24.646042919273437,
-   "below_2005_pct": 32.34933079908559
+   "emissions_mtco2e_a": 516.170559288977,
+   "avoided_vs_2024_mtco2e_a": 168.82944071102304,
+   "reduction_vs_2024_pct": 24.646633680441322,
+   "below_2005_pct": 32.349861167892925
   },
   {
    "case": "\u2026 and refineries that served Canadian transport close or convert",
-   "emissions_mtco2e_a": 504.97460600297694,
-   "avoided_vs_2024_mtco2e_a": 180.02539399702306,
-   "reduction_vs_2024_pct": 26.281079415623804,
-   "below_2005_pct": 33.81722070734248
+   "emissions_mtco2e_a": 504.970559288977,
+   "avoided_vs_2024_mtco2e_a": 180.02944071102303,
+   "reduction_vs_2024_pct": 26.281670176791682,
+   "below_2005_pct": 33.817751076149804
   },
   {
    "case": "\u2026 and oil sands carbon capture (Pathways, 22 Mt)",
-   "emissions_mtco2e_a": 482.97460600297694,
-   "avoided_vs_2024_mtco2e_a": 202.02539399702306,
-   "reduction_vs_2024_pct": 29.492758247740593,
-   "below_2005_pct": 36.70057588427563
+   "emissions_mtco2e_a": 482.970559288977,
+   "avoided_vs_2024_mtco2e_a": 202.02944071102303,
+   "reduction_vs_2024_pct": 29.49334900890847,
+   "below_2005_pct": 36.70110625308296
   }
  ],
  "lifecycle": {
-  "fossil_transport_wtw_mtco2e_a": 272.997704,
-  "renewable_transport_wtw_mtco2e_a": 19.562738285261517,
-  "avoided_mtco2e_a": 253.4349657147385,
-  "reduction_pct": 92.834101533227,
+  "fossil_transport_wtw_mtco2e_a": 268.70167000000004,
+  "renewable_transport_wtw_mtco2e_a": 19.437087532495077,
+  "avoided_mtco2e_a": 249.26458246750497,
+  "reduction_pct": 92.7662944809777,
   "monte_carlo_avoided_p5_p50_p95_mtco2e_a": [
-   249.2228986359246,
-   252.82012964223708,
-   255.80242147487195
+   244.98221632693802,
+   248.50228352192107,
+   251.72372463404875
   ]
  },
  "redirected_crude": {
@@ -39,28 +39,28 @@
   "global_additivity_sensitivity": [
    {
     "redirected_crude_additional_combustion_fraction": 0.0,
-    "net_global_avoided_mtco2e_a": 253.4349657147385,
-    "net_reduction_vs_fossil_transport_pct": 92.834101533227
+    "net_global_avoided_mtco2e_a": 249.26458246750497,
+    "net_reduction_vs_fossil_transport_pct": 92.7662944809777
    },
    {
     "redirected_crude_additional_combustion_fraction": 0.25,
-    "net_global_avoided_mtco2e_a": 218.94284896473852,
-    "net_reduction_vs_fossil_transport_pct": 80.19952027315897
+    "net_global_avoided_mtco2e_a": 214.77246571750499,
+    "net_reduction_vs_fossil_transport_pct": 79.92971004516086
    },
    {
     "redirected_crude_additional_combustion_fraction": 0.5,
-    "net_global_avoided_mtco2e_a": 184.4507322147385,
-    "net_reduction_vs_fossil_transport_pct": 67.56493901309092
+    "net_global_avoided_mtco2e_a": 180.28034896750498,
+    "net_reduction_vs_fossil_transport_pct": 67.09312560934399
    },
    {
     "redirected_crude_additional_combustion_fraction": 0.75,
-    "net_global_avoided_mtco2e_a": 149.9586154647385,
-    "net_reduction_vs_fossil_transport_pct": 54.930357753022896
+    "net_global_avoided_mtco2e_a": 145.78823221750497,
+    "net_reduction_vs_fossil_transport_pct": 54.25654117352711
    },
    {
     "redirected_crude_additional_combustion_fraction": 1.0,
-    "net_global_avoided_mtco2e_a": 115.46649871473852,
-    "net_reduction_vs_fossil_transport_pct": 42.29577649295487
+    "net_global_avoided_mtco2e_a": 111.29611546750499,
+    "net_reduction_vs_fossil_transport_pct": 41.41995673771025
    }
   ],
   "interpretation": "alpha=0 means redirected Canadian crude displaces other crude supply; alpha=1 is a conservative upper bound in which all redirected combustion is additional globally."
@@ -73,27 +73,27 @@
   "cases": [
    {
     "case": "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export",
-    "emissions_mtco2e_a": 516.1746060029769,
-    "avoided_vs_2024_mtco2e_a": 168.82539399702307,
-    "reduction_vs_2024_pct": 24.646042919273437,
-    "below_2005_pct": 32.34933079908559,
-    "illustrative_linear_2027_2050_avoided_gtco2e": 2.025904727964277
+    "emissions_mtco2e_a": 516.170559288977,
+    "avoided_vs_2024_mtco2e_a": 168.82944071102304,
+    "reduction_vs_2024_pct": 24.646633680441322,
+    "below_2005_pct": 32.349861167892925,
+    "illustrative_linear_2027_2050_avoided_gtco2e": 2.0259532885322766
    },
    {
     "case": "\u2026 and refineries that served Canadian transport close or convert",
-    "emissions_mtco2e_a": 504.97460600297694,
-    "avoided_vs_2024_mtco2e_a": 180.02539399702306,
-    "reduction_vs_2024_pct": 26.281079415623804,
-    "below_2005_pct": 33.81722070734248,
-    "illustrative_linear_2027_2050_avoided_gtco2e": 2.160304727964277
+    "emissions_mtco2e_a": 504.970559288977,
+    "avoided_vs_2024_mtco2e_a": 180.02944071102303,
+    "reduction_vs_2024_pct": 26.281670176791682,
+    "below_2005_pct": 33.817751076149804,
+    "illustrative_linear_2027_2050_avoided_gtco2e": 2.1603532885322765
    },
    {
     "case": "\u2026 and oil sands carbon capture (Pathways, 22 Mt)",
-    "emissions_mtco2e_a": 482.97460600297694,
-    "avoided_vs_2024_mtco2e_a": 202.02539399702306,
-    "reduction_vs_2024_pct": 29.492758247740593,
-    "below_2005_pct": 36.70057588427563,
-    "illustrative_linear_2027_2050_avoided_gtco2e": 2.424304727964277
+    "emissions_mtco2e_a": 482.970559288977,
+    "avoided_vs_2024_mtco2e_a": 202.02944071102303,
+    "reduction_vs_2024_pct": 29.49334900890847,
+    "below_2005_pct": 36.70110625308296,
+    "illustrative_linear_2027_2050_avoided_gtco2e": 2.4243532885322767
    }
   ]
  }

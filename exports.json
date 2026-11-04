@@ -3,91 +3,91 @@
   {
    "volume_twh": 0,
    "added_cost_bn": 0.0,
-   "marginal_cad_mwh": 329.4934678915227,
+   "marginal_cad_mwh": 329.49346789152276,
    "kelp_km2": 25215.85,
-   "efuels_twh": 53.42039888787391,
-   "wind_twh": 292.38425510466186
+   "efuels_twh": 51.53117666565169,
+   "wind_twh": 288.2388120344865
   },
   {
    "volume_twh": 25,
    "added_cost_bn": 8.237336697288086,
-   "marginal_cad_mwh": 329.4934678915227,
+   "marginal_cad_mwh": 329.49346789152276,
    "kelp_km2": 25215.85,
-   "efuels_twh": 78.42039888787392,
-   "wind_twh": 352.38425510466186,
+   "efuels_twh": 76.53117666565169,
+   "wind_twh": 348.2388120344864,
    "average_increment_cad_mwh": 329.4934678915235
   },
   {
    "volume_twh": 50,
-   "added_cost_bn": 16.584566583496468,
-   "marginal_cad_mwh": 339.33145979738987,
-   "kelp_km2": 34194.478093018675,
-   "efuels_twh": 78.77402420814457,
-   "wind_twh": 362.57379455663886,
-   "average_increment_cad_mwh": 333.88919544833533
+   "added_cost_bn": 16.56598043056583,
+   "marginal_cad_mwh": 339.3314597973899,
+   "kelp_km2": 33464.58398626002,
+   "efuels_twh": 78.86707759682179,
+   "wind_twh": 362.43557054550934,
+   "average_increment_cad_mwh": 333.14574933110976
   },
   {
    "volume_twh": 75,
-   "added_cost_bn": 25.095203889562924,
+   "added_cost_bn": 25.06495689288913,
    "marginal_cad_mwh": 345.50375843225805,
-   "kelp_km2": 45130.83592131785,
-   "efuels_twh": 77.6145844300803,
-   "wind_twh": 369.6924506214184,
-   "average_increment_cad_mwh": 340.42549224265827
+   "kelp_km2": 43853.38280355802,
+   "efuels_twh": 77.67687623773506,
+   "wind_twh": 369.49204131522606,
+   "average_increment_cad_mwh": 339.95905849293194
   },
   {
    "volume_twh": 100,
-   "added_cost_bn": 33.91720956601803,
-   "marginal_cad_mwh": 356.8251194085514,
-   "kelp_km2": 57216.62091301965,
-   "efuels_twh": 76.79027950022547,
-   "wind_twh": 377.48798100451586,
-   "average_increment_cad_mwh": 352.88022705820424
+   "added_cost_bn": 33.865574002602,
+   "marginal_cad_mwh": 356.82511940855153,
+   "kelp_km2": 56498.053534279745,
+   "efuels_twh": 76.85257130788024,
+   "wind_twh": 377.2875716983236,
+   "average_increment_cad_mwh": 352.02468438851497
   },
   {
    "volume_twh": 150,
-   "added_cost_bn": 52.05476424144467,
+   "added_cost_bn": 51.91673804461156,
    "marginal_cad_mwh": 402.55326742679216,
-   "kelp_km2": 76874.33561883938,
-   "efuels_twh": 76.43025750036047,
-   "wind_twh": 395.69065282374726,
-   "average_increment_cad_mwh": 362.75109350853285
+   "kelp_km2": 75804.89370417468,
+   "efuels_twh": 76.52331088903767,
+   "wind_twh": 395.5524288126177,
+   "average_increment_cad_mwh": 361.0232808401912
   },
   {
    "volume_twh": 200,
-   "added_cost_bn": 72.99535401520822,
+   "added_cost_bn": 72.82201635493841,
    "marginal_cad_mwh": 421.2442731863685,
    "kelp_km2": 82041.59999999999,
-   "efuels_twh": 118.76862781332983,
-   "wind_twh": 516.1536296106146,
-   "average_increment_cad_mwh": 418.81179547527097
+   "efuels_twh": 116.8794055911076,
+   "wind_twh": 511.15803654043924,
+   "average_increment_cad_mwh": 418.105566206537
   },
   {
    "volume_twh": 300,
-   "added_cost_bn": 116.36935151760133,
+   "added_cost_bn": 116.03267566867156,
    "marginal_cad_mwh": 452.5288027570839,
    "kelp_km2": 84000.2,
-   "efuels_twh": 214.59599001982983,
-   "wind_twh": 790.8408523463269,
-   "average_increment_cad_mwh": 433.7399750239311
+   "efuels_twh": 212.7067677976076,
+   "wind_twh": 771.8878518740659,
+   "average_increment_cad_mwh": 432.10659313733146
   },
   {
    "volume_twh": 400,
-   "added_cost_bn": 161.6222317933097,
+   "added_cost_bn": 161.28555594437984,
    "marginal_cad_mwh": 452.5288027570839,
    "kelp_km2": 84000.2,
-   "efuels_twh": 314.5959900198298,
-   "wind_twh": 1075.8408523463268,
-   "average_increment_cad_mwh": 452.5288027570838
+   "efuels_twh": 312.7067677976076,
+   "wind_twh": 1056.8878518740657,
+   "average_increment_cad_mwh": 452.5288027570828
   },
   {
    "volume_twh": 500,
-   "added_cost_bn": 206.87511206901817,
+   "added_cost_bn": 206.53843622008827,
    "marginal_cad_mwh": 452.5288027570839,
    "kelp_km2": 84000.2,
-   "efuels_twh": 414.59599001982997,
-   "wind_twh": 1360.8408523463272,
-   "average_increment_cad_mwh": 452.52880275708463
+   "efuels_twh": 412.7067677976077,
+   "wind_twh": 1341.8878518740662,
+   "average_increment_cad_mwh": 452.52880275708435
   }
  ],
  "at_price": [
@@ -96,95 +96,95 @@
    "price_usd_t": 1515.8958523405151,
    "volume_twh": 0.0,
    "revenue_bn": 0.0,
-   "ebit_bn": 71.57630482755734,
-   "coverage": 1.0715015692748102,
+   "ebit_bn": 70.37823804982762,
+   "coverage": 1.0535664378716707,
    "added_ebit_bn": 0.0,
    "kelp_km2": 25215.85,
-   "efuels_twh": 53.42039888787391,
-   "wind_twh": 292.38425510466186
+   "efuels_twh": 51.53117666565169,
+   "wind_twh": 288.23881203448644
   },
   {
    "price_cad_mwh": 250,
    "price_usd_t": 2105.410906028493,
    "volume_twh": 0.0,
    "revenue_bn": 0.0,
-   "ebit_bn": 71.57630482755734,
-   "coverage": 1.0715015692748102,
+   "ebit_bn": 70.37823804982762,
+   "coverage": 1.0535664378716707,
    "added_ebit_bn": 0.0,
    "kelp_km2": 25215.85,
-   "efuels_twh": 53.42039888787391,
-   "wind_twh": 292.38425510466186
+   "efuels_twh": 51.53117666565169,
+   "wind_twh": 288.23881203448644
   },
   {
    "price_cad_mwh": 300,
    "price_usd_t": 2526.493087234192,
    "volume_twh": 0.0,
    "revenue_bn": 0.0,
-   "ebit_bn": 71.57630482755734,
-   "coverage": 1.0715015692748102,
+   "ebit_bn": 70.37823804982762,
+   "coverage": 1.0535664378716707,
    "added_ebit_bn": 0.0,
    "kelp_km2": 25215.85,
-   "efuels_twh": 53.42039888787391,
-   "wind_twh": 292.38425510466186
+   "efuels_twh": 51.53117666565169,
+   "wind_twh": 288.23881203448644
   },
   {
    "price_cad_mwh": 330,
    "price_usd_t": 2779.142395957611,
-   "volume_twh": 38.88111658237397,
-   "revenue_bn": 12.83076847218341,
-   "ebit_bn": 74.98785834876182,
-   "coverage": 1.1225727297718833,
-   "added_ebit_bn": 3.411553521204482,
+   "volume_twh": 40.770338804596186,
+   "revenue_bn": 13.45421180551674,
+   "ebit_bn": 73.97104978275897,
+   "coverage": 1.1073510446520802,
+   "added_ebit_bn": 3.5928117329313523,
    "kelp_km2": 29994.35,
    "efuels_twh": 79.32387403024786,
-   "wind_twh": 359.4643125148927
+   "wind_twh": 359.8530027780506
   },
   {
    "price_cad_mwh": 350,
    "price_usd_t": 2947.5752684398904,
-   "volume_twh": 83.71117076517784,
-   "revenue_bn": 29.298909767812244,
-   "ebit_bn": 79.37606130026933,
-   "coverage": 1.1882643907225945,
-   "added_ebit_bn": 7.799756472711991,
+   "volume_twh": 85.60039298740006,
+   "revenue_bn": 29.96013754559002,
+   "ebit_bn": 78.39703717871095,
+   "coverage": 1.1736083409986666,
+   "added_ebit_bn": 8.01879912888333,
    "kelp_km2": 51021.15,
    "efuels_twh": 77.32735798981857,
-   "wind_twh": 372.4087784763102
+   "wind_twh": 372.7974687394681
   },
   {
    "price_cad_mwh": 375,
    "price_usd_t": 3158.1163590427395,
-   "volume_twh": 142.0371353775547,
-   "revenue_bn": 53.263925766583014,
-   "ebit_bn": 86.86677518501051,
-   "coverage": 1.3004008261229116,
-   "added_ebit_bn": 15.290470357453174,
+   "volume_twh": 143.9263575997769,
+   "revenue_bn": 53.97238409991634,
+   "ebit_bn": 85.9349816190076,
+   "coverage": 1.2864518206438262,
+   "added_ebit_bn": 15.556743569179986,
    "kelp_km2": 73204.65,
    "efuels_twh": 75.40416771425159,
-   "wind_twh": 390.59605359021054
+   "wind_twh": 390.98474385336846
   },
   {
    "price_cad_mwh": 400,
    "price_usd_t": 3368.6574496455887,
-   "volume_twh": 147.0841562211765,
-   "revenue_bn": 58.833662488470594,
-   "ebit_bn": 90.89660405026478,
-   "coverage": 1.3607276055428859,
-   "added_ebit_bn": 19.320299222707447,
+   "volume_twh": 148.9733784433987,
+   "revenue_bn": 59.589351377359485,
+   "ebit_bn": 90.01204103981749,
+   "coverage": 1.347485644308645,
+   "added_ebit_bn": 19.633802989989874,
    "kelp_km2": 75259.84999999999,
    "efuels_twh": 76.57444154012936,
-   "wind_twh": 394.87525248357474
+   "wind_twh": 395.2639427467327
   },
   {
    "price_cad_mwh": 450,
    "price_usd_t": 3789.739630851288,
-   "volume_twh": 261.42586330845444,
-   "revenue_bn": 117.6416384888045,
-   "ebit_bn": 114.57946269646747,
-   "coverage": 1.7152614176117882,
-   "added_ebit_bn": 43.00315786891014,
+   "volume_twh": 268.0760389127564,
+   "revenue_bn": 120.63421751074038,
+   "ebit_bn": 114.5687631770617,
+   "coverage": 1.715101245165594,
+   "added_ebit_bn": 44.19052512723408,
    "kelp_km2": 84000.2,
-   "efuels_twh": 176.98297552508424,
+   "efuels_twh": 181.74392890716408,
    "wind_twh": 683.28
   },
   {
@@ -192,24 +192,24 @@
    "price_usd_t": 4210.821812056986,
    "volume_twh": 500.0,
    "revenue_bn": 250.0,
-   "ebit_bn": 169.360163665035,
-   "coverage": 2.535331791392739,
-   "added_ebit_bn": 97.78385883747767,
+   "ebit_bn": 168.51839137470688,
+   "coverage": 2.522730409801001,
+   "added_ebit_bn": 98.14015332487926,
    "kelp_km2": 84000.2,
-   "efuels_twh": 414.59599001982997,
-   "wind_twh": 1360.8408523463272
+   "efuels_twh": 412.7067677976077,
+   "wind_twh": 1341.8878518740662
   },
   {
    "price_cad_mwh": 600,
    "price_usd_t": 5052.986174468384,
    "volume_twh": 500.0,
    "revenue_bn": 300.0,
-   "ebit_bn": 219.36016366503503,
-   "coverage": 3.2838347854047156,
-   "added_ebit_bn": 147.78385883747768,
+   "ebit_bn": 218.51839137470688,
+   "coverage": 3.271233403812977,
+   "added_ebit_bn": 148.14015332487926,
    "kelp_km2": 84000.2,
-   "efuels_twh": 414.59599001982997,
-   "wind_twh": 1360.8408523463272
+   "efuels_twh": 412.7067677976077,
+   "wind_twh": 1341.8878518740662
   }
  ],
  "oil_export_energy_twh": 2761.955,

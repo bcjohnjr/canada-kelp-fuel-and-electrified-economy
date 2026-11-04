@@ -2,8 +2,9 @@
 
 Species: the highest-yielding kelp native to each coast is farmed everywhere.
   Pacific    Macrocystis pyrifera (giant kelp), native along the British Columbia coast, the fastest-growing kelp;
-             perennial, it regrows after partial harvest of its canopy, so a grid is harvested several times a year
-             (Navarrete et al. 2021 for depth-cycled growth).
+             may regrow after partial canopy harvest in suitably configured established stands,
+             but Camus et al. (2018) observed NO regrowth from shallow suspended Chilean cropped plants;
+             multiple Grid Harvester passes are an unverified design, NOT presumed higher annual yield.
   Atlantic   Saccharina latissima (sugar kelp), the highest-yielding native kelp in cultivation, farmed in Nova
              Scotia, New Brunswick and Newfoundland; seeded in autumn and harvested in spring and early summer.
   Gulf of St Lawrence, north-east Newfoundland and Labrador
@@ -21,7 +22,7 @@ Seasonal-ice zones carry a cost factor for ice-rated submerged moorings and a ha
 season: 1.25 (Gulf), 1.40 (Labrador and north-east Newfoundland) and 1.60 (Hudson Bay). Their design yields (5, 4
 and 2.5 t dry ha-1 yr-1; learning case 7.5, 6 and 3.75) are screening assumptions scaled from the Atlantic value by
 growing-season length, not measurements.
-Yields are design values for dense, multiply harvested long-line or grid farms, not today's commercial averages.
+Yields are design values for long-line or grid farms, not today's commercial averages; repeat trimming needs field validation.
 Commercial offshore kelp farming in the Faroe Islands harvested 0.9-1.4 t dry ha-1 yr-1 at a cost of EUR 9-37 per
 dry kg (Bak et al. 2018, Algal Res. 33:36), and Danish S. latissima trials gave 5-21 t fresh ha-1 per season
 (Boderskov et al. 2023, Front. Mar. Sci. 10:992179). Fuel-oriented designs assume 10-20 t dry ha-1 yr-1 (Greene et
@@ -82,7 +83,7 @@ def _areas():
 
 MID = {"0-50": 30, "50-100": 75, "100-200": 150, "200-370": 285}
 A = _areas()
-PAC = "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial, re-harvested)"
+PAC = "Macrocystis pyrifera (giant kelp; highest-yielding native, perennial; repeated harvest requires validation)"
 ATL = "Saccharina latissima (sugar kelp; highest-yielding native)"
 HB = "Saccharina latissima (sugar kelp; highest-yielding native in the Hudson Bay complex)"
 ZONES = {
@@ -127,7 +128,9 @@ class FarmCost:
     depth_cycle_life: float = 15
     om_frac: float = 0.03
     rate: float = 0.07
-    dm_harvest: float = 0.12           # S. latissima 10-15% dry matter
+    dm_harvest: float = 0.12           # original single-composition benchmark, retained for exact reproduction
+    dm_pacific: float | None = None   # optional species-specific harvested dry fraction for sensitivity only
+    dm_atlantic: float | None = None
 
 
 def nitrate_gN_m3(uM):
@@ -159,7 +162,8 @@ def farm_cost(zone_key, band, c: FarmCost, method="depth_cycling", yield_overrid
     y = yield_override or z.yield_t_ha
     factor = 1.0 if zone_key.endswith("shelf") else (c.slope_factor if zone_key.endswith("slope") else c.deep_factor)
     factor *= z.ice_factor
-    wet = 1 / c.dm_harvest
+    dry_fraction = c.dm_pacific if zone_key.startswith('pac') else c.dm_atlantic
+    wet = 1 / (dry_fraction if dry_fraction is not None else c.dm_harvest)
     transport = wet * max(z.mid_km[band] - 40, 0) * c.transport_cad_t_wet_km
     zz = Zone(**{**asdict(z), "yield_t_ha": y})
     nut, units, info = nutrient_options(zz, c)

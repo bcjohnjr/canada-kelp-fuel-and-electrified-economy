@@ -1,0 +1,599 @@
+{
+ "objective_bn": 87.23941613858031,
+ "export_twh": 0.0,
+ "export_revenue_bn": 0.0,
+ "export_logistics_bn": 0.0,
+ "vehicle_premium_bn": 6.030774557988762,
+ "ers": {
+  "cap_twh_diesel": 26.141594737500004,
+  "used_twh_diesel": 26.141594737500004,
+  "electricity_twh": 9.933806000250001,
+  "cad_per_mwh_diesel": 78.44108822581407,
+  "route_km": 7821.0,
+  "built_km": 7820.999999999999,
+  "cost_bn": 2.0505751391677145,
+  "share_of_hdv": 0.15027599546344408,
+  "trucks": 71008.48094174212
+ },
+ "offroad_twh": {
+  "farm": {
+   "el": 6.004444444444445,
+   "liq": 24.01777777777778
+  },
+  "mine": {
+   "el": 11.108222222222224,
+   "liq": 16.662333333333333
+  },
+  "con": {
+   "el": 2.5894166666666667,
+   "liq": 14.673361111111111
+  }
+ },
+ "vehicle_premium_per_mwh": {
+  "ldv_gasoline|bev": 9.06969079371158,
+  "ldv_gasoline|e100": 2.539513422239242,
+  "ldv_diesel|bev": 8.667898792228499,
+  "hdv|bet": 16.434199158405587,
+  "hdv|lng": 13.352786816204537,
+  "hdv|ed95": 4.313977279081467,
+  "hdv|ers": 10.99382588960618,
+  "offroad|farm_el": 16.434199158405587,
+  "offroad|mine_el": 16.434199158405587,
+  "offroad|con_el": 16.434199158405587,
+  "offroad|cng": 13.352786816204537
+ },
+ "fertiliser_value_bn": 1.346362811633264,
+ "supply_cost_bn": 82.55500439222482,
+ "total_cost_bn": 87.23941613858031,
+ "energy_cost_bn": 81.20864158059155,
+ "generation_twh": {
+  "Onshore wind": 280.3560810214668,
+  "PV": 47.872827680618066,
+  "Hydro (redirected exports)": 0.0,
+  "New hydro": 0.0,
+  "SMR (net of steam extraction)": 4.369595405440696
+ },
+ "wind_by_tier_twh": [
+  210.24,
+  70.11608102146681,
+  0.0
+ ],
+ "capacity_gw": {
+  "Onshore wind": 82.23366343907497,
+  "PV": 34.15584166710764,
+  "New hydro": 0.0,
+  "SMR": 0.634667222553107
+ },
+ "smr": {
+  "lcoe_cad_mwh": 113.91673011725818,
+  "gw": 0.634667222553107,
+  "modules": 2.115557408510357,
+  "direct_twh": 4.369595405440696,
+  "flex_twh": 0.0,
+  "steam_el_forgone_twh": 0.634120977168,
+  "steam_twh": 3.3374788272,
+  "by_fleet": {
+   "atl": {
+    "gw": 0.43841831504339146,
+    "modules": 1.4613943834779717,
+    "steam_twh": 2.3054788272,
+    "direct_twh": 3.0184490186340986,
+    "flex_twh": 0.0
+   },
+   "inl": {
+    "gw": 0.19624890750971546,
+    "modules": 0.6541630250323849,
+    "steam_twh": 1.032,
+    "direct_twh": 1.3511463868065967,
+    "flex_twh": 0.0
+   },
+   "pac": {
+    "gw": 0.0,
+    "modules": 0.0,
+    "steam_twh": -0.0,
+    "direct_twh": -0.0,
+    "flex_twh": 0.0
+   },
+   "hb": {
+    "gw": 0.0,
+    "modules": 0.0,
+    "steam_twh": 0.0,
+    "direct_twh": 0.0,
+    "flex_twh": 0.0
+   }
+  },
+  "capex_bn": 9.30845259744557
+ },
+ "electricity_delivered_twh": 332.59850410752557,
+ "heat_by_pool_twh_th": {
+  "pac": {
+   "wind_thermal_storage": 1.4768285659733342,
+   "heat_pump": 2.2152428489599996,
+   "electric_boiler": 0.0,
+   "residue_boiler": 0.0,
+   "smr_steam": -0.0
+  },
+  "atl": {
+   "wind_thermal_storage": 0.0,
+   "heat_pump": 3.4582182408000004,
+   "electric_boiler": 0.0,
+   "residue_boiler": 0.0,
+   "smr_steam": 2.3054788272
+  },
+  "inl": {
+   "wind_thermal_storage": 0.8039830456136299,
+   "heat_pump": 2.7539745684204417,
+   "electric_boiler": 0.0,
+   "residue_boiler": 0.0,
+   "smr_steam": 1.032
+  },
+  "hb": {
+   "wind_thermal_storage": 0.0,
+   "heat_pump": 0.0,
+   "electric_boiler": 0.0,
+   "residue_boiler": 0.0,
+   "smr_steam": 0.0
+  }
+ },
+ "heat_twh_th": {
+  "Wind-charged thermal storage": 2.280811611586964,
+  "heat pumps": 8.427435658180443,
+  "electric boilers": 0.0,
+  "residue boilers": 0.0,
+  "SMR steam": 3.3374788272
+ },
+ "ethanol_distillation_heat_twh_th": 4.128,
+ "kelp_km2": {
+  "pac_shelf|0-50|natural|wet|H": 2359.3,
+  "pac_shelf|50-100|natural|wet|H": 869.6,
+  "pac_shelf|100-200|natural|wet|H": 101.80000000000001,
+  "pac_slope|0-50|depth_cycling|wet|H": 911.7,
+  "pac_slope|50-100|depth_cycling|wet|H": 859.1,
+  "pac_slope|100-200|depth_cycling|wet|H": 185.70000000000002,
+  "pac_deep|0-50|depth_cycling|wet|H": 1759.25,
+  "atl_shelf|0-50|natural|wet|H": 4269.3,
+  "atl_shelf|50-100|natural|wet|H": 4453.6,
+  "atl_shelf|100-200|natural|wet|H": 9446.5
+ },
+ "kelp_total_km2": 25215.85,
+ "kelp_dry_mt": 20.120559,
+ "kelp_wet_mt": 167.671325,
+ "kelp_ethanol_twh": 0.0,
+ "kelp_hc_twh": 45.5368491288,
+ "kelp_jet_twh": 18.214739651520002,
+ "kelp_ch4_gross_twh": 6.30276510675,
+ "kelp_fleet_fuel_twh": 2.6480602258333334,
+ "kite_saved_twh": 0.1017033575,
+ "kelp_refinery_el_twh": 10.983813158100002,
+ "kelp_refinery_heat_twh": 9.455768482933333,
+ "kelp_farm_cost_bn": 9.884230147932579,
+ "kelp_refinery_cost_bn": 3.473963478175702,
+ "kelp_cost_bn": 13.358193626108282,
+ "fertiliser_mt": {
+  "N": 0.241446708,
+  "P": 0.0482893416,
+  "K": 0.724340124
+ },
+ "fertiliser_energy_avoided_pj": 16.176929436,
+ "fertiliser_co2_avoided_mt": 1.1589441984000002,
+ "upwelling_pipes": 0.0,
+ "kelp_by_zone_km2": {
+  "pac_shelf": 3330.7000000000003,
+  "pac_slope": 1956.5000000000002,
+  "pac_deep": 1759.25,
+  "atl_shelf": 18169.4
+ },
+ "kelp_by_route_km2": {
+  "H": 25215.85
+ },
+ "kelp_by_nutrient_method_km2": {
+  "natural": 21500.1,
+  "depth_cycling": 3715.75
+ },
+ "kelp_by_preprocess_km2": {
+  "wet": 25215.85
+ },
+ "kelp_by_band_km2": {
+  "0-50": 9299.55,
+  "50-100": 6182.3,
+  "100-200": 9734.0
+ },
+ "kelp_by_zone_band_km2": {
+  "pac_shelf|0-50": 2359.3,
+  "pac_shelf|50-100": 869.6,
+  "pac_shelf|100-200": 101.80000000000001,
+  "pac_slope|0-50": 911.7,
+  "pac_slope|50-100": 859.1,
+  "pac_slope|100-200": 185.70000000000002,
+  "pac_deep|0-50": 1759.25,
+  "atl_shelf|0-50": 4269.3,
+  "atl_shelf|50-100": 4453.6,
+  "atl_shelf|100-200": 9446.5
+ },
+ "lake_mt": {
+  "lake|winnipeg|grid|H": 0.5486707317073168,
+  "lake|winnipeg|algae|H": 0.13336875,
+  "lake|erie|algae|H": 0.016141891248,
+  "lake|erie|milfoil|H": 0.0072,
+  "lake|stclair|milfoil|H": 0.0144,
+  "lake|ontario|algae|H": 0.0028125,
+  "lake|ontario|milfoil|H": 0.006,
+  "lake|simcoe|milfoil|H": 0.0063,
+  "lake|netley_libau|cattail|H": 0.075,
+  "lake|delta_marsh|cattail|H": 0.045,
+  "lake|erie_stclair_marshes|cattail|H": 0.045
+ },
+ "lake_dry_kt": 899.8938729553167,
+ "lake_dry_kt_by": {
+  "winnipeg|grid": 548.6707317073168,
+  "winnipeg|algae": 133.36875,
+  "erie|algae": 16.141891248,
+  "erie|milfoil": 7.2,
+  "stclair|milfoil": 14.4,
+  "ontario|algae": 2.8125,
+  "ontario|milfoil": 6.0,
+  "simcoe|milfoil": 6.3,
+  "winnipeg|cattail": 120.0,
+  "erie|cattail": 45.0
+ },
+ "lake_p_removed_t_by": {
+  "winnipeg": 3556.5,
+  "erie": 240.735129984,
+  "stclair": 43.2,
+  "ontario": 40.5,
+  "simcoe": 18.9
+ },
+ "lake_p_removed_t_by_biomass": {
+  "grid": 2249.5499999999997,
+  "algae": 1218.585129984,
+  "milfoil": 101.70000000000002,
+  "cattail": 330.0
+ },
+ "lake_dry_kt_by_biomass": {
+  "grid": 548.6707317073168,
+  "algae": 152.323141248,
+  "milfoil": 33.9,
+  "cattail": 165.0
+ },
+ "lake_p_removed_t_by_lake_biomass": {
+  "winnipeg|grid": 2249.5499999999997,
+  "winnipeg|algae": 1066.95,
+  "erie|algae": 129.135129984,
+  "erie|milfoil": 21.6,
+  "stclair|milfoil": 43.2,
+  "ontario|algae": 22.5,
+  "ontario|milfoil": 18.0,
+  "simcoe|milfoil": 18.9,
+  "winnipeg|cattail": 240.0,
+  "erie|cattail": 90.0
+ },
+ "lake_p_removed_t": 3899.8351299839996,
+ "lake_n_removed_t": 33556.91120335609,
+ "lake_hc_twh": 2.525002483921355,
+ "lake_jet_twh": 1.0100009935685421,
+ "lake_ethanol_twh": 0.0,
+ "lake_ch4_gross_twh": 0.30198787165509366,
+ "lake_fleet_fuel_twh": 0.08455111461021135,
+ "lake_refinery_el_twh": 0.6767276381308008,
+ "lake_harvest_cost_bn": 0.3974755144723608,
+ "lake_refinery_cost_bn": 0.2019853416371341,
+ "lake_cleanup_payment_bn": 0.0,
+ "lake_fertiliser_kt": {
+  "N": 20.134146722013654,
+  "P": 3.1198681039872,
+  "K": 7.900375444647334
+ },
+ "northern_willow_area_km2": {
+  "N Alberta": 0.0,
+  "N Saskatchewan": 0.0,
+  "N Manitoba": 0.0,
+  "Yukon": 0.0,
+  "NWT": 0.0,
+  "Nunavut": 0.0
+ },
+ "northern_willow_area_total_km2": 0.0,
+ "northern_willow_fuel_twh": 0.0,
+ "northern_willow_cost_bn": 0.0,
+ "northern_willow_wind_process_twh": 0.0,
+ "northern_willow_feedstock_odt": 0.0,
+ "lake_vessels": 70.5143316534677,
+ "lake_cutters": 11.141965785594298,
+ "lake_grid_units": 85.72294399374876,
+ "lake_harvesters": 167.37924143281077,
+ "lake_grid_km2": 457.22560975609736,
+ "lake_grid_km2_by": {
+  "winnipeg": 457.22560975609736
+ },
+ "fuels_twh": {
+  "eFT_liquids": 51.53117666565169,
+  "e_methanol": 0.0,
+  "e_ammonia": 0.0,
+  "e_methane": 0.0,
+  "ATJ_jet_from_ethanol": 0.0,
+  "waste_biomethane": 20.00952502870512,
+  "HEFA_waste_lipids": 8.0,
+  "canola_HVO": 15.0,
+  "forest_residue_HTL": 52.00000000000001,
+  "agri_residue_FT": 33.0,
+  "grain_ethanol_existing": 12.0,
+  "kelp HTL diesel/jet": 45.5368491288,
+  "Northern seasonal willow HTL diesel": 0.0,
+  "kelp ethanol": 0.0,
+  "kelp biomethane (net of fleet)": 3.6547048809166665,
+  "lake HTL diesel/jet": 2.525002483921355,
+  "lake ethanol": 0.0,
+  "lake biomethane (net of fleet)": 0.2174367570448823
+ },
+ "forest_residue_modt": 20.0,
+ "agri_residue_modt": 14.999999999999998,
+ "bio_methanol_from_CH4_twh": 15.921111111111113,
+ "co2_mt": {
+  "DAC": 0.0,
+  "other biogenic": 11.457447993954483,
+  "kelp": -0.0
+ },
+ "wind_assist_twh_saved": 1.3844444444444446,
+ "end_use_twh": {
+  "ldv_gasoline|bev": 416.16666666666674,
+  "ldv_diesel|bev": 19.192777777777778,
+  "hdv|bet": 86.97861111111112,
+  "hdv|ers": 26.141594737500004,
+  "hdv|liq": 49.40844494503969,
+  "hdv|ed95": 11.428571428571429,
+  "rail|el": 9.435555555555558,
+  "rail|liq": 14.153333333333334,
+  "offroad|farm_el": 6.004444444444445,
+  "offroad|farm_liq": 24.01777777777778,
+  "offroad|mine_el": 11.108222222222224,
+  "offroad|mine_liq": 16.662333333333333,
+  "offroad|con_el": 2.5894166666666667,
+  "offroad|con_liq": 14.673361111111111,
+  "aviation|jet": 88.67777777777778,
+  "shipping|meoh": 15.921111111111113
+ },
+ "electricity_for_efuels_twh": 123.67482399756406,
+ "electricity_for_dac_twh": 0.0,
+ "electricity_for_heat_storage_twh": 2.400854327986278,
+ "electrolyser_gw": 24.385861933932304,
+ "electricity_vehicles_rail_twh": 191.49131072247226,
+ "electricity_refineries_twh": 14.35478742137218,
+ "marginal_cad_mwh": {
+  "dropin": 321.49346789152276,
+  "jet": 0.0,
+  "ethanol": 292.93284820232503,
+  "methane": 52.2036711412473,
+  "methanol": 117.30550671187095,
+  "ammonia": 106.33857782082947,
+  "heat_pac": 95.15481238463903,
+  "heat_atl": 81.5835611731663,
+  "heat_inl": 95.15481238463903,
+  "heat_hb": 0.0,
+  "el_flex": 75.4996767317331,
+  "el_direct": 104.74244502249022
+ },
+ "co2_marginal_cad_t": 110.0,
+ "demand_twh": {
+  "ldv_gasoline": 416.16666666666674,
+  "ldv_diesel": 19.192777777777778,
+  "hdv": 173.95722222222224,
+  "rail": 23.588888888888892,
+  "offroad": 75.05555555555556,
+  "aviation": 88.67777777777778,
+  "shipping": 17.305555555555557
+ },
+ "fossil_cost_bn": {
+  "oct2026": 144.06380748270246,
+  "avg2025": 84.21331046675519
+ },
+ "fossil_co2_mt": 209.08383333333336,
+ "demand_total_twh": 813.9444444444446,
+ "dropin_supply_twh": 207.59302827837305,
+ "export_share_of_dropin": 0.0,
+ "kelp_fuel_twh": 49.19155400971667,
+ "kelp_share_pct": 6.043600929458057,
+ "lake_fuel_twh": 2.7424392409662373,
+ "lake_share_pct": 0.33693199329323775,
+ "fertiliser_total_mt": {
+  "N": 0.26158085472201364,
+  "P": 0.0514092097039872,
+  "K": 0.7322404994446474
+ },
+ "lifecycle": {
+  "fossil_wtw_mtco2e": 268.70167000000004,
+  "lowcarbon_wtw_mtco2e": 19.436372011063003,
+  "lowcarbon_factor_sensitivity_mtco2e": [
+   12.292463557871836,
+   31.77974901580436
+  ],
+  "avoided_wtw_mtco2e": 249.26529798893702,
+  "reduction_pct": 92.7665607693979,
+  "reduction_factor_sensitivity_pct": [
+   88.17285020379502,
+   95.42523738022476
+  ],
+  "parts_mtco2e": {
+   "Direct electric transport": 2.6174765804583453,
+   "Kelp fuels": 3.89597107756956,
+   "Residue and lake fuels": 4.738091719012177,
+   "Crop and waste biofuels": 5.958685802066769,
+   "Electrofuels": 2.2261468319561533,
+   "Northern seasonal willow (indicative, excludes land-carbon change)": 0.0
+  },
+  "electricity_ci_gco2e_kwh": 13.668905239527268
+ },
+ "cost_items_bn": {
+  "Wind generation": [
+   15.002973906999252,
+   0.85,
+   25
+  ],
+  "PV generation": [
+   3.0028649487880816,
+   0.85,
+   25
+  ],
+  "New hydro": [
+   0.0,
+   0.9,
+   60
+  ],
+  "Redirected hydro exports": [
+   0.0,
+   0.0,
+   25
+  ],
+  "SMR cogeneration (incl. steam extraction)": [
+   0.6185548163857417,
+   0.8,
+   40
+  ],
+  "Firming and balancing": [
+   4.06656281598146,
+   0.7,
+   25
+  ],
+  "Transmission and distribution": [
+   6.270210561684363,
+   0.8,
+   40
+  ],
+  "Charging, fuelling and delivery": [
+   13.977490450903174,
+   0.8,
+   20
+  ],
+  "Trans-Canada Highway catenary (electric road)": [
+   2.0505751391677145,
+   0.9,
+   30
+  ],
+  "Kelp farms and harvest": [
+   9.884230147932579,
+   0.6,
+   15
+  ],
+  "Northern willow tunnels, wind and modular HTL": [
+   0.0,
+   0.65,
+   15
+  ],
+  "Kelp biorefineries": [
+   3.473963478175702,
+   0.7,
+   25
+  ],
+  "Lake harvest (blooms, milfoil)": [
+   0.3974755144723608,
+   0.5,
+   18
+  ],
+  "Lake HTL plants": [
+   0.2019853416371341,
+   0.7,
+   25
+  ],
+  "Refinery heat": [
+   0.035766475342317444,
+   0.75,
+   25
+  ],
+  "Forest residues (feedstock)": [
+   1.9,
+   0.15,
+   15
+  ],
+  "Forest-residue HTL plants": [
+   3.20649464036718,
+   0.7,
+   25
+  ],
+  "Agricultural-residue FT": [
+   3.852528383987463,
+   0.45,
+   25
+  ],
+  "Waste-lipid and canola HVO": [
+   4.131340356064672,
+   0.15,
+   25
+  ],
+  "Grain ethanol and ATJ": [
+   1.488670402054661,
+   0.4,
+   25
+  ],
+  "Biomethane and bio-methanol": [
+   2.1057035482559248,
+   0.5,
+   20
+  ],
+  "Electrofuel synthesis": [
+   5.5289986291345,
+   0.7,
+   25
+  ],
+  "CO2 capture (DAC, biogenic, kelp)": [
+   1.260319279334993,
+   0.6,
+   20
+  ],
+  "Wind-assisted ships": [
+   0.09829555555555557,
+   0.8,
+   20
+  ],
+  "Export logistics": [
+   0.0,
+   0.7,
+   30
+  ],
+  "Winter reserve (backup turbines, methane storage)": [
+   0.0,
+   0.85,
+   30
+  ]
+ },
+ "capital_return_bn": 20.60600186675337,
+ "build": {
+  "Onshore wind (GW)": 82.23366343907497,
+  "PV (GW)": 34.15584166710764,
+  "New hydro (GW)": 0.0,
+  "SMR (GW)": 0.634667222553107,
+  "SMR modules (300 MWe)": 2.115557408510357,
+  "Electrolysers (GW)": 24.385861933932304,
+  "DAC (Mt CO2/yr)": 0.0,
+  "Kelp farms (km2)": 25215.85,
+  "Kelp (Mt dry/yr)": 20.120559,
+  "Kelp (Mt wet/yr)": 167.671325,
+  "Kelp biorefineries (0.5 Mt dry/yr each)": 40.241118,
+  "Residue biorefineries (5 TWh/yr each)": 17.0,
+  "Harvest/transport vessels (1 Mt wet/yr each)": 167.671325,
+  "Trans-Canada Highway catenary (route-km)": 7820.999999999999,
+  "Catenary-hybrid trucks": 71008.48094174212,
+  "Lake Grid Harvesters": 167.37924143281077,
+  "Lake algae grids (km2)": 457.22560975609736,
+  "Lake biomass (kt dry/yr)": 899.8938729553167,
+  "capex_bn": {
+   "Onshore wind": 189.13742590987243,
+   "PV": 51.233762500661456,
+   "New hydro": 0.0,
+   "Electrolysers": 38.52966185561304,
+   "E-fuel synthesis": 15.294641476106664,
+   "DAC": 0.0,
+   "Kelp farms": 85.08884499999998,
+   "Kelp biorefineries": 52.3134534,
+   "Residue biorefineries": 28.05,
+   "Vessels": 15.928775875,
+   "ATJ plants": 0.0,
+   "Refinery heat (thermal storage)": 0.513182612607067,
+   "SMR modules": 9.30845259744557,
+   "Charging and grid": 101.67220264444448,
+   "Trans-Canada Highway catenary": 28.155599999999996,
+   "Lake Grid Harvesters": 1.0042754485968646,
+   "Lake algae grids": 0.685838414634146,
+   "Lake HTL plants": 3.0416412905889705
+  },
+  "capex_total_bn": 619.9577590255708,
+  "capex_per_year_2027_2050_bn": 25.831573292732116
+ }
+}

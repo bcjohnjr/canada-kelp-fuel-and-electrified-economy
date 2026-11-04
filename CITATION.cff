@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Where nuclear heat pays when all Canadian transport fuel is replaced with electricity, biofuels and two-coast kelp: model and data"
+authors:
+  - family-names: Bily
+    given-names: Jonathan Karl
+    orcid: "https://orcid.org/0009-0004-3526-7271"
+    affiliation: "Independent researcher, Zaragoza, Spain"
+  - family-names: Pahl
+    given-names: Christoph
+    affiliation: "Technical University of Munich and Max Planck Institute for Physics, Munich, Germany"
+  - family-names: Valdés Bacallao
+    given-names: Patricia
+    affiliation: "University of Málaga, Málaga, Spain"
+license: MIT
+date-released: "2026-11-04"
+keywords: [energy systems, transport, small modular reactors, kelp, linear programming, Canada]
