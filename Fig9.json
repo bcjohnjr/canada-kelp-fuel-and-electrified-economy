@@ -29,12 +29,12 @@
    [
     "All routes (central case)",
     "Electrofuels",
-    53.42039888787391
+    51.53117666565169
    ],
    [
     "No electrofuels",
     "Kelp HTL fuel",
-    98.68292518144074
+    96.79370295921852
    ],
    [
     "No electrofuels",
@@ -44,7 +44,7 @@
    [
     "No electrofuels",
     "Existing biofuel feedstocks",
-    51.13358032848221
+    51.26692655666622
    ],
    [
     "No electrofuels",
@@ -59,7 +59,7 @@
    [
     "Electric or biofuel only",
     "Kelp HTL fuel",
-    114.60403629255187
+    112.71481407032965
    ],
    [
     "Electric or biofuel only",
@@ -84,7 +84,7 @@
    [
     "Electrification, seaweed and existing biofuels only",
     "Kelp HTL fuel",
-    199.18852366854014
+    197.29930144631794
    ],
    [
     "Electrification, seaweed and existing biofuels only",
@@ -109,12 +109,12 @@
    [
     "Electrification, seaweed and existing biofuels, transition demand",
     "Kelp HTL fuel",
-    170.36814667523163
+    168.9242494608018
    ],
    [
     "Electrification, seaweed and existing biofuels, transition demand",
     "Lake and marsh fuel",
-    3.1877609247469794
+    3.1147217176383486
    ],
    [
     "Electrification, seaweed and existing biofuels, transition demand",
@@ -132,7 +132,7 @@
     0.0
    ]
   ],
-  "note": "Labels: kelp farm area and share of the oil-and-gas surplus replaced (rent collected). Kelp area permitted by the farm caps: 168175 km2. The strict case is feasible only if kelp yields reach 61% of the learned yields, and in 542 of 1000 Monte Carlo draws."
+  "note": "Labels: kelp farm area and share of the oil-and-gas surplus replaced (rent collected). Kelp area permitted by the farm caps: 168175 km2. The strict case is feasible only if kelp yields reach 60% of the learned yields, and in 563 of 1000 Monte Carlo draws."
  },
  "b_territorial": {
   "columns": [
@@ -148,18 +148,18 @@
    ],
    [
     "Transport and off-road machinery on renewable energy; all oil exported, refineries run for export",
-    516.1746060029769,
-    32.34933079908559
+    516.170559288977,
+    32.349861167892925
    ],
    [
     "\u2026 and refineries that served Canadian transport close or convert",
-    504.97460600297694,
-    33.81722070734248
+    504.970559288977,
+    33.817751076149804
    ],
    [
     "\u2026 and oil sands carbon capture (Pathways, 22 Mt)",
-    482.97460600297694,
-    36.70057588427563
+    482.970559288977,
+    36.70110625308296
    ]
   ],
   "note": "NIR boundary: transport and off-road removed; adds 2.2 Mt released in Canada by the renewable system (CH4 and N2O from biofuel combustion, biogas methane slip). Targets 2030: 420-458 Mt; 2035: 382-420 Mt (excluding the LULUCF accounting contribution)."
@@ -172,11 +172,11 @@
   "rows": [
    [
     "fossil transport fuels",
-    272.997704
+    268.70167000000004
    ],
    [
     "renewable system",
-    19.562738285261517
+    19.437087532495077
    ]
   ],
   "note": "Separate account, not added to the territorial inventory. Combustion abroad of exported oil: 856 Mt CO2/yr (counted in importing countries)."

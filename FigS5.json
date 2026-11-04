@@ -1,0 +1,252 @@
+{
+ "d_candidate_area": {
+  "columns": [
+   "zone",
+   "distance band",
+   "candidate area km2"
+  ],
+  "rows": [
+   [
+    "Pacific shelf",
+    "0-50",
+    23593.0
+   ],
+   [
+    "Pacific slope",
+    "0-50",
+    9117.0
+   ],
+   [
+    "Pacific deep",
+    "0-50",
+    7037.0
+   ],
+   [
+    "Atlantic shelf",
+    "0-50",
+    42693.0
+   ],
+   [
+    "Atlantic slope",
+    "0-50",
+    8255.0
+   ],
+   [
+    "Atlantic deep",
+    "0-50",
+    0.0
+   ],
+   [
+    "Gulf of St Lawrence shelf",
+    "0-50",
+    53975.0
+   ],
+   [
+    "Laurentian Channel",
+    "0-50",
+    28348.0
+   ],
+   [
+    "Labrador shelf",
+    "0-50",
+    56353.0
+   ],
+   [
+    "Labrador slope",
+    "0-50",
+    15227.0
+   ],
+   [
+    "Hudson Bay",
+    "0-50",
+    1761.0
+   ],
+   [
+    "Hudson Bay >200 m",
+    "0-50",
+    0.0
+   ],
+   [
+    "Pacific shelf",
+    "50-100",
+    8696.0
+   ],
+   [
+    "Pacific slope",
+    "50-100",
+    8591.0
+   ],
+   [
+    "Pacific deep",
+    "50-100",
+    19114.0
+   ],
+   [
+    "Atlantic shelf",
+    "50-100",
+    44536.0
+   ],
+   [
+    "Atlantic slope",
+    "50-100",
+    12297.0
+   ],
+   [
+    "Atlantic deep",
+    "50-100",
+    0.0
+   ],
+   [
+    "Gulf of St Lawrence shelf",
+    "50-100",
+    21638.0
+   ],
+   [
+    "Laurentian Channel",
+    "50-100",
+    26040.0
+   ],
+   [
+    "Labrador shelf",
+    "50-100",
+    40472.0
+   ],
+   [
+    "Labrador slope",
+    "50-100",
+    40796.0
+   ],
+   [
+    "Hudson Bay",
+    "50-100",
+    7093.0
+   ],
+   [
+    "Hudson Bay >200 m",
+    "50-100",
+    0.0
+   ],
+   [
+    "Pacific shelf",
+    "100-200",
+    1018.0
+   ],
+   [
+    "Pacific slope",
+    "100-200",
+    1857.0
+   ],
+   [
+    "Pacific deep",
+    "100-200",
+    48580.0
+   ],
+   [
+    "Atlantic shelf",
+    "100-200",
+    94465.0
+   ],
+   [
+    "Atlantic slope",
+    "100-200",
+    17318.0
+   ],
+   [
+    "Atlantic deep",
+    "100-200",
+    6001.0
+   ],
+   [
+    "Gulf of St Lawrence shelf",
+    "100-200",
+    9167.0
+   ],
+   [
+    "Laurentian Channel",
+    "100-200",
+    1905.0
+   ],
+   [
+    "Labrador shelf",
+    "100-200",
+    27064.0
+   ],
+   [
+    "Labrador slope",
+    "100-200",
+    94678.0
+   ],
+   [
+    "Hudson Bay",
+    "100-200",
+    42583.0
+   ],
+   [
+    "Hudson Bay >200 m",
+    "100-200",
+    0.0
+   ],
+   [
+    "Pacific shelf",
+    "200-370",
+    0.0
+   ],
+   [
+    "Pacific slope",
+    "200-370",
+    0.0
+   ],
+   [
+    "Pacific deep",
+    "200-370",
+    88734.0
+   ],
+   [
+    "Atlantic shelf",
+    "200-370",
+    88818.0
+   ],
+   [
+    "Atlantic slope",
+    "200-370",
+    12693.0
+   ],
+   [
+    "Atlantic deep",
+    "200-370",
+    120228.0
+   ],
+   [
+    "Gulf of St Lawrence shelf",
+    "200-370",
+    0.0
+   ],
+   [
+    "Laurentian Channel",
+    "200-370",
+    0.0
+   ],
+   [
+    "Labrador shelf",
+    "200-370",
+    3180.0
+   ],
+   [
+    "Labrador slope",
+    "200-370",
+    60195.0
+   ],
+   [
+    "Hudson Bay",
+    "200-370",
+    123579.0
+   ],
+   [
+    "Hudson Bay >200 m",
+    "200-370",
+    47.0
+   ]
+  ],
+  "note": "Outside shipping lanes, ports, excluded waters and the 0-6 nm band; conserved share of each marine ecozone removed. Haul distance is to the nearest large land mass (Hudson Bay: to Churchill or Moosonee)."
+ }
+}

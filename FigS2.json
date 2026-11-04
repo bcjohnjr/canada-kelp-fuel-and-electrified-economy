@@ -9,12 +9,12 @@
    [
     "Fossil comparator",
     "total",
-    272.997704
+    268.70167000000004
    ],
    [
     "Renewable system",
     "Direct electric transport",
-    2.662228454656858
+    2.6181921018904197
    ],
    [
     "Renewable system",
@@ -34,10 +34,10 @@
    [
     "Renewable system",
     "Electrofuels",
-    2.3077612319561527
+    2.2261468319561533
    ]
   ],
-  "note": "Factor sensitivity of the renewable system 12.4-32.0 MtCO2e/yr; vehicle manufacture excluded; exported fuel excluded."
+  "note": "Factor sensitivity of the renewable system 12.3-31.8 MtCO2e/yr; vehicle manufacture excluded; exported fuel excluded."
  },
  "b_exposure": {
   "columns": [
@@ -48,13 +48,13 @@
   "rows": [
    [
     "Fossil fuels (pre-tax)",
-    85.55458209887212,
-    146.18503886432237
+    84.21331046675519,
+    144.06380748270246
    ],
    [
     "Renewable system",
-    84.29372115634754,
-    88.32581026974808
+    83.2410969648039,
+    87.28470990215722
    ]
   ],
   "note": "Renewable system: only commodity-priced inputs (waste lipids, canola oil, grain ethanol) repriced."

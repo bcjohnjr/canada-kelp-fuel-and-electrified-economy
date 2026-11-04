@@ -1,0 +1,1070 @@
+{
+ "year": 2041,
+ "fleet_2041": {
+  "modules": 10,
+  "gwe": 3.0,
+  "electricity_twh": 21.308875200000003,
+  "heat_twh": 12.92976,
+  "co2_avoided_mt": 10.62782678117647,
+  "margin_cad_bn": -0.40554552650647663,
+  "capex_cad_bn": 50.44,
+  "capex_before_itc_cad_bn": 52.0,
+  "npv_cad_bn": -8.24122083010261,
+  "highway_traction_fleet_provinces_twh": 5.747790848244775,
+  "ethanol_bl": 1.536172932413793,
+  "e85_bl": 2.048230576551724
+ },
+ "sites_2041": {
+  "ON_CHATHAM": {
+   "site": "ON_CHATHAM",
+   "prov": "ON",
+   "year": 2041,
+   "modules": 2,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 284.07,
+   "electricity_twh": 4.47921576,
+   "heat_twh": 1.844856,
+   "heat_by_grade_twh": {
+    "high_150C": 0.851472,
+    "medium_80C": 0.993384
+   },
+   "power_value_cad_mwh": 90.3,
+   "heat_value_cad_mwh_th": 42.88282352941176,
+   "revenue_power_cad": 404473183.12799996,
+   "revenue_heat_cad": 79112634.28517646,
+   "capacity_value_cad": 61359120.0,
+   "annualised_capital_cad": 447486544.9464075,
+   "opex_cad": 161126000.0,
+   "margin_cad": -63667607.53323108,
+   "lcoe_cad_mwh": 128.65984799306773,
+   "co2_avoided_mt": 2.0487665702117646,
+   "co2_power_mt": 1.6573098311999999,
+   "co2_heat_mt": 0.3914567390117647,
+   "capex_cad": 8840000000.0,
+   "pipes_cad": 17000000.0,
+   "common_infra_cad": 1600000000.0
+  },
+  "SK_BELLE_PLAINE": {
+   "site": "SK_BELLE_PLAINE",
+   "prov": "SK",
+   "year": 2041,
+   "modules": 2,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 268.41,
+   "electricity_twh": 4.2322888800000005,
+   "heat_twh": 2.696328,
+   "heat_by_grade_twh": {
+    "high_150C": 2.554416,
+    "medium_80C": 0.141912
+   },
+   "power_value_cad_mwh": 83.4,
+   "heat_value_cad_mwh_th": 38.64752941176471,
+   "revenue_power_cad": 352972892.59200007,
+   "revenue_heat_cad": 104206415.68376471,
+   "capacity_value_cad": 57976560.00000001,
+   "annualised_capital_cad": 526707376.2071015,
+   "opex_cad": 161206000.0,
+   "margin_cad": -172757507.93133676,
+   "lcoe_cad_mwh": 145.4239337491759,
+   "co2_avoided_mt": 2.1380759656941177,
+   "co2_power_mt": 1.5659468856000003,
+   "co2_heat_mt": 0.5721290800941176,
+   "capex_cad": 10400000000.0,
+   "pipes_cad": 25000000.0,
+   "common_infra_cad": 1600000000.0
+  },
+  "AB_HEARTLAND": {
+   "site": "AB_HEARTLAND",
+   "prov": "AB",
+   "year": 2041,
+   "modules": 2,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 265.8,
+   "electricity_twh": 4.1911344,
+   "heat_twh": 2.83824,
+   "heat_by_grade_twh": {
+    "high_150C": 2.83824
+   },
+   "power_value_cad_mwh": 79.95,
+   "heat_value_cad_mwh_th": 36.52988235294118,
+   "revenue_power_cad": 335081195.28000003,
+   "revenue_heat_cad": 103680573.28941177,
+   "capacity_value_cad": 57412800.0,
+   "annualised_capital_cad": 526454758.7604794,
+   "opex_cad": 161156000.0,
+   "margin_cad": -191436190.19106758,
+   "lcoe_cad_mwh": 145.35996084062225,
+   "co2_avoided_mt": 2.1529608649411767,
+   "co2_power_mt": 1.550719728,
+   "co2_heat_mt": 0.6022411369411765,
+   "capex_cad": 10400000000.0,
+   "pipes_cad": 20000000.0,
+   "common_infra_cad": 1600000000.0
+  },
+  "NB_SAINT_JOHN": {
+   "site": "NB_SAINT_JOHN",
+   "prov": "NB",
+   "year": 2041,
+   "modules": 2,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 266.56,
+   "electricity_twh": 4.20311808,
+   "heat_twh": 2.775168,
+   "heat_by_grade_twh": {
+    "high_150C": 2.775168
+   },
+   "power_value_cad_mwh": 111.0,
+   "heat_value_cad_mwh_th": 55.58870588235295,
+   "revenue_power_cad": 466546106.88,
+   "revenue_heat_cad": 154267997.72611767,
+   "capacity_value_cad": 57576960.0,
+   "annualised_capital_cad": 526656852.71777713,
+   "opex_cad": 161196000.0,
+   "margin_cad": -9461788.111659408,
+   "lcoe_cad_mwh": 145.41113916746514,
+   "co2_avoided_mt": 2.1440116901647057,
+   "co2_power_mt": 1.5551536896,
+   "co2_heat_mt": 0.5888580005647058,
+   "capex_cad": 10400000000.0,
+   "pipes_cad": 24000000.0,
+   "common_infra_cad": 1600000000.0
+  },
+  "NS_POINT_TUPPER": {
+   "site": "NS_POINT_TUPPER",
+   "prov": "NS",
+   "year": 2041,
+   "modules": 2,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 266.56,
+   "electricity_twh": 4.20311808,
+   "heat_twh": 2.775168,
+   "heat_by_grade_twh": {
+    "high_150C": 2.775168
+   },
+   "power_value_cad_mwh": 117.89999999999999,
+   "heat_value_cad_mwh_th": 59.824,
+   "revenue_power_cad": 495547621.63199997,
+   "revenue_heat_cad": 166021650.43199998,
+   "capacity_value_cad": 57576960.0,
+   "annualised_capital_cad": 526252664.8031817,
+   "opex_cad": 161116000.0,
+   "margin_cad": 31777567.260818183,
+   "lcoe_cad_mwh": 145.3087825137793,
+   "co2_avoided_mt": 2.1440116901647057,
+   "co2_power_mt": 1.5551536896,
+   "co2_heat_mt": 0.5888580005647058,
+   "capex_cad": 10400000000.0,
+   "pipes_cad": 16000000.0,
+   "common_infra_cad": 1600000000.0
+  },
+  "BC_KAMLOOPS": {
+   "site": "BC_KAMLOOPS",
+   "prov": "BC",
+   "year": 2041,
+   "modules": 1,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 282.9,
+   "electricity_twh": 2.2303835999999997,
+   "heat_twh": 0.70956,
+   "heat_by_grade_twh": {
+    "high_150C": 0.70956
+   },
+   "power_value_cad_mwh": 74.0,
+   "heat_value_cad_mwh_th": 40.76517647058823,
+   "revenue_power_cad": 165048386.39999998,
+   "revenue_heat_cad": 28925338.616470583,
+   "capacity_value_cad": 0.0,
+   "annualised_capital_cad": 303747217.8184263,
+   "opex_cad": 80598000.0,
+   "margin_cad": -190371492.80195576,
+   "lcoe_cad_mwh": 162.50009209302652,
+   "co2_avoided_mt": 0.19070718903529413,
+   "co2_power_mt": 0.04014690479999999,
+   "co2_heat_mt": 0.15056028423529413,
+   "capex_cad": 6000000000.0,
+   "pipes_cad": 12000000.0,
+   "common_infra_cad": 1600000000.0
+  },
+  "MB_CHURCHILL": {
+   "site": "MB_CHURCHILL",
+   "prov": "MB",
+   "year": 2041,
+   "modules": 1,
+   "carbon_price": 140.0,
+   "net_mwe_per_module": 282.9,
+   "electricity_twh": 2.2303835999999997,
+   "heat_twh": 0.70956,
+   "heat_by_grade_twh": {
+    "high_150C": 0.70956
+   },
+   "power_value_cad_mwh": 48.0,
+   "heat_value_cad_mwh_th": 42.88282352941176,
+   "revenue_power_cad": 107058412.79999998,
+   "revenue_heat_cad": 30427936.26352941,
+   "capacity_value_cad": 0.0,
+   "annualised_capital_cad": 303343029.90383095,
+   "opex_cad": 80518000.0,
+   "margin_cad": -246374680.84030154,
+   "lcoe_cad_mwh": 162.2953787856549,
+   "co2_avoided_mt": 0.15725143503529412,
+   "co2_power_mt": 0.006691150799999999,
+   "co2_heat_mt": 0.15056028423529413,
+   "capex_cad": 6000000000.0,
+   "pipes_cad": 4000000.0,
+   "common_infra_cad": 1600000000.0
+  }
+ },
+ "npv": {
+  "ON_CHATHAM": {
+   "site": "ON_CHATHAM",
+   "prov": "ON",
+   "npv_cad_bn": -1.3397627610946388,
+   "lifetime_co2_mt": 81.95066280847067,
+   "abatement_cost_cad_t": 171.07606716105792,
+   "first_year": {
+    "site": "ON_CHATHAM",
+    "prov": "ON",
+    "year": 2034,
+    "modules": 2,
+    "carbon_price": 127.0,
+    "net_mwe_per_module": 284.07,
+    "electricity_twh": 4.47921576,
+    "heat_twh": 1.844856,
+    "heat_by_grade_twh": {
+     "high_150C": 0.851472,
+     "medium_80C": 0.993384
+    },
+    "power_value_cad_mwh": 85.49000000000001,
+    "heat_value_cad_mwh_th": 40.12437647058824,
+    "revenue_power_cad": 382928155.32240003,
+    "revenue_heat_cad": 74023696.67802353,
+    "capacity_value_cad": 61359120.0,
+    "annualised_capital_cad": 447486544.9464075,
+    "opex_cad": 161126000.0,
+    "margin_cad": -90301572.94598395,
+    "lcoe_cad_mwh": 128.65984799306773,
+    "co2_avoided_mt": 2.0487665702117646,
+    "co2_power_mt": 1.6573098311999999,
+    "co2_heat_mt": 0.3914567390117647,
+    "capex_cad": 8840000000.0,
+    "pipes_cad": 17000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  },
+  "SK_BELLE_PLAINE": {
+   "site": "SK_BELLE_PLAINE",
+   "prov": "SK",
+   "npv_cad_bn": -3.44339391396551,
+   "lifetime_co2_mt": 85.5230386277647,
+   "abatement_cost_cad_t": 220.8004536336723,
+   "first_year": {
+    "site": "SK_BELLE_PLAINE",
+    "prov": "SK",
+    "year": 2037,
+    "modules": 2,
+    "carbon_price": 134.0,
+    "net_mwe_per_module": 268.41,
+    "electricity_twh": 4.2322888800000005,
+    "heat_twh": 2.696328,
+    "heat_by_grade_twh": {
+     "high_150C": 2.554416,
+     "medium_80C": 0.141912
+    },
+    "power_value_cad_mwh": 81.18,
+    "heat_value_cad_mwh_th": 37.3744,
+    "revenue_power_cad": 343577211.2784001,
+    "revenue_heat_cad": 100773641.2032,
+    "capacity_value_cad": 57976560.00000001,
+    "annualised_capital_cad": 526707376.2071015,
+    "opex_cad": 161206000.0,
+    "margin_cad": -185585963.72550142,
+    "lcoe_cad_mwh": 145.4239337491759,
+    "co2_avoided_mt": 2.1380759656941177,
+    "co2_power_mt": 1.5659468856000003,
+    "co2_heat_mt": 0.5721290800941176,
+    "capex_cad": 10400000000.0,
+    "pipes_cad": 25000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  },
+  "AB_HEARTLAND": {
+   "site": "AB_HEARTLAND",
+   "prov": "AB",
+   "npv_cad_bn": -3.801314910955866,
+   "lifetime_co2_mt": 86.11843459764712,
+   "abatement_cost_cad_t": 228.9176358513595,
+   "first_year": {
+    "site": "AB_HEARTLAND",
+    "prov": "AB",
+    "year": 2038,
+    "modules": 2,
+    "carbon_price": 136.0,
+    "net_mwe_per_module": 265.8,
+    "electricity_twh": 4.1911344,
+    "heat_twh": 2.83824,
+    "heat_by_grade_twh": {
+     "high_150C": 2.83824
+    },
+    "power_value_cad_mwh": 78.47,
+    "heat_value_cad_mwh_th": 35.681129411764715,
+    "revenue_power_cad": 328878316.36800003,
+    "revenue_heat_cad": 101271608.74164708,
+    "capacity_value_cad": 57412800.0,
+    "annualised_capital_cad": 526454758.7604794,
+    "opex_cad": 161156000.0,
+    "margin_cad": -200048033.6508323,
+    "lcoe_cad_mwh": 145.35996084062225,
+    "co2_avoided_mt": 2.1529608649411767,
+    "co2_power_mt": 1.550719728,
+    "co2_heat_mt": 0.6022411369411765,
+    "capex_cad": 10400000000.0,
+    "pipes_cad": 20000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  },
+  "NB_SAINT_JOHN": {
+   "site": "NB_SAINT_JOHN",
+   "prov": "NB",
+   "npv_cad_bn": -0.24603999915639213,
+   "lifetime_co2_mt": 85.76046760658818,
+   "abatement_cost_cad_t": 144.41312337757472,
+   "first_year": {
+    "site": "NB_SAINT_JOHN",
+    "prov": "NB",
+    "year": 2035,
+    "modules": 2,
+    "carbon_price": 130.0,
+    "net_mwe_per_module": 266.56,
+    "electricity_twh": 4.20311808,
+    "heat_twh": 2.775168,
+    "heat_by_grade_twh": {
+     "high_150C": 2.775168
+    },
+    "power_value_cad_mwh": 107.30000000000001,
+    "heat_value_cad_mwh_th": 53.46682352941177,
+    "revenue_power_cad": 450994569.984,
+    "revenue_heat_cad": 148379417.7204706,
+    "capacity_value_cad": 57576960.0,
+    "annualised_capital_cad": 526656852.71777713,
+    "opex_cad": 161196000.0,
+    "margin_cad": -30901905.0133065,
+    "lcoe_cad_mwh": 145.41113916746514,
+    "co2_avoided_mt": 2.1440116901647057,
+    "co2_power_mt": 1.5551536896,
+    "co2_heat_mt": 0.5888580005647058,
+    "capex_cad": 10400000000.0,
+    "pipes_cad": 24000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  },
+  "NS_POINT_TUPPER": {
+   "site": "NS_POINT_TUPPER",
+   "prov": "NS",
+   "npv_cad_bn": 0.5892907550697953,
+   "lifetime_co2_mt": 85.76046760658818,
+   "abatement_cost_cad_t": 125.17845429360646,
+   "first_year": {
+    "site": "NS_POINT_TUPPER",
+    "prov": "NS",
+    "year": 2036,
+    "modules": 2,
+    "carbon_price": 132.0,
+    "net_mwe_per_module": 266.56,
+    "electricity_twh": 4.20311808,
+    "heat_twh": 2.775168,
+    "heat_by_grade_twh": {
+     "high_150C": 2.775168
+    },
+    "power_value_cad_mwh": 114.94,
+    "heat_value_cad_mwh_th": 58.126494117647056,
+    "revenue_power_cad": 483106392.1152,
+    "revenue_heat_cad": 161310786.42748234,
+    "capacity_value_cad": 57576960.0,
+    "annualised_capital_cad": 526252664.8031817,
+    "opex_cad": 161116000.0,
+    "margin_cad": 14625473.739500582,
+    "lcoe_cad_mwh": 145.3087825137793,
+    "co2_avoided_mt": 2.1440116901647057,
+    "co2_power_mt": 1.5551536896,
+    "co2_heat_mt": 0.5888580005647058,
+    "capex_cad": 10400000000.0,
+    "pipes_cad": 16000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  },
+  "BC_KAMLOOPS": {
+   "site": "BC_KAMLOOPS",
+   "prov": "BC",
+   "npv_cad_bn": -3.767979910879458,
+   "lifetime_co2_mt": 7.62828756141176,
+   "abatement_cost_cad_t": 1108.767496729051,
+   "first_year": {
+    "site": "BC_KAMLOOPS",
+    "prov": "BC",
+    "year": 2040,
+    "modules": 1,
+    "carbon_price": 140.0,
+    "net_mwe_per_module": 282.9,
+    "electricity_twh": 2.2303835999999997,
+    "heat_twh": 0.70956,
+    "heat_by_grade_twh": {
+     "high_150C": 0.70956
+    },
+    "power_value_cad_mwh": 74.0,
+    "heat_value_cad_mwh_th": 40.76517647058823,
+    "revenue_power_cad": 165048386.39999998,
+    "revenue_heat_cad": 28925338.616470583,
+    "capacity_value_cad": 0.0,
+    "annualised_capital_cad": 303747217.8184263,
+    "opex_cad": 80598000.0,
+    "margin_cad": -190371492.80195576,
+    "lcoe_cad_mwh": 162.50009209302652,
+    "co2_avoided_mt": 0.19070718903529413,
+    "co2_power_mt": 0.04014690479999999,
+    "co2_heat_mt": 0.15056028423529413,
+    "capex_cad": 6000000000.0,
+    "pipes_cad": 12000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  },
+  "MB_CHURCHILL": {
+   "site": "MB_CHURCHILL",
+   "prov": "MB",
+   "npv_cad_bn": -4.876438348473448,
+   "lifetime_co2_mt": 6.290057401411769,
+   "abatement_cost_cad_t": 1700.7992364153274,
+   "first_year": {
+    "site": "MB_CHURCHILL",
+    "prov": "MB",
+    "year": 2040,
+    "modules": 1,
+    "carbon_price": 140.0,
+    "net_mwe_per_module": 282.9,
+    "electricity_twh": 2.2303835999999997,
+    "heat_twh": 0.70956,
+    "heat_by_grade_twh": {
+     "high_150C": 0.70956
+    },
+    "power_value_cad_mwh": 48.0,
+    "heat_value_cad_mwh_th": 42.88282352941176,
+    "revenue_power_cad": 107058412.79999998,
+    "revenue_heat_cad": 30427936.26352941,
+    "capacity_value_cad": 0.0,
+    "annualised_capital_cad": 303343029.90383095,
+    "opex_cad": 80518000.0,
+    "margin_cad": -246374680.84030154,
+    "lcoe_cad_mwh": 162.2953787856549,
+    "co2_avoided_mt": 0.15725143503529412,
+    "co2_power_mt": 0.006691150799999999,
+    "co2_heat_mt": 0.15056028423529413,
+    "capex_cad": 6000000000.0,
+    "pipes_cad": 4000000.0,
+    "common_infra_cad": 1600000000.0
+   }
+  }
+ },
+ "breakeven_capex_cad_bn_per_module": {
+  "ON_CHATHAM": 3.6119042581796235,
+  "SK_BELLE_PLAINE": 2.6783030430172436,
+  "AB_HEARTLAND": 2.499342544522065,
+  "NB_SAINT_JOHN": 4.276980000421803,
+  "NS_POINT_TUPPER": 4.694645377534897,
+  "BC_KAMLOOPS": 0.6320200891205394,
+  "MB_CHURCHILL": 0.5
+ },
+ "highway_allocation": {
+  "BC": {
+   "km": 1105.68706460866,
+   "traction_twh": 1.404382324819014
+  },
+  "AB": {
+   "km": 502.0994399672176,
+   "traction_twh": 0.6377388334926922
+  },
+  "SK": {
+   "km": 699.7343259117607,
+   "traction_twh": 0.8887636934844967
+  },
+  "MB": {
+   "km": 523.4653735828439,
+   "traction_twh": 0.664876656194509
+  },
+  "ON": {
+   "km": 2307.5208304876382,
+   "traction_twh": 2.9308848517962023
+  },
+  "QC": {
+   "km": 699.7343259117607,
+   "traction_twh": 0.8887636934844967
+  },
+  "NB": {
+   "km": 551.2410872831581,
+   "traction_twh": 0.7001558257068706
+  },
+  "NS": {
+   "km": 464.7090561398716,
+   "traction_twh": 0.590247643764513
+  },
+  "NL": {
+   "km": 966.8084961070892,
+   "traction_twh": 1.2279864772572053
+  }
+ },
+ "e85": {
+  "ON_CHATHAM": {
+   "ethanol_bl": 0.4227998896551724,
+   "e85_bl": 0.5637331862068965,
+   "ethanol_pj": 8.921077671724138,
+   "heat_co2_avoided_g_per_mj": 20.25229997212155
+  },
+  "SK_BELLE_PLAINE": {
+   "ethanol_bl": 0.7610398013793103,
+   "e85_bl": 1.0147197351724138,
+   "ethanol_pj": 16.05793980910345,
+   "heat_co2_avoided_g_per_mj": 20.25229997212155
+  },
+  "AB_HEARTLAND": {
+   "ethanol_bl": 0.3523332413793104,
+   "e85_bl": 0.4697776551724138,
+   "ethanol_pj": 7.43423139310345,
+   "heat_co2_avoided_g_per_mj": 20.25229997212155
+  }
+ },
+ "kelp": [
+  {
+   "biomass_key": "atl_shelf",
+   "valuation": "market_2026",
+   "revenue_fuel": 308.23361759999995,
+   "revenue_fertiliser": 44.4,
+   "process": 325.6,
+   "energy": 73.19688188799998,
+   "biomass": 499.5,
+   "margin": -545.663264288,
+   "breakeven_biomass_cad_t": -46.16326428800008,
+   "fuel_gj_per_t": 7.697732799999999,
+   "ethanol_l_per_t": 177.92648922686948,
+   "heat_mwh_th_per_t": 0.5653119999999999,
+   "el_mwh_per_t": 0.33399199999999996,
+   "site": "NS_POINT_TUPPER"
+  },
+  {
+   "biomass_key": "atl_shelf",
+   "valuation": "system_shadow_2041",
+   "revenue_fuel": 664.3027555199999,
+   "revenue_fertiliser": 44.4,
+   "process": 325.6,
+   "energy": 73.19688188799998,
+   "biomass": 499.5,
+   "margin": -189.59412636800016,
+   "breakeven_biomass_cad_t": 309.90587363199984,
+   "fuel_gj_per_t": 7.697732799999999,
+   "ethanol_l_per_t": 177.92648922686948,
+   "heat_mwh_th_per_t": 0.5653119999999999,
+   "el_mwh_per_t": 0.33399199999999996,
+   "site": "NS_POINT_TUPPER"
+  },
+  {
+   "biomass_key": "atl_shelf",
+   "valuation": "market_2026",
+   "revenue_fuel": 308.23361759999995,
+   "revenue_fertiliser": 44.4,
+   "process": 325.6,
+   "energy": 68.4980744997647,
+   "biomass": 499.5,
+   "margin": -540.9644568997649,
+   "breakeven_biomass_cad_t": -41.4644568997648,
+   "fuel_gj_per_t": 7.697732799999999,
+   "ethanol_l_per_t": 177.92648922686948,
+   "heat_mwh_th_per_t": 0.5653119999999999,
+   "el_mwh_per_t": 0.33399199999999996,
+   "site": "NB_SAINT_JOHN"
+  },
+  {
+   "biomass_key": "atl_shelf",
+   "valuation": "system_shadow_2041",
+   "revenue_fuel": 664.3027555199999,
+   "revenue_fertiliser": 44.4,
+   "process": 325.6,
+   "energy": 68.4980744997647,
+   "biomass": 499.5,
+   "margin": -184.89531897976485,
+   "breakeven_biomass_cad_t": 314.60468102023515,
+   "fuel_gj_per_t": 7.697732799999999,
+   "ethanol_l_per_t": 177.92648922686948,
+   "heat_mwh_th_per_t": 0.5653119999999999,
+   "el_mwh_per_t": 0.33399199999999996,
+   "site": "NB_SAINT_JOHN"
+  },
+  {
+   "biomass_key": "hb_shelf",
+   "valuation": "market_2026",
+   "revenue_fuel": 308.23361759999995,
+   "revenue_fertiliser": 44.4,
+   "process": 325.6,
+   "energy": 40.27379073505882,
+   "biomass": 2200.2,
+   "margin": -2213.4401731350586,
+   "breakeven_biomass_cad_t": -13.240173135058917,
+   "fuel_gj_per_t": 7.697732799999999,
+   "ethanol_l_per_t": 177.92648922686948,
+   "heat_mwh_th_per_t": 0.5653119999999999,
+   "el_mwh_per_t": 0.33399199999999996,
+   "site": "MB_CHURCHILL"
+  },
+  {
+   "biomass_key": "hb_shelf",
+   "valuation": "system_shadow_2041",
+   "revenue_fuel": 664.3027555199999,
+   "revenue_fertiliser": 44.4,
+   "process": 325.6,
+   "energy": 40.27379073505882,
+   "biomass": 2200.2,
+   "margin": -1857.3710352150588,
+   "breakeven_biomass_cad_t": 342.82896478494104,
+   "fuel_gj_per_t": 7.697732799999999,
+   "ethanol_l_per_t": 177.92648922686948,
+   "heat_mwh_th_per_t": 0.5653119999999999,
+   "el_mwh_per_t": 0.33399199999999996,
+   "site": "MB_CHURCHILL"
+  }
+ ],
+ "kelp_capacity_ns_mt_dry": 4.90909090909091,
+ "kelp_capacity_churchill_mt_dry": 1.2551652892561986,
+ "deployment": [
+  {
+   "year": 2034,
+   "modules": 2,
+   "electricity_twh": 4.47921576,
+   "co2_avoided_mt": 2.0487665702117646
+  },
+  {
+   "year": 2035,
+   "modules": 4,
+   "electricity_twh": 8.68233384,
+   "co2_avoided_mt": 4.19277826037647
+  },
+  {
+   "year": 2036,
+   "modules": 6,
+   "electricity_twh": 12.885451920000001,
+   "co2_avoided_mt": 6.336789950541176
+  },
+  {
+   "year": 2037,
+   "modules": 8,
+   "electricity_twh": 17.1177408,
+   "co2_avoided_mt": 8.474865916235293
+  },
+  {
+   "year": 2038,
+   "modules": 10,
+   "electricity_twh": 21.308875200000003,
+   "co2_avoided_mt": 10.62782678117647
+  },
+  {
+   "year": 2039,
+   "modules": 10,
+   "electricity_twh": 21.308875200000003,
+   "co2_avoided_mt": 10.62782678117647
+  },
+  {
+   "year": 2040,
+   "modules": 10,
+   "electricity_twh": 21.308875200000003,
+   "co2_avoided_mt": 10.62782678117647
+  },
+  {
+   "year": 2041,
+   "modules": 10,
+   "electricity_twh": 21.308875200000003,
+   "co2_avoided_mt": 10.62782678117647
+  }
+ ],
+ "sites": [
+  {
+   "id": "ON_CHATHAM",
+   "prov": "ON",
+   "place": "Chatham-Kent industrial area (Highway 401)",
+   "modules": 2,
+   "first_year": 2034,
+   "fleet": true,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 60.0,
+     "lf": 0.9,
+     "pipe_km": 3.0,
+     "user": "Chatham grain-ethanol distillery (existing) and expansion"
+    },
+    {
+     "grade": "medium_80C",
+     "mwth": 140.0,
+     "lf": 0.45,
+     "pipe_km": 2.0,
+     "user": "new greenhouse and grain-drying cluster beside the site (seasonal)"
+    }
+   ],
+   "heat": {
+    "high_150C": 60.0,
+    "medium_80C": 140.0
+   },
+   "heat_avg": {
+    "high_150C": 54.0,
+    "medium_80C": 63.0
+   },
+   "uses": "Chatham grain-ethanol distillery (existing) and expansion (150C, 60 MWth/module, load factor 0.90, 3 km); new greenhouse and grain-drying cluster beside the site (seasonal) (80C, 140 MWth/module, load factor 0.45, 2 km)"
+  },
+  {
+   "id": "SK_BELLE_PLAINE",
+   "prov": "SK",
+   "place": "Belle Plaine / Moose Jaw (Highway 1)",
+   "modules": 2,
+   "first_year": 2037,
+   "fleet": true,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 180.0,
+     "lf": 0.9,
+     "pipe_km": 5.0,
+     "user": "Belle Plaine ethanol distillery and potash solution-mining steam"
+    },
+    {
+     "grade": "medium_80C",
+     "mwth": 20.0,
+     "lf": 0.45,
+     "pipe_km": 2.0,
+     "user": "greenhouses beside the site (seasonal)"
+    }
+   ],
+   "heat": {
+    "high_150C": 180.0,
+    "medium_80C": 20.0
+   },
+   "heat_avg": {
+    "high_150C": 162.0,
+    "medium_80C": 9.0
+   },
+   "uses": "Belle Plaine ethanol distillery and potash solution-mining steam (150C, 180 MWth/module, load factor 0.90, 5 km); greenhouses beside the site (seasonal) (80C, 20 MWth/module, load factor 0.45, 2 km)"
+  },
+  {
+   "id": "AB_HEARTLAND",
+   "prov": "AB",
+   "place": "Alberta Industrial Heartland, Fort Saskatchewan (Yellowhead Highway 16)",
+   "modules": 2,
+   "first_year": 2038,
+   "fleet": true,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 200.0,
+     "lf": 0.9,
+     "pipe_km": 5.0,
+     "user": "petrochemical and upgrader process steam; ethanol distillation"
+    }
+   ],
+   "heat": {
+    "high_150C": 200.0
+   },
+   "heat_avg": {
+    "high_150C": 180.0
+   },
+   "uses": "petrochemical and upgrader process steam; ethanol distillation (150C, 200 MWth/module, load factor 0.90, 5 km)"
+  },
+  {
+   "id": "NB_SAINT_JOHN",
+   "prov": "NB",
+   "place": "East Saint John industrial area",
+   "modules": 2,
+   "first_year": 2035,
+   "fleet": true,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 120.0,
+     "lf": 0.9,
+     "pipe_km": 5.0,
+     "user": "Saint John refinery process steam"
+    },
+    {
+     "grade": "high_150C",
+     "mwth": 80.0,
+     "lf": 0.85,
+     "pipe_km": 1.0,
+     "user": "Atlantic kelp biorefinery built beside the site"
+    }
+   ],
+   "heat": {
+    "high_150C": 200.0
+   },
+   "heat_avg": {
+    "high_150C": 176.0
+   },
+   "uses": "Saint John refinery process steam (150C, 120 MWth/module, load factor 0.90, 5 km); Atlantic kelp biorefinery built beside the site (150C, 80 MWth/module, load factor 0.85, 1 km)"
+  },
+  {
+   "id": "NS_POINT_TUPPER",
+   "prov": "NS",
+   "place": "Point Tupper / Port Hawkesbury (Highway 104)",
+   "modules": 2,
+   "first_year": 2036,
+   "fleet": true,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 120.0,
+     "lf": 0.9,
+     "pipe_km": 3.0,
+     "user": "Port Hawkesbury paper-mill process steam"
+    },
+    {
+     "grade": "high_150C",
+     "mwth": 80.0,
+     "lf": 0.85,
+     "pipe_km": 1.0,
+     "user": "Atlantic kelp biorefinery built beside the site"
+    }
+   ],
+   "heat": {
+    "high_150C": 200.0
+   },
+   "heat_avg": {
+    "high_150C": 176.0
+   },
+   "uses": "Port Hawkesbury paper-mill process steam (150C, 120 MWth/module, load factor 0.90, 3 km); Atlantic kelp biorefinery built beside the site (150C, 80 MWth/module, load factor 0.85, 1 km)"
+  },
+  {
+   "id": "BC_KAMLOOPS",
+   "prov": "BC",
+   "place": "Kamloops (Highway 1) - test site",
+   "modules": 1,
+   "first_year": 2040,
+   "fleet": false,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 100.0,
+     "lf": 0.9,
+     "pipe_km": 3.0,
+     "user": "pulp-mill process steam"
+    }
+   ],
+   "heat": {
+    "high_150C": 100.0
+   },
+   "heat_avg": {
+    "high_150C": 90.0
+   },
+   "uses": "pulp-mill process steam (150C, 100 MWth/module, load factor 0.90, 3 km)"
+  },
+  {
+   "id": "MB_CHURCHILL",
+   "prov": "MB",
+   "place": "Churchill, Hudson Bay - test site",
+   "modules": 1,
+   "first_year": 2040,
+   "fleet": false,
+   "users": [
+    {
+     "grade": "high_150C",
+     "mwth": 150.0,
+     "lf": 0.6,
+     "pipe_km": 1.0,
+     "user": "Hudson Bay kelp biorefinery (seasonal biomass)"
+    }
+   ],
+   "heat": {
+    "high_150C": 150.0
+   },
+   "heat_avg": {
+    "high_150C": 90.0
+   },
+   "uses": "Hudson Bay kelp biorefinery (seasonal biomass) (150C, 150 MWth/module, load factor 0.60, 1 km)"
+  }
+ ],
+ "provinces": {
+  "BC": {
+   "name": "British Columbia",
+   "grid_avg": 18,
+   "marginal": "hydro",
+   "power_value_cad_mwh": 74.0,
+   "gas_cad_gj": 4.5,
+   "tch_km": 1035,
+   "nuclear_policy": "Clean Energy Act excludes nuclear; governing party open to review"
+  },
+  "AB": {
+   "name": "Alberta",
+   "grid_avg": 346,
+   "marginal": "ccgt",
+   "gas_cad_gj": 3.5,
+   "tch_km": 470,
+   "nuclear_policy": "public consultation on nuclear; large-reactor proposal (Peace River)"
+  },
+  "SK": {
+   "name": "Saskatchewan",
+   "grid_avg": 581,
+   "marginal": "ccgt",
+   "gas_cad_gj": 4.0,
+   "tch_km": 655,
+   "nuclear_policy": "SaskPower BWRX-300 near Estevan; final investment decision 2029"
+  },
+  "MB": {
+   "name": "Manitoba",
+   "grid_avg": 3,
+   "marginal": "hydro",
+   "power_value_cad_mwh": 48.0,
+   "gas_cad_gj": 5.0,
+   "tch_km": 490,
+   "nuclear_policy": "no provincial SMR programme"
+  },
+  "ON": {
+   "name": "Ontario",
+   "grid_avg": 73,
+   "marginal": "ccgt",
+   "gas_cad_gj": 5.0,
+   "tch_km": 2160,
+   "nuclear_policy": "Darlington BWRX-300 under construction; further units planned"
+  },
+  "QC": {
+   "name": "Quebec",
+   "grid_avg": 3,
+   "marginal": "hydro",
+   "power_value_cad_mwh": 60.0,
+   "gas_cad_gj": 6.0,
+   "tch_km": 655,
+   "nuclear_policy": "no SMR programme"
+  },
+  "NB": {
+   "name": "New Brunswick",
+   "grid_avg": 375,
+   "marginal": "ccgt",
+   "gas_cad_gj": 8.0,
+   "tch_km": 516,
+   "nuclear_policy": "Point Lepreau; advanced-reactor projects"
+  },
+  "NS": {
+   "name": "Nova Scotia",
+   "grid_avg": 628,
+   "marginal": "ccgt",
+   "gas_cad_gj": 9.0,
+   "tch_km": 435,
+   "nuclear_policy": "ban on utility nuclear lifted 2025; SMR MOU with Ontario"
+  },
+  "NL": {
+   "name": "Newfoundland and Labrador",
+   "grid_avg": 17,
+   "marginal": "hydro",
+   "power_value_cad_mwh": 60.0,
+   "gas_cad_gj": 9.0,
+   "tch_km": 905,
+   "nuclear_policy": "no SMR programme"
+  }
+ },
+ "params": {
+  "module": {
+   "mwe": 300.0,
+   "mwth": 870.0,
+   "availability": 0.9,
+   "life_years": 40,
+   "capex_cad_bn": {
+    "noak_low": 3.5,
+    "central": 4.4,
+    "foak": 6.1
+   },
+   "fixed_om_cad_kw_yr": 150.0,
+   "fuel_vom_cad_mwh": 12.0,
+   "waste_decom_cad_mwh": 3.0
+  },
+  "finance": {
+   "real_rate": {
+    "low": 0.04,
+    "central": 0.04,
+    "high": 0.06,
+    "merchant": 0.08
+   },
+   "itc": 0.15,
+   "itc_last_year": 2034
+  },
+  "extraction_penalty_mwe_per_mwth": {
+   "high_150C": 0.19,
+   "medium_80C": 0.09,
+   "low_45C": 0.03
+  },
+  "heat_delivery_cad_mwh_th": 8.0,
+  "site": {
+   "common_infra_cad_bn": {
+    "none": 0.0,
+    "low": 0.8,
+    "central": 1.6,
+    "high": 2.4
+   },
+   "pipe_cad_m_per_km": {
+    "high_150C": 4.0,
+    "medium_80C": 2.5
+   },
+   "pipe_om_share": 0.01
+  },
+  "gas_boiler_efficiency": 0.85,
+  "gas_co2_t_per_gj": 0.0501,
+  "carbon_price_path": {
+   "2026": 95,
+   "2030": 115,
+   "2035": 130,
+   "2040": 140
+  },
+  "decarbonised_grid": {
+   "switch_year": 2045,
+   "power_cad_mwh": 79.2,
+   "heat_cad_mwh_th": 41.9
+  },
+  "ccgt": {
+   "heat_rate_gj_mwh": 6.9,
+   "vom_cad_mwh": 4.0,
+   "co2_t_mwh": 0.37,
+   "capacity_value_cad_kw_yr": 120.0
+  },
+  "coal": {
+   "heat_rate_gj_mwh": 10.5,
+   "fuel_cad_gj": 2.5,
+   "vom_cad_mwh": 6.0,
+   "co2_t_mwh": 0.95
+  },
+  "ethanol_heat_mj_per_l": 7.25,
+  "ethanol_lhv_mj_per_l": 21.1,
+  "greenhouse_heat_gj_per_m2_yr": 1.2,
+  "highway1": {
+   "traction_twh": 9.9338,
+   "route_km": 7821.0
+  },
+  "kelp": {
+   "fuel_value_cad_gj": {
+    "market_2026": 45.0,
+    "system_shadow_2041": 91.4
+   },
+   "ethanol_value_cad_gj": {
+    "market_2026": 38.0,
+    "system_shadow_2041": 91.4
+   },
+   "rng_value_cad_gj": 25.0,
+   "n_cad_kg": 1.5,
+   "p_cad_kg": 2.0,
+   "k_cad_kg": 0.6,
+   "eur_cad": 1.48,
+   "biomass_cad_t": {
+    "atl_shelf": 499.5,
+    "pac_shelf": 369.5,
+    "hb_shelf": 2200.2
+   },
+   "hb_forced_dry_mt": 0.75,
+   "hb_forced_extra_cad_t": 942.2
+  },
+  "_sources": {
+   "capex": "OPG Darlington New Nuclear: CAD 20.9 bn for four BWRX-300 (unit 1 CAD 6.1 bn + CAD 1.6 bn common); later units ~CAD 4.4 bn each",
+   "carbon": "Federal benchmark after the 2026 reset: CAD 95 (2026), 115 (2030), 130 (2035), 140 (2040)",
+   "grid": "ECCC federal offset system, Table 5.4 electricity consumption intensity (g CO2e/kWh)",
+   "ethanol_heat": "Renewable Fuels Association (2024) using Argonne GREET 2022: 26,083 Btu natural gas per gallon",
+   "kelp_biomass": "Archived national model siting solution: cheapest biomass by region (CAD/t dry)",
+   "itc": "Federal Clean Electricity investment tax credit, 15%, for property available for use before 2035; available to provincial crown utilities"
+  }
+ }
+}

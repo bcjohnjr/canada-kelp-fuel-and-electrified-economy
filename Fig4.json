@@ -9,12 +9,12 @@
    [
     "supply",
     "Onshore wind",
-    292.38425510466186
+    288.2388120344865
    ],
    [
     "supply",
     "PV",
-    48.65287268061807
+    47.872827680618066
    ],
    [
     "supply",
@@ -29,22 +29,22 @@
    [
     "use",
     "Vehicles and rail",
-    194.61149072247227
+    191.49131072247226
    ],
    [
     "use",
     "Biorefineries",
-    13.36406742137218
+    14.35478742137218
    ],
    [
     "use",
     "Thermal storage",
-    4.17588467240733
+    5.913989935565225
    ],
    [
     "use",
     "Electrofuels",
-    128.20895733089736
+    123.67482399756406
    ],
    [
     "use",
@@ -98,7 +98,7 @@
    ],
    [
     "e-Fischer\u2013Tropsch",
-    53.42039888787391
+    51.53117666565169
    ],
    [
     "e-Methanol",
@@ -119,7 +119,7 @@
     "Cars and light trucks",
     "least-cost",
     "Battery-electric",
-    427.3101666666667
+    416.16666666666674
    ],
    [
     "Cars and light trucks",
@@ -143,7 +143,7 @@
     "Cars and light trucks",
     "electric-or-biofuel",
     "Battery-electric",
-    427.3101666666667
+    416.16666666666674
    ],
    [
     "Cars and light trucks",
@@ -467,7 +467,7 @@
     "Aviation (jets)",
     "least-cost",
     "Renewable liquid",
-    90.567
+    88.67777777777778
    ],
    [
     "Aviation (jets)",
@@ -491,7 +491,7 @@
     "Aviation (jets)",
     "electric-or-biofuel",
     "Renewable liquid",
-    90.567
+    88.67777777777778
    ],
    [
     "Aviation (jets)",

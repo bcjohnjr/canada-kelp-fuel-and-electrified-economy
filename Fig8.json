@@ -222,6 +222,6 @@
     26.508486195015113
    ]
   ],
-  "note": "Steady-state mass balance (TP falls in proportion to the load removed); chlorophyll from Dillon and Rigler (1974), slope 1.449; response time about 2 years; legacy sediment P slows it."
+  "note": "Idealized equilibrium, conditional on harvested P substituting for the same amount of external P loading; TP decline and chlorophyll response are NOT a forecast of observed water quality or cleanup time (internal loading, sediment flux and hydrodynamics omitted)."
  }
 }

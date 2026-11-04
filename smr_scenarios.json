@@ -1,0 +1,2771 @@
+{
+ "rows": [
+  {
+   "case": "No SMR (wind, solar and hydro only)",
+   "total_cost_bn": 87.28470990215722,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 288.2388120344865,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7662944809777
+  },
+  {
+   "case": "Central: current law (no ITC after 2034), CAD 4.4 bn/module, 4%",
+   "total_cost_bn": 87.28470990215722,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 288.2388120344865,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7662944809777
+  },
+  {
+   "case": "ITC extended beyond 2034 (15%)",
+   "total_cost_bn": 87.23941613858031,
+   "delta_bn": -0.04529376357690751,
+   "smr_gw": 0.634667222553107,
+   "smr_modules": 2.115557408510357,
+   "smr_lcoe": 113.91673011725818,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 3.3374788272,
+   "smr_net_twh": 4.369595405440696,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 280.3560810214668,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136299,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7665607693979
+  },
+  {
+   "case": "CAD 3.5 bn/module (fleet learning)",
+   "total_cost_bn": 87.21376365646574,
+   "delta_bn": -0.07094624569147356,
+   "smr_gw": 0.634667222553107,
+   "smr_modules": 2.115557408510357,
+   "smr_lcoe": 108.79004423958976,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 3.3374788272,
+   "smr_net_twh": 4.369595405440696,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 280.3560810214668,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136299,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7665607693979
+  },
+  {
+   "case": "CAD 3.5 bn/module and ITC extended",
+   "total_cost_bn": 87.15764885184011,
+   "delta_bn": -0.1270610503171099,
+   "smr_gw": 0.634667222553107,
+   "smr_modules": 2.115557408510357,
+   "smr_lcoe": 97.57541888219012,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 3.3374788272,
+   "smr_net_twh": 4.369595405440696,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 280.3560810214668,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136299,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7665607693979
+  },
+  {
+   "case": "CAD 6.1 bn/module (first of a kind)",
+   "total_cost_bn": 87.28470990215722,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 164.32914124766424,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 288.2388120344865,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7662944809777
+  },
+  {
+   "case": "Financed at 7%",
+   "total_cost_bn": 87.28470990215722,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 173.56596103665035,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 288.2388120344865,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7662944809777
+  },
+  {
+   "case": "Financed at 3% (public)",
+   "total_cost_bn": 87.24237075280762,
+   "delta_bn": -0.04233914934960126,
+   "smr_gw": 0.634667222553107,
+   "smr_modules": 2.115557408510357,
+   "smr_lcoe": 114.50721406986156,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 3.3374788272,
+   "smr_net_twh": 4.369595405440696,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 280.3560810214668,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136299,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7665607693979
+  },
+  {
+   "case": "All distilleries beside a module (co-location 100%)",
+   "total_cost_bn": 87.28470990215722,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 288.2388120344865,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.7662944809777
+  },
+  {
+   "case": "All distilleries beside a module, ITC extended",
+   "total_cost_bn": 87.22850508269853,
+   "delta_bn": -0.05620481945868505,
+   "smr_gw": 0.7875555891790841,
+   "smr_modules": 2.625185297263614,
+   "smr_lcoe": 113.91673011725818,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.3491372741356926,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272,
+   "steam_inl_twh": 1.8359830456136295,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 4.141461872813629,
+   "smr_net_twh": 5.4222105092533095,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 278.457167974903,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272
+    },
+    "inl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.8359830456136295
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.76662575997379
+  },
+  {
+   "case": "No distillery co-location (0%), ITC extended",
+   "total_cost_bn": 87.25342166983057,
+   "delta_bn": -0.031288232326645016,
+   "smr_gw": 0.43841831504339146,
+   "smr_modules": 1.4613943834779717,
+   "smr_lcoe": 113.91673011725818,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 2.3054788272,
+   "smr_net_twh": 3.0184490186340986,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 282.7935431977471,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.76647783006045
+  },
+  {
+   "case": "Forced fleet 10 modules (4 Atlantic, 6 inland)",
+   "total_cost_bn": 88.24422961111216,
+   "delta_bn": 0.959519708954943,
+   "smr_gw": 3.0,
+   "smr_modules": 10.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 1.2,
+   "inl_gw": 1.8,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 5.763697068000001,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 6.795697068000001,
+   "smr_net_twh": 22.36081755708,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 260.98157157350755,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 5.763697068000001
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136299,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.77997044034181,
+   "site_cost_bn": 0.4041879145953777,
+   "total_with_sites_bn": 88.64841752570754,
+   "delta_with_sites_bn": 1.3637076235503258
+  },
+  {
+   "case": "Forced fleet 20 modules (8 Atlantic, 12 inland)",
+   "total_cost_bn": 89.51598513486113,
+   "delta_bn": 2.231275232703908,
+   "smr_gw": 6.0,
+   "smr_modules": 20.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 2.4,
+   "inl_gw": 3.6,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 5.763697068000001,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 6.795697068000001,
+   "smr_net_twh": 46.01281755708,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 237.3295715735075,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 5.763697068000001
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136299,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.79930881153336,
+   "site_cost_bn": 0.8083758291907553,
+   "total_with_sites_bn": 90.32436096405188,
+   "delta_with_sites_bn": 3.0396510618946593
+  },
+  {
+   "case": "Forced fleet 40 modules (10 Atlantic, 30 inland)",
+   "total_cost_bn": 92.1252429395921,
+   "delta_bn": 4.840533037434881,
+   "smr_gw": 11.999999999999998,
+   "smr_modules": 39.99999999999999,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 3.0000000000000004,
+   "inl_gw": 8.999999999999998,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 5.0962397198163005,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 6.128239719816301,
+   "smr_net_twh": 93.44363445323489,
+   "kelp_km2": 21166.816562058826,
+   "kelp_pacific_km2": 5101.500000000001,
+   "kelp_atlantic_km2": 16065.316562058826,
+   "kelp_hb_km2": 0,
+   "wind_twh": 210.24000000000007,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.0380893382400007,
+     "heat_pump": 1.5571340073599997,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 5.0962397198163005
+    },
+    "inl": {
+     "wind_thermal_storage": 0.6919607180513903,
+     "heat_pump": 2.585941077077083,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.97242680774332,
+   "site_cost_bn": 1.6167516583815107,
+   "total_with_sites_bn": 93.74199459797362,
+   "delta_with_sites_bn": 6.457284695816398
+  },
+  {
+   "case": "BC fleet allowed (SMR steam for Pacific refineries), ITC extended",
+   "total_cost_bn": 87.20600400062864,
+   "delta_bn": -0.07870590152857915,
+   "smr_gw": 1.1204890423585776,
+   "smr_modules": 3.7349634745285916,
+   "smr_lcoe": 113.91673011725818,
+   "atl_gw": 0.4384183150433916,
+   "inl_gw": 0.19624890750971546,
+   "pac_gw": 0.48582181980547035,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272000004,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": 2.554756224640001,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 5.892235051840002,
+   "smr_net_twh": 7.7144109501054245,
+   "kelp_km2": 29994.35,
+   "kelp_pacific_km2": 11824.95,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 248.08742601076696,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.8321343369599994,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.554756224640001
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272000004
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136294,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.56327413166498
+  },
+  {
+   "case": "BC fleet allowed, CAD 3.5 bn/module and ITC",
+   "total_cost_bn": 87.06164590939582,
+   "delta_bn": -0.22306399276139643,
+   "smr_gw": 1.1204890423585776,
+   "smr_modules": 3.7349634745285916,
+   "smr_lcoe": 97.57541888219012,
+   "atl_gw": 0.4384183150433916,
+   "inl_gw": 0.19624890750971546,
+   "pac_gw": 0.48582181980547035,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 2.3054788272000004,
+   "steam_inl_twh": 1.032,
+   "steam_pac_twh": 2.554756224640001,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 5.892235051840002,
+   "smr_net_twh": 7.7144109501054245,
+   "kelp_km2": 29994.35,
+   "kelp_pacific_km2": 11824.95,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 248.08742601076696,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.8321343369599994,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.554756224640001
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 2.3054788272000004
+    },
+    "inl": {
+     "wind_thermal_storage": 0.8039830456136294,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 1.032
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.56327413166498
+  },
+  {
+   "case": "Electric boilers only (no storage, no heat pumps)",
+   "total_cost_bn": 91.8256311435849,
+   "delta_bn": 4.540921241427682,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 53837.24966475552,
+   "kelp_pacific_km2": 26786.049664755523,
+   "kelp_atlantic_km2": 27051.200000000004,
+   "kelp_hb_km2": 0,
+   "wind_twh": 210.24,
+   "pv_twh": 27.739245341219448,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 5.9296611388826665,
+     "heat_pump": 8.894491708323995,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 3.4324726655999998,
+     "heat_pump": 5.148708998400001,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.858236135291759,
+     "heat_pump": 2.7873542029376344,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.07292700521094
+  },
+  {
+   "case": "Transition (demand levers), no SMR",
+   "total_cost_bn": 78.08152761067173,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 224.80656598240313,
+   "pv_twh": 47.55960677436806,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.96763759641429
+  },
+  {
+   "case": "Transition (demand levers), SMR option",
+   "total_cost_bn": 78.08152761067173,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 128.0151162808463,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": -0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": -0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 25215.85,
+   "kelp_pacific_km2": 7046.450000000001,
+   "kelp_atlantic_km2": 18169.4,
+   "kelp_hb_km2": 0,
+   "wind_twh": 224.80656598240313,
+   "pv_twh": 47.55960677436806,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 1.4768285659733342,
+     "heat_pump": 2.2152428489599996,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 2.3054788272000004,
+     "heat_pump": 3.4582182408000004,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.83598304561363,
+     "heat_pump": 2.7539745684204417,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 92.96763759641429
+  },
+  {
+   "case": "Today's costs, 7%, no SMR",
+   "total_cost_bn": 110.2632381463741,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 173.56596103665035,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": 0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 0,
+   "kelp_pacific_km2": 0,
+   "kelp_atlantic_km2": 0,
+   "kelp_hb_km2": 0,
+   "wind_twh": 356.14595708687,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.885279531507504,
+     "heat_pump": 2.827919297261255,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 93.39080910664251
+  },
+  {
+   "case": "Today's costs, 7%, SMR option",
+   "total_cost_bn": 110.2632381463741,
+   "delta_bn": 0.0,
+   "smr_gw": 0.0,
+   "smr_modules": 0.0,
+   "smr_lcoe": 173.56596103665035,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "pac_gw": 0.0,
+   "hb_gw": 0.0,
+   "steam_atl_twh": 0.0,
+   "steam_inl_twh": -0.0,
+   "steam_pac_twh": 0.0,
+   "steam_hb_twh": 0.0,
+   "smr_steam_twh": 0.0,
+   "smr_net_twh": 0.0,
+   "kelp_km2": 0,
+   "kelp_pacific_km2": 0,
+   "kelp_atlantic_km2": 0,
+   "kelp_hb_km2": 0,
+   "wind_twh": 356.14595708687,
+   "pv_twh": 47.872827680618066,
+   "heat": {
+    "pac": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    },
+    "atl": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    },
+    "inl": {
+     "wind_thermal_storage": 1.885279531507504,
+     "heat_pump": 2.827919297261255,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": -0.0
+    },
+    "hb": {
+     "wind_thermal_storage": 0.0,
+     "heat_pump": 0.0,
+     "electric_boiler": 0.0,
+     "residue_boiler": 0.0,
+     "smr_steam": 0.0
+    }
+   },
+   "ethanol_heat_twh": 4.128,
+   "reduction_pct": 93.39080910664251
+  }
+ ],
+ "integer": {
+  "current_law": {
+   "best": {
+    "atl": 0,
+    "inl": 0,
+    "modules": 0,
+    "cost_lp": 87.28470990215722,
+    "site_cost_bn": 0.0,
+    "cost": 87.28470990215722,
+    "steam_atl": -0.0,
+    "steam_inl": -0.0
+   },
+   "grid": [
+    {
+     "atl": 0,
+     "inl": 0,
+     "modules": 0,
+     "cost_lp": 87.28470990215722,
+     "site_cost_bn": 0.0,
+     "cost": 87.28470990215722,
+     "steam_atl": -0.0,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 0,
+     "inl": 1,
+     "modules": 1,
+     "cost_lp": 87.33649977431385,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.41733735723292,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 2,
+     "modules": 2,
+     "cost_lp": 87.46367532668874,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.54451290960782,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 3,
+     "modules": 3,
+     "cost_lp": 87.59085087906364,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.75252604490178,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 0,
+     "modules": 1,
+     "cost_lp": 87.29664555662664,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.37748313954572,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 1,
+     "inl": 1,
+     "modules": 2,
+     "cost_lp": 87.34843542878325,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.5101105946214,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 2,
+     "modules": 3,
+     "cost_lp": 87.47561098115816,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.6372861469963,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 3,
+     "modules": 4,
+     "cost_lp": 87.60278653353305,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.84529928229027,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 0,
+     "modules": 2,
+     "cost_lp": 87.35383428500074,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.43467186791982,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 2,
+     "inl": 1,
+     "modules": 3,
+     "cost_lp": 87.40562415715738,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.56729932299552,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 2,
+     "modules": 4,
+     "cost_lp": 87.53279970953227,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.69447487537042,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 3,
+     "modules": 5,
+     "cost_lp": 87.65997526190716,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.90248801066438,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 0,
+     "modules": 3,
+     "cost_lp": 87.4497888811903,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.61146404702845,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 3,
+     "inl": 1,
+     "modules": 4,
+     "cost_lp": 87.50157875334693,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.74409150210415,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 2,
+     "modules": 5,
+     "cost_lp": 87.62875430572181,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.87126705447903,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 3,
+     "modules": 6,
+     "cost_lp": 87.75592985809672,
+     "site_cost_bn": 0.32335033167630217,
+     "cost": 88.07928018977303,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 0,
+     "modules": 4,
+     "cost_lp": 87.55656197708105,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.7182371429192,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 4,
+     "inl": 1,
+     "modules": 5,
+     "cost_lp": 87.60835184923766,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.85086459799489,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 2,
+     "modules": 6,
+     "cost_lp": 87.73552740161256,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.97804015036978,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 3,
+     "modules": 7,
+     "cost_lp": 87.86270295398747,
+     "site_cost_bn": 0.32335033167630217,
+     "cost": 88.18605328566377,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    }
+   ],
+   "relaxed_cost": 87.28470990215722,
+   "relaxed_modules": 0.0,
+   "relaxed_atl": 0.0,
+   "relaxed_inl": 0.0,
+   "saving_best_bn": 0.0,
+   "saving_relaxed_bn": 0.0
+  },
+  "itc_extended": {
+   "best": {
+    "atl": 0,
+    "inl": 0,
+    "modules": 0,
+    "cost_lp": 87.28470990215722,
+    "site_cost_bn": 0.0,
+    "cost": 87.28470990215722,
+    "steam_atl": -0.0,
+    "steam_inl": -0.0
+   },
+   "grid": [
+    {
+     "atl": 0,
+     "inl": 0,
+     "modules": 0,
+     "cost_lp": 87.28470990215722,
+     "site_cost_bn": 0.0,
+     "cost": 87.28470990215722,
+     "steam_atl": -0.0,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 0,
+     "inl": 1,
+     "modules": 1,
+     "cost_lp": 87.30315427135973,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.37186621684094,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 2,
+     "modules": 2,
+     "cost_lp": 87.3969843207805,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.46569626626172,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 3,
+     "modules": 3,
+     "cost_lp": 87.49081437020129,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.62823826116372,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 0,
+     "modules": 1,
+     "cost_lp": 87.26330005367251,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.33201199915372,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 1,
+     "inl": 1,
+     "modules": 2,
+     "cost_lp": 87.28174442287502,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.41916831383745,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 2,
+     "modules": 3,
+     "cost_lp": 87.37557447229581,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.51299836325823,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 3,
+     "modules": 4,
+     "cost_lp": 87.46940452171658,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.67554035816022,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 0,
+     "modules": 2,
+     "cost_lp": 87.28714327909252,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.35585522457373,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 2,
+     "inl": 1,
+     "modules": 3,
+     "cost_lp": 87.30558764829503,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.44301153925745,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 2,
+     "modules": 4,
+     "cost_lp": 87.39941769771579,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.53684158867821,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 3,
+     "modules": 5,
+     "cost_lp": 87.49324774713656,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.6993835835802,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 0,
+     "modules": 3,
+     "cost_lp": 87.34975237232794,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.48717626329037,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 3,
+     "inl": 1,
+     "modules": 4,
+     "cost_lp": 87.36819674153045,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.57433257797409,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 2,
+     "modules": 5,
+     "cost_lp": 87.46202679095121,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.66816262739485,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 3,
+     "modules": 6,
+     "cost_lp": 87.555856840372,
+     "site_cost_bn": 0.2748477819248568,
+     "cost": 87.83070462229686,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 0,
+     "modules": 4,
+     "cost_lp": 87.42317996526455,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.56060385622698,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 4,
+     "inl": 1,
+     "modules": 5,
+     "cost_lp": 87.44162433446706,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.6477601709107,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 2,
+     "modules": 6,
+     "cost_lp": 87.53545438388784,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.74159022033147,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 3,
+     "modules": 7,
+     "cost_lp": 87.62928443330863,
+     "site_cost_bn": 0.2748477819248568,
+     "cost": 87.90413221523349,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    }
+   ],
+   "relaxed_cost": 87.23941613858031,
+   "relaxed_modules": 2.115557408510357,
+   "relaxed_atl": 1.4613943834779717,
+   "relaxed_inl": 0.6541630250323849,
+   "saving_best_bn": 0.0,
+   "saving_relaxed_bn": 0.04529376357690751
+  },
+  "capex_3p5": {
+   "best": {
+    "atl": 0,
+    "inl": 0,
+    "modules": 0,
+    "cost_lp": 87.28470990215722,
+    "site_cost_bn": 0.0,
+    "cost": 87.28470990215722,
+    "steam_atl": -0.0,
+    "steam_inl": -0.0
+   },
+   "grid": [
+    {
+     "atl": 0,
+     "inl": 0,
+     "modules": 0,
+     "cost_lp": 87.28470990215722,
+     "site_cost_bn": 0.0,
+     "cost": 87.28470990215722,
+     "steam_atl": -0.0,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 0,
+     "inl": 1,
+     "modules": 1,
+     "cost_lp": 87.29102863392187,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.37186621684094,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 2,
+     "modules": 2,
+     "cost_lp": 87.37273304590478,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.45357062882385,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 3,
+     "modules": 3,
+     "cost_lp": 87.4544374578877,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.61611262372585,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 0,
+     "modules": 1,
+     "cost_lp": 87.25117441623466,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.33201199915374,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 1,
+     "inl": 1,
+     "modules": 2,
+     "cost_lp": 87.2574931479993,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.41916831383745,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 2,
+     "modules": 3,
+     "cost_lp": 87.33919755998222,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.50087272582037,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 3,
+     "modules": 4,
+     "cost_lp": 87.42090197196514,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.66341472072236,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 0,
+     "modules": 2,
+     "cost_lp": 87.2628920042168,
+     "site_cost_bn": 0.08083758291907554,
+     "cost": 87.34372958713587,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 2,
+     "inl": 1,
+     "modules": 3,
+     "cost_lp": 87.26921073598143,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.43088590181958,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 2,
+     "modules": 4,
+     "cost_lp": 87.35091514796434,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.51259031380249,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 3,
+     "modules": 5,
+     "cost_lp": 87.43261955994727,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.67513230870449,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 0,
+     "modules": 3,
+     "cost_lp": 87.31337546001436,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.4750506258525,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 3,
+     "inl": 1,
+     "modules": 4,
+     "cost_lp": 87.31969419177899,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.56220694053621,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 2,
+     "modules": 5,
+     "cost_lp": 87.40139860376192,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.64391135251914,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 3,
+     "modules": 6,
+     "cost_lp": 87.48310301574485,
+     "site_cost_bn": 0.32335033167630217,
+     "cost": 87.80645334742115,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 0,
+     "modules": 4,
+     "cost_lp": 87.37467741551312,
+     "site_cost_bn": 0.16167516583815109,
+     "cost": 87.53635258135127,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 4,
+     "inl": 1,
+     "modules": 5,
+     "cost_lp": 87.38099614727777,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.62350889603499,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 2,
+     "modules": 6,
+     "cost_lp": 87.46270055926068,
+     "site_cost_bn": 0.24251274875722664,
+     "cost": 87.7052133080179,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 3,
+     "modules": 7,
+     "cost_lp": 87.5444049712436,
+     "site_cost_bn": 0.32335033167630217,
+     "cost": 87.8677553029199,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    }
+   ],
+   "relaxed_cost": 87.21376365646574,
+   "relaxed_modules": 2.115557408510357,
+   "relaxed_atl": 1.4613943834779717,
+   "relaxed_inl": 0.6541630250323849,
+   "saving_best_bn": 0.0,
+   "saving_relaxed_bn": 0.07094624569147356
+  },
+  "capex_3p5_itc": {
+   "best": {
+    "atl": 2,
+    "inl": 0,
+    "modules": 2,
+    "cost_lp": 87.20984234042614,
+    "site_cost_bn": 0.0687119454812142,
+    "cost": 87.27855428590735,
+    "steam_atl": 3.155176800000002,
+    "steam_inl": -0.0
+   },
+   "grid": [
+    {
+     "atl": 0,
+     "inl": 0,
+     "modules": 0,
+     "cost_lp": 87.28470990215722,
+     "site_cost_bn": 0.0,
+     "cost": 87.28470990215722,
+     "steam_atl": -0.0,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 0,
+     "inl": 1,
+     "modules": 1,
+     "cost_lp": 87.26450380202655,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.33321574750777,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 2,
+     "modules": 2,
+     "cost_lp": 87.31968338211414,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.38839532759535,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 3,
+     "modules": 3,
+     "cost_lp": 87.37486296220173,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.51228685316416,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 0,
+     "modules": 1,
+     "cost_lp": 87.22464958433933,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.29336152982054,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 1,
+     "inl": 1,
+     "modules": 2,
+     "cost_lp": 87.20444348420865,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.34186737517108,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 2,
+     "modules": 3,
+     "cost_lp": 87.25962306429625,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.39704695525867,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 3,
+     "modules": 4,
+     "cost_lp": 87.31480264438385,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.52093848082748,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 0,
+     "modules": 2,
+     "cost_lp": 87.20984234042614,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.27855428590735,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 2,
+     "inl": 1,
+     "modules": 3,
+     "cost_lp": 87.18963624029547,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.3270601312579,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 2,
+     "modules": 4,
+     "cost_lp": 87.24481582038307,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.38223971134549,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 3,
+     "modules": 5,
+     "cost_lp": 87.29999540047065,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.50613123691429,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 0,
+     "modules": 3,
+     "cost_lp": 87.23380096432838,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.3712248552908,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 3,
+     "inl": 1,
+     "modules": 4,
+     "cost_lp": 87.21359486419772,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.41973070064135,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 2,
+     "modules": 5,
+     "cost_lp": 87.26877444428531,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.47491028072895,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 3,
+     "modules": 6,
+     "cost_lp": 87.3239540243729,
+     "site_cost_bn": 0.2748477819248568,
+     "cost": 87.59880180629776,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 0,
+     "modules": 4,
+     "cost_lp": 87.26857808793183,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.40600197889425,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 4,
+     "inl": 1,
+     "modules": 5,
+     "cost_lp": 87.24837198780116,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.4545078242448,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 2,
+     "modules": 6,
+     "cost_lp": 87.30355156788875,
+     "site_cost_bn": 0.2061358364436426,
+     "cost": 87.50968740433238,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 3,
+     "modules": 7,
+     "cost_lp": 87.35873114797634,
+     "site_cost_bn": 0.2748477819248568,
+     "cost": 87.6335789299012,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    }
+   ],
+   "relaxed_cost": 87.15764885184011,
+   "relaxed_modules": 2.115557408510357,
+   "relaxed_atl": 1.4613943834779717,
+   "relaxed_inl": 0.6541630250323849,
+   "saving_best_bn": 0.006155616249870377,
+   "saving_relaxed_bn": 0.1270610503171099
+  },
+  "itc_extended_no_site_cost": {
+   "best": {
+    "atl": 1,
+    "inl": 0,
+    "modules": 1,
+    "cost_lp": 87.26330005367251,
+    "site_cost_bn": 0.0,
+    "cost": 87.26330005367251,
+    "steam_atl": 1.577588400000001,
+    "steam_inl": -0.0
+   },
+   "grid": [
+    {
+     "atl": 0,
+     "inl": 0,
+     "modules": 0,
+     "cost_lp": 87.28470990215722,
+     "site_cost_bn": 0.0,
+     "cost": 87.28470990215722,
+     "steam_atl": -0.0,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 0,
+     "inl": 1,
+     "modules": 1,
+     "cost_lp": 87.30315427135973,
+     "site_cost_bn": 0.0,
+     "cost": 87.30315427135973,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 2,
+     "modules": 2,
+     "cost_lp": 87.3969843207805,
+     "site_cost_bn": 0.0,
+     "cost": 87.3969843207805,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 3,
+     "modules": 3,
+     "cost_lp": 87.49081437020129,
+     "site_cost_bn": 0.0,
+     "cost": 87.49081437020129,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 0,
+     "modules": 1,
+     "cost_lp": 87.26330005367251,
+     "site_cost_bn": 0.0,
+     "cost": 87.26330005367251,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 1,
+     "inl": 1,
+     "modules": 2,
+     "cost_lp": 87.28174442287502,
+     "site_cost_bn": 0.0,
+     "cost": 87.28174442287502,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 2,
+     "modules": 3,
+     "cost_lp": 87.37557447229581,
+     "site_cost_bn": 0.0,
+     "cost": 87.37557447229581,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 3,
+     "modules": 4,
+     "cost_lp": 87.46940452171658,
+     "site_cost_bn": 0.0,
+     "cost": 87.46940452171658,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 0,
+     "modules": 2,
+     "cost_lp": 87.28714327909252,
+     "site_cost_bn": 0.0,
+     "cost": 87.28714327909252,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 2,
+     "inl": 1,
+     "modules": 3,
+     "cost_lp": 87.30558764829503,
+     "site_cost_bn": 0.0,
+     "cost": 87.30558764829503,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 2,
+     "modules": 4,
+     "cost_lp": 87.39941769771579,
+     "site_cost_bn": 0.0,
+     "cost": 87.39941769771579,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 3,
+     "modules": 5,
+     "cost_lp": 87.49324774713656,
+     "site_cost_bn": 0.0,
+     "cost": 87.49324774713656,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 0,
+     "modules": 3,
+     "cost_lp": 87.34975237232794,
+     "site_cost_bn": 0.0,
+     "cost": 87.34975237232794,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 3,
+     "inl": 1,
+     "modules": 4,
+     "cost_lp": 87.36819674153045,
+     "site_cost_bn": 0.0,
+     "cost": 87.36819674153045,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 2,
+     "modules": 5,
+     "cost_lp": 87.46202679095121,
+     "site_cost_bn": 0.0,
+     "cost": 87.46202679095121,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 3,
+     "modules": 6,
+     "cost_lp": 87.555856840372,
+     "site_cost_bn": 0.0,
+     "cost": 87.555856840372,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 0,
+     "modules": 4,
+     "cost_lp": 87.42317996526455,
+     "site_cost_bn": 0.0,
+     "cost": 87.42317996526455,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 4,
+     "inl": 1,
+     "modules": 5,
+     "cost_lp": 87.44162433446706,
+     "site_cost_bn": 0.0,
+     "cost": 87.44162433446706,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 2,
+     "modules": 6,
+     "cost_lp": 87.53545438388784,
+     "site_cost_bn": 0.0,
+     "cost": 87.53545438388784,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 3,
+     "modules": 7,
+     "cost_lp": 87.62928443330863,
+     "site_cost_bn": 0.0,
+     "cost": 87.62928443330863,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    }
+   ],
+   "relaxed_cost": 87.23941613858031,
+   "relaxed_modules": 2.115557408510357,
+   "relaxed_atl": 1.4613943834779717,
+   "relaxed_inl": 0.6541630250323849,
+   "saving_best_bn": 0.021409848484708505,
+   "saving_relaxed_bn": 0.04529376357690751
+  },
+  "capex_3p5_itc_site_0p8": {
+   "best": {
+    "atl": 2,
+    "inl": 0,
+    "modules": 2,
+    "cost_lp": 87.20984234042614,
+    "site_cost_bn": 0.0343559727406071,
+    "cost": 87.24419831316675,
+    "steam_atl": 3.155176800000002,
+    "steam_inl": -0.0
+   },
+   "grid": [
+    {
+     "atl": 0,
+     "inl": 0,
+     "modules": 0,
+     "cost_lp": 87.28470990215722,
+     "site_cost_bn": 0.0,
+     "cost": 87.28470990215722,
+     "steam_atl": -0.0,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 0,
+     "inl": 1,
+     "modules": 1,
+     "cost_lp": 87.26450380202655,
+     "site_cost_bn": 0.0343559727406071,
+     "cost": 87.29885977476717,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 2,
+     "modules": 2,
+     "cost_lp": 87.31968338211414,
+     "site_cost_bn": 0.0343559727406071,
+     "cost": 87.35403935485475,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 0,
+     "inl": 3,
+     "modules": 3,
+     "cost_lp": 87.37486296220173,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.44357490768294,
+     "steam_atl": -0.0,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 0,
+     "modules": 1,
+     "cost_lp": 87.22464958433933,
+     "site_cost_bn": 0.0343559727406071,
+     "cost": 87.25900555707994,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 1,
+     "inl": 1,
+     "modules": 2,
+     "cost_lp": 87.20444348420865,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.27315542968987,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 2,
+     "modules": 3,
+     "cost_lp": 87.25962306429625,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.32833500977746,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 1,
+     "inl": 3,
+     "modules": 4,
+     "cost_lp": 87.31480264438385,
+     "site_cost_bn": 0.1030679182218213,
+     "cost": 87.41787056260567,
+     "steam_atl": 1.577588400000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 0,
+     "modules": 2,
+     "cost_lp": 87.20984234042614,
+     "site_cost_bn": 0.0343559727406071,
+     "cost": 87.24419831316675,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 2,
+     "inl": 1,
+     "modules": 3,
+     "cost_lp": 87.18963624029547,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.25834818577668,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 2,
+     "modules": 4,
+     "cost_lp": 87.24481582038307,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.31352776586428,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 2,
+     "inl": 3,
+     "modules": 5,
+     "cost_lp": 87.29999540047065,
+     "site_cost_bn": 0.1030679182218213,
+     "cost": 87.40306331869247,
+     "steam_atl": 3.155176800000002,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 0,
+     "modules": 3,
+     "cost_lp": 87.23380096432838,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.3025129098096,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 3,
+     "inl": 1,
+     "modules": 4,
+     "cost_lp": 87.21359486419772,
+     "site_cost_bn": 0.1030679182218213,
+     "cost": 87.31666278241954,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 2,
+     "modules": 5,
+     "cost_lp": 87.26877444428531,
+     "site_cost_bn": 0.1030679182218213,
+     "cost": 87.37184236250714,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 3,
+     "inl": 3,
+     "modules": 6,
+     "cost_lp": 87.3239540243729,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.46137791533532,
+     "steam_atl": 4.732765199999998,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 0,
+     "modules": 4,
+     "cost_lp": 87.26857808793183,
+     "site_cost_bn": 0.0687119454812142,
+     "cost": 87.33729003341304,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": -0.0
+    },
+    {
+     "atl": 4,
+     "inl": 1,
+     "modules": 5,
+     "cost_lp": 87.24837198780116,
+     "site_cost_bn": 0.1030679182218213,
+     "cost": 87.35143990602299,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 2,
+     "modules": 6,
+     "cost_lp": 87.30355156788875,
+     "site_cost_bn": 0.1030679182218213,
+     "cost": 87.40661948611057,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    },
+    {
+     "atl": 4,
+     "inl": 3,
+     "modules": 7,
+     "cost_lp": 87.35873114797634,
+     "site_cost_bn": 0.1374238909624284,
+     "cost": 87.49615503893877,
+     "steam_atl": 5.763697068000001,
+     "steam_inl": 1.032
+    }
+   ],
+   "relaxed_cost": 87.15764885184011,
+   "relaxed_modules": 2.115557408510357,
+   "relaxed_atl": 1.4613943834779717,
+   "relaxed_inl": 0.6541630250323849,
+   "saving_best_bn": 0.04051158899046925,
+   "saving_relaxed_bn": 0.1270610503171099
+  }
+ },
+ "sweep": [
+  {
+   "itc": 0.0,
+   "capex_bn": 2.0,
+   "lcoe": 76.74825750416218,
+   "gw": 1.2922946951181946,
+   "atl_gw": 1.096045787608479,
+   "inl_gw": 0.19624890750971546,
+   "steam": 6.795697068000001,
+   "cost": 86.99797182844338,
+   "saving_vs_nosmr": 0.28673807371383475
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 2.5,
+   "lcoe": 87.42885308263804,
+   "gw": 1.2922946951181946,
+   "atl_gw": 1.096045787608479,
+   "inl_gw": 0.19624890750971546,
+   "steam": 6.795697068000001,
+   "cost": 87.10679055716473,
+   "saving_vs_nosmr": 0.17791934499248896
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 3.0,
+   "lcoe": 98.10944866111392,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.1603209853937,
+   "saving_vs_nosmr": 0.1243889167635217
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 3.5,
+   "lcoe": 108.79004423958976,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.21376365646574,
+   "saving_vs_nosmr": 0.07094624569147356
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 4.0,
+   "lcoe": 119.47063981806564,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.26720632753778,
+   "saving_vs_nosmr": 0.017503574619439632
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 4.4,
+   "lcoe": 128.0151162808463,
+   "gw": 0.0,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "steam": 0.0,
+   "cost": 87.28470990215722,
+   "saving_vs_nosmr": 0.0
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 5.0,
+   "lcoe": 140.83183097501734,
+   "gw": 0.0,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "steam": 0.0,
+   "cost": 87.28470990215722,
+   "saving_vs_nosmr": 0.0
+  },
+  {
+   "itc": 0.0,
+   "capex_bn": 6.1,
+   "lcoe": 164.32914124766424,
+   "gw": 0.0,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "steam": 0.0,
+   "cost": 87.28470990215722,
+   "saving_vs_nosmr": 0.0
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 2.0,
+   "lcoe": 70.33990015707667,
+   "gw": 11.135940762308925,
+   "atl_gw": 3.0,
+   "inl_gw": 8.135940762308925,
+   "steam": 6.795697068000001,
+   "cost": 86.66279396216582,
+   "saving_vs_nosmr": 0.6219159399913963
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 2.5,
+   "lcoe": 79.41840639878116,
+   "gw": 1.2922946951181946,
+   "atl_gw": 1.096045787608479,
+   "inl_gw": 0.19624890750971546,
+   "steam": 6.795697068000001,
+   "cost": 87.02517651062371,
+   "saving_vs_nosmr": 0.25953339153350896
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 3.0,
+   "lcoe": 88.49691264048563,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.11222258142887,
+   "saving_vs_nosmr": 0.17248732072835082
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 3.5,
+   "lcoe": 97.57541888219012,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.15764885184011,
+   "saving_vs_nosmr": 0.1270610503171099
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 4.0,
+   "lcoe": 106.6539251238946,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.20307512225133,
+   "saving_vs_nosmr": 0.08163477990588319
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 4.4,
+   "lcoe": 113.91673011725818,
+   "gw": 0.634667222553107,
+   "atl_gw": 0.43841831504339146,
+   "inl_gw": 0.19624890750971546,
+   "steam": 3.3374788272,
+   "cost": 87.23941613858031,
+   "saving_vs_nosmr": 0.04529376357690751
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 5.0,
+   "lcoe": 124.81093760730356,
+   "gw": 0.0,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "steam": 0.0,
+   "cost": 87.28470990215722,
+   "saving_vs_nosmr": 0.0
+  },
+  {
+   "itc": 0.15,
+   "capex_bn": 6.1,
+   "lcoe": 144.7836513390534,
+   "gw": 0.0,
+   "atl_gw": 0.0,
+   "inl_gw": 0.0,
+   "steam": 0.0,
+   "cost": 87.28470990215722,
+   "saving_vs_nosmr": 0.0
+  }
+ ],
+ "breakeven_capex_bn": {
+  "one_atlantic_module": 2.563762003183365,
+  "two_atlantic_modules": 2.915918910503388,
+  "two_atlantic_modules_itc": 3.5716697990894315,
+  "one_atlantic_module_no_site_cost": 4.163761925697328,
+  "10_modules": 1.8249800145626063,
+  "40_modules": 1.2048104524612424
+ },
+ "forced": [
+  {
+   "region": "gsl",
+   "smr": "no SMR",
+   "extra_cost_bn": 0.20907359689989846,
+   "total_cost_bn": 87.49378349905712,
+   "smr_steam_twh": 0.0,
+   "hb_steam_twh": 0.0
+  },
+  {
+   "region": "gsl",
+   "smr": "SMR option (current law)",
+   "extra_cost_bn": 0.20907359689989846,
+   "total_cost_bn": 87.49378349905712,
+   "smr_steam_twh": 0.0,
+   "hb_steam_twh": 0.0
+  },
+  {
+   "region": "gsl",
+   "smr": "SMR CAD 3.5 bn with ITC, Hudson Bay fleet allowed",
+   "extra_cost_bn": 0.20102234854378764,
+   "total_cost_bn": 87.3586712003839,
+   "smr_steam_twh": 3.5489588272000003,
+   "hb_steam_twh": 0.0
+  },
+  {
+   "region": "lab",
+   "smr": "no SMR",
+   "extra_cost_bn": 0.4127016398492742,
+   "total_cost_bn": 87.69741154200649,
+   "smr_steam_twh": 0.0,
+   "hb_steam_twh": 0.0
+  },
+  {
+   "region": "lab",
+   "smr": "SMR option (current law)",
+   "extra_cost_bn": 0.4127016398492742,
+   "total_cost_bn": 87.69741154200649,
+   "smr_steam_twh": 0.0,
+   "hb_steam_twh": 0.0
+  },
+  {
+   "region": "lab",
+   "smr": "SMR CAD 3.5 bn with ITC, Hudson Bay fleet allowed",
+   "extra_cost_bn": 0.40669004107668627,
+   "total_cost_bn": 87.5643388929168,
+   "smr_steam_twh": 3.4953838938666673,
+   "hb_steam_twh": 0.0
+  },
+  {
+   "region": "hb",
+   "smr": "no SMR",
+   "extra_cost_bn": 0.7066212247671757,
+   "total_cost_bn": 87.9913311269244,
+   "smr_steam_twh": 0.0,
+   "hb_steam_twh": -0.0
+  },
+  {
+   "region": "hb",
+   "smr": "SMR option (current law)",
+   "extra_cost_bn": 0.7066212247672041,
+   "total_cost_bn": 87.99133112692442,
+   "smr_steam_twh": 0.0,
+   "hb_steam_twh": -0.0
+  },
+  {
+   "region": "hb",
+   "smr": "SMR CAD 3.5 bn with ITC, Hudson Bay fleet allowed",
+   "extra_cost_bn": 0.7039374753151435,
+   "total_cost_bn": 87.86158632715525,
+   "smr_steam_twh": 3.4079721605333337,
+   "hb_steam_twh": 0.07049333333333334
+  }
+ ]
+}

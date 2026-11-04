@@ -1,0 +1,275 @@
+{
+  "sources": {
+    "Correa giant kelp pilot": "https://doi.org/10.1111/are.12529",
+    "Saether sugar kelp review": "https://doi.org/10.1007/s10811-024-03213-1"
+  },
+  "chile_reported_unit": "41.3 wet kg per metre of line per year, 4 m apart (NOT 41.3 wet tonnes per hectare)",
+  "chile_implied_wet_t_ha_yr": 103.25,
+  "chile_implied_dry_t_ha_yr_at_assumed_15pct_dm": 15.487499999999999,
+  "limits": "Chilean pilot to BC transfer is conditional; 100% line packing and 15% dry fraction are design assumptions; applying coastal yield to slope/deep is not validated; Atlantic 7.5% DM and 75\u2013200 wet t/ha range are heterogeneous studies, not site guarantees; otter houses not quantified; chemistry, seasonal storm losses and actual farm construction/policy exclusion not independently validated.",
+  "rows": [
+    {
+      "case": "V4 benchmark (shared 12% DM)",
+      "pac_shelf_dry_t_ha_yr": 12.0,
+      "pac_slope_deep_dry_t_ha_yr": 12.0,
+      "atlantic_open_water_dry_t_ha_yr": 9.0,
+      "pacific_dry_fraction": 0.12,
+      "atlantic_dry_fraction": 0.12,
+      "baseline_cost_cad_bn": 87.28470990215722,
+      "baseline_kelparea_km2": 25215.85,
+      "baseline_dry_mt": 20.120559,
+      "baseline_wet_mt": 167.671325,
+      "baseline_new_electricity_twh": 336.11163971510456,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 127.20759072570895,
+      "export_farm_area_km2": 76991.65,
+      "export_dry_mt": 76.145727,
+      "export_wet_mt": 634.547725,
+      "export_new_electricity_twh": 384.27667597328065,
+      "export_total_cost_before_sales_cad_bn": 131.76948224852163,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 1759.25,
+        "atl_shelf": 18169.4
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 40866.25,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 3787.0
+      }
+    },
+    {
+      "case": "Chile analogue: Pacific shelf, Atlantic midpoint",
+      "pac_shelf_dry_t_ha_yr": 15.487499999999999,
+      "pac_slope_deep_dry_t_ha_yr": 8.0,
+      "atlantic_open_water_dry_t_ha_yr": 9.375,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 86.91865231063392,
+      "baseline_kelparea_km2": 21500.1,
+      "baseline_dry_mt": 17.160017756250003,
+      "baseline_wet_mt": 199.569180875,
+      "baseline_new_electricity_twh": 350.73878332565425,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 25.09015914117155,
+      "export_farm_area_km2": 35939.700000000004,
+      "export_dry_mt": 28.05245775625,
+      "export_wet_mt": 335.35744754166666,
+      "export_new_electricity_twh": 360.24468832453135,
+      "export_total_cost_before_sales_cad_bn": 95.94806418739924,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "atl_shelf": 18169.4
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1770.8000000000002,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 3787.0
+      }
+    },
+    {
+      "case": "Chile analogue: Pacific shelf, Atlantic low",
+      "pac_shelf_dry_t_ha_yr": 15.487499999999999,
+      "pac_slope_deep_dry_t_ha_yr": 8.0,
+      "atlantic_open_water_dry_t_ha_yr": 5.625,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 87.56899307459656,
+      "baseline_kelparea_km2": 5287.200000000001,
+      "baseline_dry_mt": 5.949858381249999,
+      "baseline_wet_mt": 39.66572254166667,
+      "baseline_new_electricity_twh": 400.13260464661994,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 0.0,
+      "export_farm_area_km2": 5287.200000000001,
+      "export_dry_mt": 5.949858381249999,
+      "export_wet_mt": 39.66572254166667,
+      "export_new_electricity_twh": 400.13260464661994,
+      "export_total_cost_before_sales_cad_bn": 87.56899307459656,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002
+      }
+    },
+    {
+      "case": "Chile analogue: Pacific shelf, Atlantic high",
+      "pac_shelf_dry_t_ha_yr": 15.487499999999999,
+      "pac_slope_deep_dry_t_ha_yr": 8.0,
+      "atlantic_open_water_dry_t_ha_yr": 15.0,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 82.4846709027282,
+      "baseline_kelparea_km2": 34029.44603413075,
+      "baseline_dry_mt": 39.11543078824758,
+      "baseline_wet_mt": 492.3080213016343,
+      "baseline_new_electricity_twh": 255.29199526893566,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 138.57847485122315,
+      "export_farm_area_km2": 81455.2,
+      "export_dry_mt": 100.45104038125001,
+      "export_wet_mt": 1300.671882541667,
+      "export_new_electricity_twh": 308.5958963748583,
+      "export_total_cost_before_sales_cad_bn": 130.86229197589205,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 2055.2,
+        "gsl_shelf": 1592.3460341307464
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1770.8000000000002,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 5056.3,
+        "atl_deep": 31557.25,
+        "gsl_shelf": 4239.0,
+        "gsl_slope": 2814.65,
+        "lab_shelf": 5635.3
+      }
+    },
+    {
+      "case": "50% Pacific line occupancy, Atlantic midpoint",
+      "pac_shelf_dry_t_ha_yr": 7.7437499999999995,
+      "pac_slope_deep_dry_t_ha_yr": 7.7437499999999995,
+      "atlantic_open_water_dry_t_ha_yr": 9.375,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 87.83180393304393,
+      "baseline_kelparea_km2": 21500.1,
+      "baseline_dry_mt": 14.967688565625,
+      "baseline_wet_mt": 184.9536529375,
+      "baseline_new_electricity_twh": 360.7689407085616,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 23.481833459521553,
+      "export_farm_area_km2": 35080.600000000006,
+      "export_dry_mt": 25.149486253125,
+      "export_wet_mt": 316.0043041875,
+      "export_new_electricity_twh": 369.66613412152816,
+      "export_total_cost_before_sales_cad_bn": 96.23977826928095,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "atl_shelf": 18169.4
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 911.7,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 3787.0
+      }
+    },
+    {
+      "case": "All-Pacific-zone yield transfer, Atlantic midpoint",
+      "pac_shelf_dry_t_ha_yr": 15.487499999999999,
+      "pac_slope_deep_dry_t_ha_yr": 15.487499999999999,
+      "atlantic_open_water_dry_t_ha_yr": 9.375,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 84.45353263874382,
+      "baseline_kelparea_km2": 27119.69293294974,
+      "baseline_dry_mt": 38.56435981848029,
+      "baseline_wet_mt": 271.8601521214038,
+      "baseline_new_electricity_twh": 254.4532788388417,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 124.4710355940276,
+      "export_farm_area_km2": 76991.65,
+      "export_dry_mt": 92.95755181874999,
+      "export_wet_mt": 768.058074625,
+      "export_new_electricity_twh": 301.8105455429103,
+      "export_total_cost_before_sales_cad_bn": 124.43183442720577,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 18682.75,
+        "atl_shelf": 3149.7429329497404
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 40866.25,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 3787.0
+      }
+    },
+    {
+      "case": "All-Pacific-zone yield transfer, Atlantic high",
+      "pac_shelf_dry_t_ha_yr": 15.487499999999999,
+      "pac_slope_deep_dry_t_ha_yr": 15.487499999999999,
+      "atlantic_open_water_dry_t_ha_yr": 15.0,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 82.2791901380677,
+      "baseline_kelparea_km2": 33173.03152563582,
+      "baseline_dry_mt": 39.14002333157847,
+      "baseline_wet_mt": 463.81748887718976,
+      "baseline_new_electricity_twh": 255.17948156382718,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 284.7420679641557,
+      "export_farm_area_km2": 122124.33088048325,
+      "export_dry_mt": 165.08816106008828,
+      "export_wet_mt": 1729.7995311761772,
+      "export_new_electricity_twh": 363.79939914201,
+      "export_total_cost_before_sales_cad_bn": 174.95572626107264,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 834.6315256358154,
+        "atl_shelf": 27051.200000000004
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 40866.25,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 5056.3,
+        "atl_deep": 31557.25,
+        "gsl_shelf": 4239.0,
+        "gsl_slope": 2814.65,
+        "lab_shelf": 5252.480880483262
+      }
+    },
+    {
+      "case": "17.6 dry t/ha exploratory, NOT verified by supplied LCA",
+      "pac_shelf_dry_t_ha_yr": 17.6,
+      "pac_slope_deep_dry_t_ha_yr": 17.6,
+      "atlantic_open_water_dry_t_ha_yr": 15.0,
+      "pacific_dry_fraction": 0.15,
+      "atlantic_dry_fraction": 0.075,
+      "baseline_cost_cad_bn": 81.79949459869451,
+      "baseline_kelparea_km2": 33151.77102463351,
+      "baseline_dry_mt": 43.9252808527127,
+      "baseline_wet_mt": 452.7863633695027,
+      "baseline_new_electricity_twh": 232.23699123278382,
+      "export_price_cad_mwh": 400.0,
+      "additional_biogenic_exports_twh": 286.98078654129756,
+      "export_farm_area_km2": 116871.84999999999,
+      "export_dry_mt": 171.05579920000002,
+      "export_wet_mt": 1745.0722080000003,
+      "export_new_electricity_twh": 341.8696950874748,
+      "export_total_cost_before_sales_cad_bn": 171.72069309227444,
+      "no_export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 6537.75,
+        "atl_shelf": 21326.82102463351
+      },
+      "export_kelparea_by_zone": {
+        "pac_shelf": 3330.7000000000003,
+        "pac_slope": 1956.5000000000002,
+        "pac_deep": 40866.25,
+        "atl_shelf": 27051.200000000004,
+        "atl_slope": 5056.3,
+        "atl_deep": 31557.25,
+        "gsl_shelf": 4239.0,
+        "gsl_slope": 2814.65
+      }
+    }
+  ]
+}
